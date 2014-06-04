@@ -11,6 +11,7 @@ Adobe Experience Manager Links
 * http://ruben42.wordpress.com/
 * http://therealcq.blogspot.de/
 * http://www.reddit.com/r/adobecq/
+* http://blogs.adobe.com/contentmanagement/
 
 ## Component Development
 * http://dev.day.com/docs/en/cq/current/widgets-api/index.html
