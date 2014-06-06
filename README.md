@@ -18,8 +18,8 @@ Adobe Experience Manager Links
 
 ## Component Development
 * http://dev.day.com/docs/en/cq/current/widgets-api/index.html
-* [ACS AEM Commons, An AEM development and component toolkit for bootstrapping any AEM project](http://adobe-consulting-services.github.io/acs-aem-commons/)
-* [ACS AEM Tools, A set of tools for AEM to make developer lives easier](http://adobe-consulting-services.github.io/acs-aem-tools/)
+* [ACS AEM Commons](http://adobe-consulting-services.github.io/acs-aem-commons/), An AEM development and component toolkit for bootstrapping any AEM project
+* [ACS AEM Tools](http://adobe-consulting-services.github.io/acs-aem-tools/), A set of tools for AEM to make developer lives easier
 
 ## Documentation
 * http://dev.day.com/docs/en/cq/current.html (up to 5.6.1)
