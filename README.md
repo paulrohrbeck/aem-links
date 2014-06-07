@@ -1,8 +1,11 @@
 Adobe Experience Manager Links
 =========
 
-## Blogs
-* http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers.html
+## Blogs (by Adobe)
+* [Experience Delivers](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers.html)
+* [Adobe Content Management](http://blogs.adobe.com/contentmanagement/) (not sure if this is still being updated)
+
+## Blogs (3rd party)
 * http://scottsdigitalcommunity.blogspot.ca/
 * http://www.wemblog.com/
 * http://cq-ops.tumblr.com/
@@ -11,25 +14,26 @@ Adobe Experience Manager Links
 * http://ruben42.wordpress.com/
 * http://therealcq.blogspot.de/
 * http://www.reddit.com/r/adobecq/
-* http://blogs.adobe.com/contentmanagement/
-* http://helpx.adobe.com/marketing-cloud/experience-manager.html (hub for all sorts of information, webinars, etc.)
-* http://helpx.adobe.com/experience-manager/topics.html
 * http://cqinnovator.blogspot.in/?view=classic
 
 ## Component Development
 * http://dev.day.com/docs/en/cq/current/widgets-api/index.html
-* [ACS AEM Commons](http://adobe-consulting-services.github.io/acs-aem-commons/), An AEM development and component toolkit for bootstrapping any AEM project
-* [ACS AEM Tools](http://adobe-consulting-services.github.io/acs-aem-tools/), A set of tools for AEM to make developer lives easier
+* [Adobe Consulting Services AEM Commons](http://adobe-consulting-services.github.io/acs-aem-commons/) - AEM development and component toolkit for bootstrapping any AEM project
+* [Adobe Consulting Services AEM Tools](http://adobe-consulting-services.github.io/acs-aem-tools/) - Set of tools for AEM to make developer lives easier
 
 ## Documentation
 * http://dev.day.com/docs/en/cq/current.html (up to 5.6.1)
 * http://docs.adobe.com/content/docs/en/aem/6-0.html
 
 ## Forums, Help
-* http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html
+* [Official Adobe Experience Manager Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+
+## General
+[Adobe Experience Manager help](http://helpx.adobe.com/marketing-cloud/experience-manager.html) (hub for all sorts of information, webinars, etc.)
+* [Adobe CQ Help / Help and tutorials](http://helpx.adobe.com/experience-manager/topics.html)
 
 ## Maven
-* http://www.cqblueprints.com/
+* [CQ Blueprints](http://www.cqblueprints.com/)
 
 ## Quick References
 * http://www.aemcasts.com/qr.html
