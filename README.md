@@ -38,6 +38,7 @@ Adobe Experience Manager Links
 ### Quick References
 * http://www.aemcasts.com/qr.html
 * [XSS Cheat Sheet](http://dev.day.com/content/docs/en/cq/current/developing/securitychecklist/_jcr_content/par/download/file.res/xss_cheat_sheet.pdf)
+* [Apache Sling Cheat Sheet](http://dev.day.com/content/ddc/blog/2008/07/cheatsheet/_jcr_content/par/download/file)
 
 ### Screencasts, Podcasts
 * http://dev.day.com/gems
