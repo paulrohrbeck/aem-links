@@ -22,6 +22,9 @@ Adobe Experience Manager Links
 * [Adobe Consulting Services AEM Commons](http://adobe-consulting-services.github.io/acs-aem-commons/) - AEM development and component toolkit for bootstrapping any AEM project
 * [Adobe Consulting Services AEM Tools](http://adobe-consulting-services.github.io/acs-aem-tools/) - Set of tools for AEM to make developer lives easier
 
+### CI
+* [Recap](http://adamcin.net/net.adamcin.recap/)
+
 ### Documentation
 * [5.6.1](http://dev.day.com/docs/en/cq/current.html)
 * [6.0](http://docs.adobe.com/content/docs/en/aem/6-0.html)
