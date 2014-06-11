@@ -76,3 +76,22 @@ If you want to include (*.woff, *.eot, etc.), make sure to include them from a f
 * layout: (rollover | editbar | auto)
 
 (See here for more details on the [EditConfig](http://dev.day.com/docs/en/cq/current/developing/components.html#Configuring with cq:EditConfig Properties) and [listener](http://dev.day.com/docs/en/cq/current/developing/components.html#cq:listeners) properties.)
+
+-----------------------
+
+## Querybuilder
+
+```
+type=nt:file
+nodename=*.jar
+orderby=@jcr:content/jcr:lastModified
+orderby.sort=desc
+
+property=
+property.operation=like
+property.value=
+```
+
+(more to come...)
+
+[(Source)](http://dev.day.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)
