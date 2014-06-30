@@ -12,6 +12,8 @@ Adobe Experience Manager Links
 * [CQ-OPS](http://cq-ops.tumblr.com/)
 * [Daniel Klco's Blog](http://www.danklco.com/)
 * [The Real CQ](http://therealcq.blogspot.de/)
+* [Code Monkey](http://blog.kristianwright.com/)
+* [Things on a content management system](http://cqdump.wordpress.com/)
 * [Adobe CQ (by Himanshu Jain )](http://cqinnovator.blogspot.in/?view=classic)
 * [Cititech Blog](http://www.citytechinc.com/us/en/blog.html)
 * [ACQ | mobi.fm](http://mobi.fm/blog/category/acq/) *
@@ -30,6 +32,9 @@ Adobe Experience Manager Links
 * [5.6.1](http://dev.day.com/docs/en/cq/current.html)
 * [6.0](http://docs.adobe.com/content/docs/en/aem/6-0.html)
 
+### Events
+* [Adobe's AEM Technologists](https://communities.adobe.com/en/communities/aem_technologistsdevelopersarchitects/home.html)
+
 ### Forums, Help
 * [Official Adobe Experience Manager Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
 
@@ -45,6 +50,7 @@ Adobe Experience Manager Links
 
 ### Quick References
 * [AEM 5.6 - Quick Reference](http://www.aemcasts.com/qr.html)
+* [Frequently Used CQ URLs](http://cq5geeks.blogspot.com/2013/02/frequently-used-cq-urls.html)
 * [XSS Cheat Sheet](http://dev.day.com/content/docs/en/cq/current/developing/securitychecklist/_jcr_content/par/download/file.res/xss_cheat_sheet.pdf)
 * [Apache Sling Cheat Sheet](http://dev.day.com/content/ddc/blog/2008/07/cheatsheet/_jcr_content/par/download/file)
 * [Expression Language (EL)](http://docs.oracle.com/javaee/1.4/tutorial/doc/JSPIntro7.html)
