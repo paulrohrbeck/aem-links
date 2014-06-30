@@ -16,6 +16,7 @@ Adobe Experience Manager Links
 * [Things on a content management system](http://cqdump.wordpress.com/)
 * [Adobe CQ (by Himanshu Jain )](http://cqinnovator.blogspot.in/?view=classic)
 * [Cititech Blog](http://www.citytechinc.com/us/en/blog.html)
+* [cqwemblog](http://cqwemblog.wordpress.com/)
 * [ACQ | mobi.fm](http://mobi.fm/blog/category/acq/) *
 * [Ruben's Blog](http://ruben42.wordpress.com/) *
 
