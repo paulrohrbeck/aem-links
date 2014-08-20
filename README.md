@@ -86,3 +86,12 @@ This is more of a short cut for people who don't want to navigate through the AE
 
 #### Workflows
 * [CQ5 OOTB workflow processes](http://blogs.adobe.com/contentmanagement/2013/05/13/cq-5-6-out-of-the-box-workflow-processes-and-what-they-docan-be-used-for/)
+
+
+#### Security
+* [Tighten Up Security in Production CQ Environment](http://www.hsufengko.com/home/tighten-up-security-in-production-cq-environment)
+* [How to protect your CQ instances from Google searches](http://crxdelight.com/2012/02/04/how-to-protect-your-cq-instances-from-google-searches/)
+
+#### List of articles
+* [Experiencing Adobe Experience Manger - Day CQ](http://experience-aem.blogspot.com/2013/08/in-blog-experiencing-adobe-experience.html)
+* [My HUGE list of AEM bookmarks](http://aemtips.blogspot.com/2013/05/my-huge-list-of-aem-bookmarks.html)
