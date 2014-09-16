@@ -14,7 +14,7 @@ General Advice:
 Edit button doesn't show up.
 
 Solutions:
-* Unknown
+* the only thing that helped for me is re-install the instance.. (bug?)
 
 ---
 #### Maven 'MojoExecutionException' (can have a lot of reasons....)
