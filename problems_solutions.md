@@ -1,7 +1,7 @@
 Problems & Solutions
 --------------------------
 
-Working document to gather common issues and solutions. (AEM 5.6.1 and 6.0)
+Working document to gather common issues and possible solutions. (AEM 5.6.1 and 6.0)
 
 
 General Advice:
@@ -17,7 +17,7 @@ Solutions:
 * Unknown
 
 ---
-#### Maven Mojo Exception (can have a lot of reasons....)
+#### Maven 'MojoExecutionException' (can have a lot of reasons....)
 
 Solutions:
 * Build Content packages before Core packages (?)
