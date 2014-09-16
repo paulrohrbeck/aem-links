@@ -4,12 +4,17 @@ Problems & Solutions
 Working document to gather common issues and solutions. (AEM 5.6.1 and 6.0)
 
 
+General Advice:
+* check all logs
+* restart instance
+
 
 ---
-#### Components are not editable in edit mode (editor.html/). Edit button doesn't show up.  (AEM 6)
+#### Components are not editable in edit mode (editor.html) (AEM 6)
+Edit button doesn't show up.
 
 Solutions:
-* Restart instance?
+* Unknown
 
 ---
 #### Maven Mojo Exception (can have a lot of reasons....)
