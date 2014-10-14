@@ -36,3 +36,9 @@ Solutions:
 #### Console shows 404 for component that's not there anymore (AEM 6)
 Solutions:
 * clear local storage in browser since it might have old references to it if it was deleted in a different tab
+
+
+---
+
+### Favicon scrambled/broken
+org.apache.jackrabbit.vault.util.InputStreamPump Error while processing input stream java.util.zip.ZipException: invalid code lengths set
