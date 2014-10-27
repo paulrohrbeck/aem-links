@@ -95,3 +95,50 @@ property.value=
 (more to come...)
 
 [(Source)](http://dev.day.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)
+
+-----------------------
+
+### Install AEM
+
+```
+java -XX:MaxPermSize=256m -Xmx1024M -jar cq-quickstart-6.0.0.jar
+```
+
+```
+crx-quickstart/bin/(stop | start | status | quickstart)
+```
+
+
+### Install AEM with different run modes
+
+Installation run modes (not changeable): author, publish, samplecontent, nosamplecontent
+
+```
+cq-<instance-type>-p<port-number>.jar
+cq-publish-p4503.jar
+```
+
+Additional run modes:
+
+1. crx-quickstart/conf/sling.properties: ```sling.run.modes=author```
+2. ```java -jar cq-56-p4545.jar -r dev```
+3. System property: ```-Dsling.run.modes=publish,prod```
+
+### Troubleshooting
+
+Possible memory leaks? ```-XX:+HeapDumpOnOutOfMemoryError```
+
+Start in debug mode: [help article](http://helpx.adobe.com/experience-manager/kb/CQ5HowToSetupRemoteDebuggingWithEclipse.html)
+
+```
+-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n
+
+Example:
+java -Xmx512m -agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n -jar cq-author-4502.jar
+
+OR:
+
+crx-quickstart/bin/start -d --debug-port 8000
+```
+
+
