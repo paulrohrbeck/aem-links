@@ -141,4 +141,25 @@ OR:
 crx-quickstart/bin/start -d --debug-port 8000
 ```
 
+### Vault
 
+```
+Checkout:
+vlt --credentials admin:admin co http://localhost:4502/crx/-/etc/designs ~/Desktop/
+
+Export code from JCR:
+vlt export -v http://localhost:4502/crx /content/forms forms
+
+Import code to JCR:
+vlt -v import http://localhost:4502/crx . /
+
+See modified files:
+vlt st
+
+See  changes:
+vlt diff text.jsp
+
+Commit  changes:
+vlt ci test.jsp
+
+```
