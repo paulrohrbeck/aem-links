@@ -1,7 +1,7 @@
 ### Common commands
 
-`mvn clean package` - check if maven is able to build package
-`mvn clean install -PautoInstallPackage` - install package to defined AEM instance
+* `mvn clean package` - check if maven is able to build package
+* `mvn clean install -PautoInstallPackage` - install package to defined AEM instance
 
 ### Init new project
 
