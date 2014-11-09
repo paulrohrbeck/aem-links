@@ -43,6 +43,7 @@ Adobe Experience Manager Links
 ### General
 * [Adobe Experience Manager help](http://helpx.adobe.com/marketing-cloud/experience-manager.html) (hub for all sorts of information, webinars, etc.)
 * [Adobe CQ Help / Help and tutorials](http://helpx.adobe.com/experience-manager/topics.html)
+* [David's Model](http://wiki.apache.org/jackrabbit/DavidsModel)
 
 ### Java
 * [Google Java Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javaguide.html)
