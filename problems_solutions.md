@@ -41,4 +41,9 @@ Solutions:
 ---
 
 ### Favicon scrambled/broken
-org.apache.jackrabbit.vault.util.InputStreamPump Error while processing input stream java.util.zip.ZipException: invalid code lengths set
+
+
+---
+
+### Changes don't show up in JCR/CRX
+Make sure there is no XML errors in any of the files you're building. (Example: & -> &amp;)
