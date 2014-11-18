@@ -1,5 +1,8 @@
-### Download
-https://www.adobeaemcloud.com/content/companies/public/adobe/dispatcher/dispatcher.html
+# Dispatcher
+
+* Docs: http://docs.adobe.com/docs/en/dispatcher.html
+* FAQ: http://helpx.adobe.com/experience-manager/using/dispatcher-faq.html
+* Download: https://www.adobeaemcloud.com/content/companies/public/adobe/dispatcher/dispatcher.html
 
 ### Snippets
 ```
