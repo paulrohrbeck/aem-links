@@ -163,11 +163,3 @@ Commit  changes:
 vlt ci test.jsp
 
 ```
-
-### Dispatcher
-
-```
-# serve stale content if no remote server is available (502, 503, 504). (/cache section)
-/serveStaleOnError "1"
-```
-
