@@ -163,3 +163,15 @@ Commit  changes:
 vlt ci test.jsp
 
 ```
+
+### David's Model
+
+1. Data First, Structure Later. Maybe.
+2. Drive the content hierarchy, don't let it happen.
+3. Workspaces are for clone(), merge() and update().
+4. Beware of Same Name Siblings.
+5. References considered harmful.
+6. Files are Files are Files.
+7. ID's are evil.
+
+[(Source)](http://wiki.apache.org/jackrabbit/DavidsModel)
