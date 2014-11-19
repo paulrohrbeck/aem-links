@@ -9,3 +9,5 @@
 # serve stale content if no remote server is available (502, 503, 504). (/cache section)
 /serveStaleOnError "1"
 ```
+
+See [Configuration Docs](http://docs.adobe.com/docs/en/dispatcher/disp-config.html) for more info.
