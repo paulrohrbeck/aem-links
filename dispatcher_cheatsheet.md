@@ -11,3 +11,9 @@
 ```
 
 See [Configuration Docs](http://docs.adobe.com/docs/en/dispatcher/disp-config.html) for more info.
+
+```
+# in JSP/Sightly:
+# http://helpx.adobe.com/experience-manager/kb/DispatcherNoCache.html)
+getResponse().setHeader("Dispatcher", "no-cache");
+```
