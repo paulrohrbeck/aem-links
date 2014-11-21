@@ -47,3 +47,11 @@ Solutions:
 
 ### Changes don't show up in JCR/CRX
 Make sure there is no XML errors in any of the files you're building. (Example: & -> &amp;)
+
+---
+
+### cannot render resource SyntheticResource
+
+org.apache.sling.servlets.get.impl.DefaultGetServlet No renderer for extension html, cannot render resource SyntheticResource
+
+Resource/Component doesn't exist. Check resource path.
