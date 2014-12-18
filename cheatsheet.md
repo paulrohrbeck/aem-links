@@ -40,6 +40,15 @@ Some more useful snippets for AEM. Please create an issue if you have any commen
 
 [(Source)](http://blogs.adobe.com/mtg/2011/11/building-components-in-adobe-cq-5-part-1-a-tutorial-on-clientlibs-using-jquery-ui.html)
 
+### Link Checker
+
+```
+<a x-cq-linkchecker="valid" ...
+<a x-cq-linkchecker="skip" ...
+```
+
+[(Source)](http://tostring.me/206/how-to-disable-adobe-cq-link-checker/)
+
 ### Font embedding
 
 If you want to include (*.woff, *.eot, etc.), make sure to include them from a folder that is defined as a `sling:Folder`:
