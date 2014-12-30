@@ -19,8 +19,7 @@ Solutions:
 ---
 #### Maven 'MojoExecutionException' (can have a lot of reasons....)
 
-Solutions:
-* Build Content packages before Core packages (?)
+1. "Installation on http://localhost:4502/apps/abc/install failed, cause: Installation failed" --> 'install' folder doesn't exist yet so the jars can't be pushed to the instance. Create folder manually in CRXDE Lite.
 
 ---
 
