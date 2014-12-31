@@ -41,7 +41,7 @@ Solutions:
 
 ### Favicon scrambled/broken
 
-
+Use favicon from DAM. (?)
 ---
 
 ### Changes don't show up in JCR/CRX
@@ -54,3 +54,16 @@ Make sure there is no XML errors in any of the files you're building. (Example: 
 org.apache.sling.servlets.get.impl.DefaultGetServlet No renderer for extension html, cannot render resource SyntheticResource
 
 Resource/Component doesn't exist. Check resource path.
+
+---
+
+### Only a type can be imported. ... resolves to a package
+
+org.apache.sling.servlets.resolver.internal.SlingServletResolver Calling the error handler resulted in an error
+java.lang.Error: Unresolved compilation problems: 
+	Only a type can be imported. com.adobe.acs.commons.errorpagehandler.ErrorPageHandlerService resolves to a package
+	ErrorPageHandlerService cannot be resolved to a type
+	ErrorPageHandlerService cannot be resolved to a type
+
+* Make sure bundle is active
+* Make sure bundle actually exports this class/service
