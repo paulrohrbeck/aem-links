@@ -67,3 +67,10 @@ java.lang.Error: Unresolved compilation problems:
 
 * Make sure bundle is active
 * Make sure bundle actually exports this class/service
+
+---
+
+### Image doesn't show up on Dispatcher
+
+- Check: Does it show up on Author/Publish?
+- Check: Is there Redirects set on the Dispatcher?
