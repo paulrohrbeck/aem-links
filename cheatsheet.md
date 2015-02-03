@@ -41,26 +41,13 @@ Some more useful snippets for AEM. Please create an issue if you have any commen
 [(Source)](http://blogs.adobe.com/mtg/2011/11/building-components-in-adobe-cq-5-part-1-a-tutorial-on-clientlibs-using-jquery-ui.html)
 
 ### Link Checker
-
+How to disable the link checker for specific links:
 ```
 <a x-cq-linkchecker="valid" ...
 <a x-cq-linkchecker="skip" ...
 ```
 
 [(Source)](http://tostring.me/206/how-to-disable-adobe-cq-link-checker/)
-
-### Font embedding
-
-If you want to include (*.woff, *.eot, etc.), make sure to include them from a folder that is defined as a `sling:Folder`:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root 
-    xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    xmlns:jcr="http://www.jcp.org/jcr/1.0"
-    xmlns:rep="internal"
-    jcr:primaryType="sling:Folder"/>
-```
 
 ## Component Development
 
@@ -89,6 +76,7 @@ If you want to include (*.woff, *.eot, etc.), make sure to include them from a f
 -----------------------
 
 ## Querybuilder
+[Query Builder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html)
 
 ```
 type=nt:file
@@ -96,9 +84,18 @@ nodename=*.jar
 orderby=@jcr:content/jcr:lastModified
 orderby.sort=desc
 
-property=
+# LIKE
+property=propertyName
 property.operation=like
 property.value=
+
+# check if a property exists:
+property=propertyName
+property.operation=exists
+property.value=true
+
+# set this higher so you can actually see all the results and not just 10
+p.limit=1000
 ```
 
 (more to come...)
