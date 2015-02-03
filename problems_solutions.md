@@ -36,12 +36,13 @@ Solutions:
 Solutions:
 * clear local storage in browser since it might have old references to it if it was deleted in a different tab
 
-
 ---
 
 ### Favicon scrambled/broken
 
-Use favicon from DAM. (?)
+Never really found out why this happened..
+Solution for now: Use favicon from DAM instead of /etc.
+
 ---
 
 ### Changes don't show up in JCR/CRX
