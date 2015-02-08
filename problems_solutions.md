@@ -2,12 +2,12 @@ Problems & Solutions
 --------------------------
 
 Working document to gather common issues and possible solutions. (AEM 5.6.1 and 6.0)
-
+Please let me know if you have explanations for any of these issues.
 
 General Advice:
-* check all logs
+* check all logs (make sure to check them on the correct instancce if there's more than one)
+* restart/reload/update bundle
 * restart instance
-
 
 ---
 #### Components are not editable in edit mode (editor.html) (AEM 6)
@@ -17,7 +17,8 @@ Solutions:
 * the only thing that helped for me is re-install the instance.. (bug?)
 
 ---
-#### Maven 'MojoExecutionException' (can have a lot of reasons....)
+#### Maven 'MojoExecutionException'
+(Pretty generic error that can have a lot of reasons...)
 
 1. "Installation on http://localhost:4502/apps/abc/install failed, cause: Installation failed" --> 'install' folder doesn't exist yet so the jars can't be pushed to the instance. Create folder manually in CRXDE Lite.
 
@@ -34,6 +35,7 @@ Solutions:
 
 #### Console shows 404 for component that's not there anymore (AEM 6)
 Solutions:
+
 * clear local storage in browser since it might have old references to it if it was deleted in a different tab
 
 ---
@@ -41,12 +43,13 @@ Solutions:
 ### Favicon scrambled/broken
 
 Never really found out why this happened..
-Solution for now: Use favicon from DAM instead of /etc.
+Solution for now: Use favicon from DAM instead of /etc or upload to CRXDE directly.
 
 ---
 
 ### Changes don't show up in JCR/CRX
-Make sure there is no XML errors in any of the files you're building. (Example: & -> &amp;)
+
+Vault might not have pushed your changes to CRX. Make sure there is no XML errors in any of the files you're building. (Example: & -> &amp;)
 
 ---
 
@@ -75,3 +78,7 @@ java.lang.Error: Unresolved compilation problems:
 
 - Check: Does it show up on Author/Publish?
 - Check: Is there Redirects set on the Dispatcher?
+
+### ClassNotFoundException
+
+- Maven dependency included?
