@@ -49,6 +49,17 @@ How to disable the link checker for specific links:
 
 [(Source)](http://tostring.me/206/how-to-disable-adobe-cq-link-checker/)
 
+## Templates
+
+### Availability
+Order of evaluation:
+1. cq:allowedTemplates
+2. allowedPaths (deprecated)
+3. allowedParents
+4. allowedChildren
+
+[(Source)](http://docs.adobe.com/docs/en/cq/current/developing/templates.html#Template Availability)
+
 ## Component Development
 
 ### Dialogs
