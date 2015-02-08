@@ -58,6 +58,12 @@ Adobe Experience Manager Links
 * [Apache Sling Cheat Sheet](http://dev.day.com/content/ddc/blog/2008/07/cheatsheet/_jcr_content/par/download/file)
 * [Expression Language (EL)](http://docs.oracle.com/javaee/1.4/tutorial/doc/JSPIntro7.html)
 * [JSP XML Cheat Sheet](http://ndpsoftware.com/JSPXMLCheatSheet.html)
+* [Granite UI](http://docs.adobe.com/docs/en/aem/6-0/develop/extending/granite/granite-reference.html)
+
+### Open Source Documentation
+* [Sling](http://sling.apache.org/)
+* [Jackrabbit Oak](http://jackrabbit.apache.org/oak/)
+* [Apache Felix](http://felix.apache.org/)
 
 ### Screencasts, Podcasts
 * [CQ Gems on Adobe Experience Manager](http://dev.day.com/gems)
@@ -80,6 +86,12 @@ This is more of a short cut for people who don't want to navigate through the AE
 ----------------------------------------
 
 ### Helpful Specific Articles
+
+#### FAQs, Knowledge Base
+* [All Adobe Knowledge Base Articles](https://helpx.adobe.com/experience-manager/kb/index/full_kb_list.html)
+* [Replication](https://helpx.adobe.com/experience-manager/kb/experience-manager-replication-faqs.html)
+* [Workflows](https://helpx.adobe.com/marketing-cloud/experience-manager/faq_aem.html#workflows)
+* [Dispatcher](https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html)
 
 #### Component Development
 * [Favourite CQ5 utils](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers/2013/05/my-favourite-cq5-utils.html)
