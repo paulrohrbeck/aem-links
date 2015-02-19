@@ -192,3 +192,22 @@ vlt ci test.jsp
 7. ID's are evil.
 
 [(Source)](http://wiki.apache.org/jackrabbit/DavidsModel)
+
+### Sling URL to Script resolution
+
+GET Request: [...]/print.a4.html (Resource type of this resource is is "sling\sample")
+
+Matches in order:
+1. print/a4.html.jsp
+2. print/a4.jsp (matches more selectors, html extension is implied)
+3. print.html.jsp
+4. print.jsp
+5. html.jsp
+6. sample.jsp
+7. GET.jsp
+
+Wrong:
+a4.html.jsp - does not include the first selector (print)
+a4/print.html.jsp - wrong order of selectors
+
+[(Source)](http://sling.apache.org/documentation/the-sling-engine/url-to-script-resolution.html)
