@@ -198,6 +198,7 @@ vlt ci test.jsp
 GET Request: [...]/print.a4.html (Resource type of this resource is is "sling\sample")
 
 Matches in order:
+
 1. print/a4.html.jsp
 2. print/a4.jsp (matches more selectors, html extension is implied)
 3. print.html.jsp
