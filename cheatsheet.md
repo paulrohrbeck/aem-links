@@ -211,4 +211,5 @@ Wrong:
 a4.html.jsp - does not include the first selector (print)
 a4/print.html.jsp - wrong order of selectors
 
-[(Source)](http://sling.apache.org/documentation/the-sling-engine/url-to-script-resolution.html)
+([Source](http://sling.apache.org/documentation/the-sling-engine/url-to-script-resolution.html), also see [here] (http://svn.apache.org/repos/asf/sling/trunk/bundles/servlets/resolver/src/test/java/org/apache/sling/servlets/resolver/internal/helper/ScriptSelectionTest.java) for some example tests)
+
