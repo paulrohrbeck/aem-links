@@ -107,6 +107,12 @@ property.value=true
 
 # set this higher so you can actually see all the results and not just 10
 p.limit=1000
+
+# date ranges:
+daterange.property=cq:lastReplicated
+daterange.lowerBound=2013-01-01T00:00:00.000+01:00
+daterange.lowerOperation=>=
+
 ```
 
 (more to come...)
