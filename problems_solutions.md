@@ -89,3 +89,10 @@ java.lang.Error: Unresolved compilation problems:
 
 - set header direclty on Dispatcher
 - use Varnish? (see [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB4QFjAA&url=http%3A%2F%2Fwww.netcentric.biz%2Fblog%2F2014%2F10%2Fcache-is-king--the-life-beyond-the-adobe-dispatcher.html&ei=qpz7VI3JHMjpoATk1oCACg&usg=AFQjCNEeE2lTGNVMVdTPBzcEcXMkQ55NXQ&sig2=nx5sJHSyYDcIujvkRKdQUQ))
+
+---
+
+### Cannot read property 'length' of undefined (Client context not showing)
+campaigns.length seems to be 0
+
+- check that campaigns is actually part of your client context configuration
