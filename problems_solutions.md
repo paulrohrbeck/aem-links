@@ -96,3 +96,4 @@ java.lang.Error: Unresolved compilation problems:
 campaigns.length seems to be 0
 
 - check that campaigns is actually part of your client context configuration
+- any personalization components included that shouldn't be there? hit "Target" by accident?
