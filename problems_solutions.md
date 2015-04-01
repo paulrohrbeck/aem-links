@@ -8,6 +8,7 @@ General Advice:
 * check all logs (make sure to check them on the correct instancce if there's more than one)
 * restart/reload/update bundle
 * restart instance
+* delete /var/classes and /var/clientlibs
 
 ---
 #### Components are not editable in edit mode (editor.html) (AEM 6)
