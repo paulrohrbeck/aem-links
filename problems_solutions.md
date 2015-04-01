@@ -98,3 +98,12 @@ campaigns.length seems to be 0
 
 - check that campaigns is actually part of your client context configuration
 - any personalization components included that shouldn't be there? hit "Target" by accident?
+
+
+---
+
+### AntiSamy warning
+"com.adobe.granite.xss.impl.HtmlToHtmlContentContext AntiSamy warning: The a tag contained an attribute that we could not process. The adhocenable attribute has been filtered out, but the tag is still in place. The value of the attribute was "false"."
+
+- Depending on which attribute it's complaining about, you might want to see where it's coming from.
+- If it should be allowed, like target="_blank", simply add it to your AntiSamy config (/libs/cq/xssprotection/config.xml, copied to /apps of course)
