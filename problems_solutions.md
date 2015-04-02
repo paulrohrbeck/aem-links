@@ -107,3 +107,11 @@ campaigns.length seems to be 0
 
 - Depending on which attribute it's complaining about, you might want to see where it's coming from.
 - If it should be allowed, like target="_blank", simply add it to your AntiSamy config (/libs/cq/xssprotection/config.xml, copied to /apps of course)
+
+
+---
+
+### editor.html throws 404
+Whenever you try to edit a page and enter the /editor.html/path/to/page.html it throws a 404 error.
+
+- I'm still not sure how/shy this happened but for some reason there was a folder node "editor.html" under "/libs/wcm/core/content" that prevented the actual "editor" node from loading.
