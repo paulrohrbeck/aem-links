@@ -41,20 +41,20 @@ Solutions:
 
 ---
 
-### Favicon scrambled/broken
+#### Favicon scrambled/broken
 
 Never really found out why this happened..
 Solution for now: Use favicon from DAM instead of /etc or upload to CRXDE directly.
 
 ---
 
-### Changes don't show up in JCR/CRX
+#### Changes don't show up in JCR/CRX
 
 Vault might not have pushed your changes to CRX. Make sure there is no XML errors in any of the files you're building. (Example: & -> &amp;)
 
 ---
 
-### cannot render resource SyntheticResource
+#### cannot render resource SyntheticResource
 
 org.apache.sling.servlets.get.impl.DefaultGetServlet No renderer for extension html, cannot render resource SyntheticResource
 
@@ -62,7 +62,7 @@ Resource/Component doesn't exist. Check resource path.
 
 ---
 
-### Only a type can be imported. ... resolves to a package
+#### Only a type can be imported. ... resolves to a package
 
 org.apache.sling.servlets.resolver.internal.SlingServletResolver Calling the error handler resulted in an error
 java.lang.Error: Unresolved compilation problems: 
@@ -75,25 +75,25 @@ java.lang.Error: Unresolved compilation problems:
 
 ---
 
-### Image doesn't show up on Dispatcher
+#### Image doesn't show up on Dispatcher
 
 - Check: Does it show up on Author/Publish?
 - Check: Is there Redirects set on the Dispatcher?
 
-### ClassNotFoundException
+#### ClassNotFoundException
 
 - Maven dependency included?
 
 ---
 
-### Dispatcher ignores "Content-disposition" header
+#### Dispatcher ignores "Content-disposition" header
 
 - set header directly on Dispatcher and/or CDN
 - use Varnish? (see [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB4QFjAA&url=http%3A%2F%2Fwww.netcentric.biz%2Fblog%2F2014%2F10%2Fcache-is-king--the-life-beyond-the-adobe-dispatcher.html&ei=qpz7VI3JHMjpoATk1oCACg&usg=AFQjCNEeE2lTGNVMVdTPBzcEcXMkQ55NXQ&sig2=nx5sJHSyYDcIujvkRKdQUQ))
 
 ---
 
-### Cannot read property 'length' of undefined (Client context not showing)
+#### Cannot read property 'length' of undefined (Client context not showing)
 campaigns.length seems to be 0
 
 - check that campaigns is actually part of your client context configuration
@@ -102,7 +102,7 @@ campaigns.length seems to be 0
 
 ---
 
-### AntiSamy warning
+#### AntiSamy warning
 "com.adobe.granite.xss.impl.HtmlToHtmlContentContext AntiSamy warning: The a tag contained an attribute that we could not process. The adhocenable attribute has been filtered out, but the tag is still in place. The value of the attribute was "false"."
 
 - Depending on which attribute it's complaining about, you might want to see where it's coming from.
@@ -111,7 +111,7 @@ campaigns.length seems to be 0
 
 ---
 
-### editor.html throws 404
+#### editor.html throws 404
 Whenever you try to edit a page and enter the /editor.html/path/to/page.html it throws a 404 error.
 
 - I'm still not sure how/shy this happened but for some reason there was a folder node "editor.html" under "/libs/wcm/core/content" that prevented the actual "editor" node from loading.
