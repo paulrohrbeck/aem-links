@@ -115,3 +115,10 @@ campaigns.length seems to be 0
 Whenever you try to edit a page and enter the /editor.html/path/to/page.html it throws a 404 error.
 
 - I'm still not sure how/shy this happened but for some reason there was a folder node "editor.html" under "/libs/wcm/core/content" that prevented the actual "editor" node from loading.
+
+---
+
+#### Taglibs don't resolve
+....JasperException: The absolute uri: http://abc.com/taglibs cannot be resolved in either web.xml or the jar files deployed with this application
+
+- does taglib bundle exist and is active?
