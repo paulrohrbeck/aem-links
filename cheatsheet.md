@@ -98,7 +98,7 @@ orderby.sort=desc
 # LIKE
 property=propertyName
 property.operation=like
-property.value=
+property.value=%value%
 
 # check if a property exists:
 property=propertyName
