@@ -53,6 +53,7 @@ How to disable the link checker for specific links:
 
 ### Availability
 Order of evaluation:
+
 1. cq:allowedTemplates
 2. allowedPaths (deprecated)
 3. allowedParents
