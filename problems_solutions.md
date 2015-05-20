@@ -122,3 +122,11 @@ Whenever you try to edit a page and enter the /editor.html/path/to/page.html it 
 ....JasperException: The absolute uri: http://abc.com/taglibs cannot be resolved in either web.xml or the jar files deployed with this application
 
 - does taglib bundle exist and is active?
+
+
+---
+
+#### Sitekick: all 'Page' operations greyed out (can't edit page properties etc.)
+
+- Check console, see if AEM can read the "....permissions.json?path=...". If it's a 404, call that page and see what it returns. For me, a "jcr:content" node was missing.
+ 
