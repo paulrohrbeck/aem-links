@@ -80,6 +80,8 @@ java.lang.Error: Unresolved compilation problems:
 - Check: Does it show up on Author/Publish?
 - Check: Is there Redirects set on the Dispatcher?
 
+---
+
 #### ClassNotFoundException
 
 - Maven dependency included?
@@ -130,3 +132,8 @@ Whenever you try to edit a page and enter the /editor.html/path/to/page.html it 
 
 - Check console, see if AEM can read the "....permissions.json?path=...". If it's a 404, call that page and see what it returns. For me, a "jcr:content" node was missing.
  
+---
+
+#### Ajax Post Servlet returns 302 for some form values
+
+- This was a weird one, I'm not sure what exactly went on but whenever I put in a real email address bla@bla.com, it would return a "302 Found" instead of the normal "200 OK" when ajax posting to my servlet. It was fixed when I took out ":formid" and ":formstart"
