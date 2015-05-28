@@ -137,3 +137,10 @@ Whenever you try to edit a page and enter the /editor.html/path/to/page.html it 
 #### Ajax Post Servlet returns 302 for some form values
 
 - This was a weird one, I'm not sure what exactly went on but whenever I put in a real email address bla@bla.com, it would return a "302 Found" instead of the normal "200 OK" when ajax posting to my servlet. It was fixed when I took out ":formid" and ":formstart"
+
+---
+
+#### Posting (eg. via Postman) to servlet rreturns 403 Forbidden
+
+- make sure you added authentication headers if needed
+- Either check "Allow Empty" in "Apache Sling Referrer Filter" OSGi config or set a proper referrer header in Postman
