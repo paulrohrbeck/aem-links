@@ -140,7 +140,7 @@ Whenever you try to edit a page and enter the /editor.html/path/to/page.html it 
 
 ---
 
-#### Posting (eg. via Postman) to servlet rreturns 403 Forbidden
+#### Posting (eg. via Postman) to servlet returns 403 Forbidden
 
 - make sure you added authentication headers if needed
 - Either check "Allow Empty" in "Apache Sling Referrer Filter" OSGi config or set a proper referrer header in Postman
