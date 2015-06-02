@@ -148,6 +148,8 @@ Additional run modes:
 2. ```java -jar cq-56-p4545.jar -r dev```
 3. System property: ```-Dsling.run.modes=publish,prod```
 
+[(More info)](https://helpx.adobe.com/experience-manager/kb/RunModeSetUp.html)
+
 ### Troubleshooting
 
 Possible memory leaks? ```-XX:+HeapDumpOnOutOfMemoryError```
