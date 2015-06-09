@@ -144,3 +144,10 @@ Whenever you try to edit a page and enter the /editor.html/path/to/page.html it 
 
 - make sure you added authentication headers if needed
 - Either check "Allow Empty" in "Apache Sling Referrer Filter" OSGi config or set a proper referrer header in Postman
+
+---
+
+#### Targeted component: simulation doesn't work but selecting the campaign and experience in the client context works
+
+- This happened for me when I was just trying to test some segments on the Geometrixx site. Turns out they have to be under their respective site (ie. '/etc/segmentation/geometrixx-outdoors'), I had them under another folder. They showed up when I created the experiences but then the connection wasn't made properly.
+
