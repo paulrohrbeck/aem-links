@@ -22,6 +22,7 @@ Adobe Experience Manager Links
 * [Ruben's Blog](http://ruben42.wordpress.com/) *
 
 ### Component Development
+* [Adobe Marketing Cloud Open Developer Projects](http://adobe-marketing-cloud.github.io/index.html#projects)
 * [CQ5 Widgets API](http://dev.day.com/docs/en/cq/current/widgets-api/index.html)
 * [Adobe Consulting Services AEM Commons](http://adobe-consulting-services.github.io/acs-aem-commons/) - AEM development and component toolkit for bootstrapping any AEM project
 * [Adobe Consulting Services AEM Tools](http://adobe-consulting-services.github.io/acs-aem-tools/) - Set of tools for AEM to make developer lives easier
@@ -34,9 +35,13 @@ Adobe Experience Manager Links
 ### Documentation
 * [5.6.1](http://dev.day.com/docs/en/cq/current.html)
 * [6.0](http://docs.adobe.com/content/docs/en/aem/6-0.html)
+* [6.1](http://docs.adobe.com/content/docs/en/aem/6-1.html)
 
 ### Events
 * [Adobe's AEM Technologists](https://communities.adobe.com/en/communities/aem_technologistsdevelopersarchitects/home.html)
+* [Circuit](http://www.circuitdevcon.com) (Chicago)
+* [Adobe Summit](http://summit.adobe.com/)
+* [Evolve](http://evolve.3sharecorp.com/)
 
 ### Forums, Help
 * [Official Adobe Experience Manager Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
