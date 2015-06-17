@@ -151,3 +151,10 @@ Whenever you try to edit a page and enter the /editor.html/path/to/page.html it 
 
 - This happened for me when I was just trying to test some segments on the Geometrixx site. Turns out they have to be under their respective site (ie. '/etc/segmentation/geometrixx-outdoors'), I had them under another folder. They showed up when I created the experiences but then the connection wasn't made properly.
 
+---
+
+#### Maven build: Peer not authenticated
+
+- Adobe's Maven repository seems to have issues some times, try a different source :)
+- check that the artifact actually exists by navigating to it in your browser
+
