@@ -110,7 +110,6 @@ campaigns.length seems to be 0
 - Depending on which attribute it's complaining about, you might want to see where it's coming from.
 - If it should be allowed, like target="_blank", simply add it to your AntiSamy config (/libs/cq/xssprotection/config.xml, copied to /apps of course)
 
-
 ---
 
 #### editor.html throws 404
@@ -124,7 +123,6 @@ Whenever you try to edit a page and enter the /editor.html/path/to/page.html it 
 ....JasperException: The absolute uri: http://abc.com/taglibs cannot be resolved in either web.xml or the jar files deployed with this application
 
 - does taglib bundle exist and is active?
-
 
 ---
 
@@ -157,4 +155,13 @@ Whenever you try to edit a page and enter the /editor.html/path/to/page.html it 
 
 - Adobe's Maven repository seems to have issues some times, try a different source :)
 - check that the artifact actually exists by navigating to it in your browser
+
+---
+
+#### IntelliJ doesn't resolve any imports
+
+Some approaches:
+- "mvn eclipse:eclipse"
+- On the project, do "Maven" > "Reimport"
+- "File" > "Invalidate Caches / Restart"
 
