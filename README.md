@@ -24,8 +24,11 @@ Adobe Experience Manager Links
 ### Component Development
 * [Adobe Marketing Cloud Open Developer Projects](http://adobe-marketing-cloud.github.io/index.html#projects)
 * [CQ5 Widgets API](http://dev.day.com/docs/en/cq/current/widgets-api/index.html)
-* [Adobe Consulting Services AEM Commons](http://adobe-consulting-services.github.io/acs-aem-commons/) - AEM development and component toolkit for bootstrapping any AEM project
-* [Adobe Consulting Services AEM Tools](http://adobe-consulting-services.github.io/acs-aem-tools/) - Set of tools for AEM to make developer lives easier
+
+### Adobe Consulting Services
+* [Commons](http://adobe-consulting-services.github.io/acs-aem-commons/) - AEM development and component toolkit for bootstrapping any AEM project
+* [Tools](http://adobe-consulting-services.github.io/acs-aem-tools/) - Set of tools for AEM to make developer lives easier
+* [Samples](http://adobe-consulting-services.github.io/acs-aem-samples) - Well commented code samples of AEM building blocks to help educate AEM developers.
 
 ### Continuous Integration and Delivery 
 * [Grabbit](https://github.com/TWCable/grabbit)
