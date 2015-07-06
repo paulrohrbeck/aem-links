@@ -1,6 +1,10 @@
 Adobe Experience Manager Links
 =========
 
+#### Start Here
+* [Experiencing Adobe Experience Manger - Day CQ](http://experience-aem.blogspot.com/2013/08/in-blog-experiencing-adobe-experience.html)
+* [My HUGE list of AEM bookmarks](http://aemtips.blogspot.com/2013/05/my-huge-list-of-aem-bookmarks.html)
+
 ### Blogs (by Adobe)
 * [Experience Delivers](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers.html)
 * [Adobe Content Management](http://blogs.adobe.com/contentmanagement/) *
@@ -18,14 +22,25 @@ Adobe Experience Manager Links
 * [Cititech Blog](http://www.citytechinc.com/us/en/blog.html)
 * [cqwemblog](http://cqwemblog.wordpress.com/)
 * [AEM Stuff](http://www.aemstuff.com/)
+* [Six Dimensions](http://labs.sixdimensions.com/blog/)
+* [A WCM journey with Day/Adobe CQ](https://balawcm.wordpress.com/)
+* [AEM Club](http://adobeaemclub.com/)
+* [Answers to Frequently Asked Questions in AEM](http://aemfaq.blogspot.com.au/)
+* [DIGITAL PROJECTIONS](https://chanchal.wordpress.com/)
+* [Eyelock](http://www.eyelock.net/)
 * [ACQ | mobi.fm](http://mobi.fm/blog/category/acq/) *
 * [Ruben's Blog](http://ruben42.wordpress.com/) *
+* [CRXDelight](http://crxdelight.com/) *
+* [Adobe Experience Manager Blog](http://aemtips.blogspot.com.au/)
 
 ### Component Development
 * [Adobe Marketing Cloud Open Developer Projects](http://adobe-marketing-cloud.github.io/index.html#projects)
 * [CQ5 Widgets API](http://dev.day.com/docs/en/cq/current/widgets-api/index.html)
-* [Adobe Consulting Services AEM Commons](http://adobe-consulting-services.github.io/acs-aem-commons/) - AEM development and component toolkit for bootstrapping any AEM project
-* [Adobe Consulting Services AEM Tools](http://adobe-consulting-services.github.io/acs-aem-tools/) - Set of tools for AEM to make developer lives easier
+
+### Adobe Consulting Services
+* [Commons](http://adobe-consulting-services.github.io/acs-aem-commons/) - AEM development and component toolkit for bootstrapping any AEM project
+* [Tools](http://adobe-consulting-services.github.io/acs-aem-tools/) - Set of tools for AEM to make developer lives easier
+* [Samples](http://adobe-consulting-services.github.io/acs-aem-samples) - Well commented code samples of AEM building blocks to help educate AEM developers.
 
 ### Continuous Integration and Delivery 
 * [Grabbit](https://github.com/TWCable/grabbit)
@@ -33,6 +48,7 @@ Adobe Experience Manager Links
 * [Chef cookbook by Tacit Knowledge](https://github.com/tacitknowledge/aem-cookbook)
 
 ### Documentation
+* [CRX 2.3](http://docs.adobe.com/docs/en/crx/2-3.html)
 * [5.6.1](http://dev.day.com/docs/en/cq/current.html)
 * [6.0](http://docs.adobe.com/content/docs/en/aem/6-0.html)
 * [6.1](http://docs.adobe.com/content/docs/en/aem/6-1.html)
@@ -70,6 +86,11 @@ Adobe Experience Manager Links
 * [Sling](http://sling.apache.org/)
 * [Jackrabbit Oak](http://jackrabbit.apache.org/oak/)
 * [Apache Felix](http://felix.apache.org/)
+* [JCR 1.0 Spec](http://www.day.com/specs/jcr/1.0/index.html)
+* [JCR 2.0 Spec](http://www.day.com/specs/jcr/2.0/index.html)
+* [Apache Lucene](http://lucene.apache.org/core/3_0_3/index.html)
+* [Apache Lucene - Scoring](http://lucene.apache.org/core/3_0_3/scoring.html)
+* [Jackrabbit Indexing](http://wiki.apache.org/jackrabbit/IndexingConfiguration)
 
 ### Screencasts, Podcasts
 * [CQ Gems on Adobe Experience Manager](http://dev.day.com/gems)
@@ -88,6 +109,8 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [XPath/SQL search](http://localhost:4502/crx/explorer/ui/search.jsp)
 * [CQ5 Translator](http://localhost:4502/libs/cq/i18n/translator.html)
 * [Dump Libs](http://localhost:4502/libs/cq/ui/content/dumplibs.html)
+* [DAM WebDav](http://localhost:4502/crx/repository/crx.default/content/dam/)
+* [CQ5 AntiSamy configuration XSS](http://localhost:4502/libs/cq/xssprotection/config.xml)
 
 ----------------------------------------
 
@@ -109,11 +132,10 @@ This is more of a short cut for people who don't want to navigate through the AE
 #### Workflows
 * [CQ5 OOTB workflow processes](http://blogs.adobe.com/contentmanagement/2013/05/13/cq-5-6-out-of-the-box-workflow-processes-and-what-they-docan-be-used-for/)
 
-
 #### Security
 * [Tighten Up Security in Production CQ Environment](http://www.hsufengko.com/home/tighten-up-security-in-production-cq-environment)
 * [How to protect your CQ instances from Google searches](http://crxdelight.com/2012/02/04/how-to-protect-your-cq-instances-from-google-searches/)
 
-#### List of articles
-* [Experiencing Adobe Experience Manger - Day CQ](http://experience-aem.blogspot.com/2013/08/in-blog-experiencing-adobe-experience.html)
-* [My HUGE list of AEM bookmarks](http://aemtips.blogspot.com/2013/05/my-huge-list-of-aem-bookmarks.html)
+### Other
+* [AEM Capability Matrix](https://docs.google.com/spreadsheets/d/11sESEtCSf45j5JWknVLE3DJt9NOJaDHfeBBJFOsxt5o/edit?usp=sharing) - list AEM Capabilities, Features and OOTB Component
+* [Libraries and extensions for AEM applications](http://wcm.io/)
