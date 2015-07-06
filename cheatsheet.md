@@ -87,47 +87,6 @@ Order of evaluation:
 
 -----------------------
 
-## Querybuilder
-[Query Builder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html)
-
-```
-type=nt:file
-nodename=*.jar
-orderby=@jcr:content/jcr:lastModified
-orderby.sort=desc
-
-# LIKE
-property=propertyName
-property.operation=like
-property.value=%value%
-
-# check if a property exists:
-property=propertyName
-property.operation=exists
-property.value=true
-
-# set this higher so you can actually see all the results and not just 10
-p.limit=1000
-
-# date ranges:
-daterange.property=cq:lastReplicated
-daterange.lowerBound=2013-01-01T00:00:00.000+01:00
-daterange.lowerOperation=>=
-
-```
-
-
-```
-Grab all assets and return the path, title and tags:
-http://localhost:4502/bin/querybuilder.json?type=dam:Asset&path=/content/dam&p.limit=-1&p.hits=selective&p.properties=jcr:path%20jcr:content/metadata/cq:tags%20jcr:content/metadata/dc:title
-```
-
-(more to come...)
-
-[(Source)](http://dev.day.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)
-
------------------------
-
 ### Install AEM
 
 ```
