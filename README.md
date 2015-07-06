@@ -58,6 +58,7 @@ Adobe Experience Manager Links
 * [Circuit](http://www.circuitdevcon.com) (Chicago)
 * [Adobe Summit](http://summit.adobe.com/)
 * [Evolve](http://evolve.3sharecorp.com/)
+* A lof of [meetups](http://www.meetup.com/find/) all over the world
 
 ### Forums, Help
 * [Official Adobe Experience Manager Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
@@ -111,6 +112,12 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [Dump Libs](http://localhost:4502/libs/cq/ui/content/dumplibs.html)
 * [DAM WebDav](http://localhost:4502/crx/repository/crx.default/content/dam/)
 * [CQ5 AntiSamy configuration XSS](http://localhost:4502/libs/cq/xssprotection/config.xml)
+
+### Third-party Tools
+(There's an Adobe Community page that collects these, but I can't find it right now.)
+
+* [Access Control Tool](https://github.com/Netcentric/accesscontroltool)
+* [Sling Dynamic Include](https://github.com/Cognifide/Sling-Dynamic-Include)
 
 ----------------------------------------
 
