@@ -22,28 +22,34 @@ USE --form-string instead of -F
 
 Clear Audit
 
+```bash
 curl -u admin:admin -F":operation=delete" http://localhost:4502/var/audit/com.day.cq.replication
 
 curl -u admin:admin -F":operation=delete" http://localhost:4502/var/audit/com.day.cq.wcm.core.page
+```
 
 GC
 
+```bash
 curl -u admin:admin -X POST --data "delete=true&delay=2" http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository/op/runDataStoreGarbageCollection/java.lang.Boolean
+```
 
 Upload DAM Image via WebDav
 
+```bash
 curl -u admin:admin -X PUT -T /Users/maxbarrass/Desktop/GearBumper.jpg http://localhost:4502/crx/repository/crx.default/content/dam/sitesmart/GearBumper1.jpg
 
 curl -u admin:admin -X POST -T /Users/maxbarrass/Desktop/GearBumper.jpg http://localhost:4502/crx/repository/crx.default/content/dam/sitesmart/GearBumper2.jpg
+```
 
 Update DAM ASSET
 
+```bash
 curl -u admin:admin -Fdc:title="some title" -Fdc:description="some content" http://localhost:4502/content/dam/import/documents/2001/02/13/00003709-source.pdf/jcr%3Acontent/metadata
+```
 
 Update Title
 
+```bash
 curl -u admin:admin -Fjcr:title="Test" http://localhost:4502/content/geometrixx-outdoors/en/jcr%3Acontent | grep 'id="Message"' | sed 's/.*<div id="Message">\([^<]*\)<.*/\1/' 
-
-
-
-
+```
