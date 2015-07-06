@@ -143,6 +143,15 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [Tighten Up Security in Production CQ Environment](http://www.hsufengko.com/home/tighten-up-security-in-production-cq-environment)
 * [How to protect your CQ instances from Google searches](http://crxdelight.com/2012/02/04/how-to-protect-your-cq-instances-from-google-searches/)
 
+#### Talks, Presentations
+* [Replication deep dive](http://www.slideshare.net/mwmd/adobe-experience-manager-replication-deep-dive)
+* [From Eventing to Job Processing](http://www.slideshare.net/cziegeler/adobe-aem-from-eventing-to-job-processing)
+
+#### Certification
+* [Adobe WEM / CQ Tips and Tricks (Google Doc)](https://docs.google.com/document/d/1FBvBxyKequyP32d6Zfh6_lmHKLO1mMN4E6Vgu0uE3Z4/edit?pli=1#heading=h.ps4m4afefi7l)
+* [ACE: AEM 6.0 Architect experience and Certification Path](http://aemfaq.blogspot.com/2014/12/ace-aem-60-architect-experience-and.html)
+
 ### Other
 * [AEM Capability Matrix](https://docs.google.com/spreadsheets/d/11sESEtCSf45j5JWknVLE3DJt9NOJaDHfeBBJFOsxt5o/edit?usp=sharing) - list AEM Capabilities, Features and OOTB Component
 * [Libraries and extensions for AEM applications](http://wcm.io/)
+* [Apache Sling Resource Resolver Rules in a Nutshell](http://ilikeorangutans.github.io/2012/11/20/apache-sling-resource-resolver-rule-priority-explained/)
