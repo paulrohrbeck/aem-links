@@ -2,8 +2,8 @@ Query Builder Queries
 =========
 
 ### Query Builder API
-* [5.6.1](https://docs.adobe.com/docs/en/cq/5-6-1/dam/customizing_and_extendingcq5dam/query_builder.html)
 * [6.1](https://docs.adobe.com/docs/en/aem/6-1/develop/search/querybuilder-api.html)
+* [5.6.1](https://docs.adobe.com/docs/en/cq/5-6-1/dam/customizing_and_extendingcq5dam/query_builder.html)
 
 ### References
 * [CQ Queries Demystified](http://itgumby.github.io/blog/2014/10/cq-queries-demystified/)
@@ -24,15 +24,13 @@ Query Builder Queries
 * [Operation Equals](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=path%3D%2Fcontent%2Fgeometrixx%0D%0Atype%3Dcq%3APage%0D%0Aproperty%3Djcr%3Acontent%2Fjcr%3Atitle%0D%0Aproperty.operation%3Dequals%0D%0Aproperty.value%3DContact)
 * [Operation UnEquals](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=path%3D%2Fcontent%2Fgeometrixx%0D%0Atype%3Dcq%3APage%0D%0Aproperty%3Djcr%3Acontent%2Fjcr%3Atitle%0D%0Aproperty.operation%3Dunequals%0D%0Aproperty.value%3DContact)
 * [Operation Not Exist](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=path%3D%2Fcontent%2Fgeometrixx%0D%0Atype%3Dcq%3APage%0D%0Aproperty%3Djcr%3Acontent%2Fcq%3Atoolbars%0D%0Aproperty.operation%3Dnot)
-
 * [Special Character Search](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=path%3D%2Fcontent%2Fgeometrixx%0D%0Atype%3Dnt%3Aunstructured%0D%0Aproperty%3Dtext%0D%0Aproperty.operation%3Dlike%0D%0Aproperty.value%3D%25%3Cli%3EThe+whole+is+greater+than+the+part.%3C%2Fli%3E%25)
-
 
 ### Samples 
 
 GET USER PATH
 ```bash
-    curl -s -u admin:admin -X GET "http://localhost:4502/bin/querybuilder.json?path=/home/users&1_property=rep:authorizableId&1_property.value=admin&p.limit=-1" | sed -e 's/^.*"path":"\([^"]*\)".*$/\1/'
+curl -s -u admin:admin -X GET "http://localhost:4502/bin/querybuilder.json?path=/home/users&1_property=rep:authorizableId&1_property.value=admin&p.limit=-1" | sed -e 's/^.*"path":"\([^"]*\)".*$/\1/'
 ```
 
 
@@ -129,57 +127,57 @@ For such principal properties, you can shorten the query and use "similar=/conte
 EXAMPLE QUERY BUILDER API USAGE
 
 ```java
-   String fulltextSearchTerm = "Geometrixx";
-                   
-    // create query description as hash map (simplest way, same as form post)
-    Map<String, String> map = new HashMap<String, String>();
-   
-    // create query description as hash map (simplest way, same as form post)
-    map.put("path", "/content");
-    map.put("type", "cq:Page");
-    map.put("group.p.or", "true"); // combine this group with OR
-    map.put("group.1_fulltext", fulltextSearchTerm);
-    map.put("group.1_fulltext.relPath", "jcr:content");
-    map.put("group.2_fulltext", fulltextSearchTerm);
-    map.put("group.2_fulltext.relPath", "jcr:content/@cq:tags");
-  
-    // can be done in map or with Query methods
-    map.put("p.offset", "0"); // same as query.setStart(0) below
-    map.put("p.limit", "20"); // same as query.setHitsPerPage(20) below
-                     
-    Query query = builder.createQuery(PredicateGroup.create(map), session);
-    query.setStart(0);
-    query.setHitsPerPage(20);
+String fulltextSearchTerm = "Geometrixx";
                
-    SearchResult result = query.getResult();
-  
-    // paging metadata
-    int hitsPerPage = result.getHits().size(); // 20 (set above) or lower
-    long totalMatches = result.getTotalMatches();
-    long offset = result.getStartIndex();
-    long numberOfPages = totalMatches / 20;
+// create query description as hash map (simplest way, same as form post)
+Map<String, String> map = new HashMap<String, String>();
+
+// create query description as hash map (simplest way, same as form post)
+map.put("path", "/content");
+map.put("type", "cq:Page");
+map.put("group.p.or", "true"); // combine this group with OR
+map.put("group.1_fulltext", fulltextSearchTerm);
+map.put("group.1_fulltext.relPath", "jcr:content");
+map.put("group.2_fulltext", fulltextSearchTerm);
+map.put("group.2_fulltext.relPath", "jcr:content/@cq:tags");
+
+// can be done in map or with Query methods
+map.put("p.offset", "0"); // same as query.setStart(0) below
+map.put("p.limit", "20"); // same as query.setHitsPerPage(20) below
+                 
+Query query = builder.createQuery(PredicateGroup.create(map), session);
+query.setStart(0);
+query.setHitsPerPage(20);
+           
+SearchResult result = query.getResult();
+
+// paging metadata
+int hitsPerPage = result.getHits().size(); // 20 (set above) or lower
+long totalMatches = result.getTotalMatches();
+long offset = result.getStartIndex();
+long numberOfPages = totalMatches / 20;
+              
+//Place the results in XML to return to client
+DocumentBuilderFactory factory =     DocumentBuilderFactory.newInstance();
+DocumentBuilder builder = factory.newDocumentBuilder();
+Document doc = builder.newDocument();
+                           
+//Start building the XML to pass back to the AEM client
+Element root = doc.createElement( "results" );
+doc.appendChild( root );
+              
+// iterating over the results
+for (Hit hit : result.getHits()) {
+   String path = hit.getPath();
+
+  //Create a result element
+  Element resultel = doc.createElement( "result" );
+  root.appendChild( resultel );
                   
-    //Place the results in XML to return to client
-    DocumentBuilderFactory factory =     DocumentBuilderFactory.newInstance();
-    DocumentBuilder builder = factory.newDocumentBuilder();
-    Document doc = builder.newDocument();
-                               
-    //Start building the XML to pass back to the AEM client
-    Element root = doc.createElement( "results" );
-    doc.appendChild( root );
-                  
-    // iterating over the results
-    for (Hit hit : result.getHits()) {
-       String path = hit.getPath();
-  
-      //Create a result element
-      Element resultel = doc.createElement( "result" );
-      root.appendChild( resultel );
-                      
-      Element pathel = doc.createElement( "path" );
-      pathel.appendChild( doc.createTextNode(path ) );
-      resultel.appendChild( pathel );
-    }
+  Element pathel = doc.createElement( "path" );
+  pathel.appendChild( doc.createTextNode(path ) );
+  resultel.appendChild( pathel );
+}
 ```
 
 The same query executed over HTTP using the Query Builder (JSON) Servlet:
@@ -191,12 +189,12 @@ STORING AND LOADING QUERIES
 
 Queries can be stored to the repository so that you can use them later. The QueryBuilder provides the  storeQuery method with the following signature:
 ```java
-    void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
+void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
 When using the QueryBuilder#storeQuery method, the given Query is stored into the repository as a file or as a property according to the createFile argument value. The following example shows how to save a Query to the path /mypath/getfiles as a file:
 ```java
-    builder.storeQuery(query, "/mypath/getfiles", true, session);
+builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
 Any previously stored queries can be loaded from the repository by using the QueryBuilder#loadQuery method:
