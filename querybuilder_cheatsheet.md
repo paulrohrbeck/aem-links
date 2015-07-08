@@ -1,6 +1,7 @@
 Query Builder Queries 
 =========
 
+
 ### Query Builder API
 * [6.1](https://docs.adobe.com/docs/en/aem/6-1/develop/search/querybuilder-api.html)
 * [5.6.1](https://docs.adobe.com/docs/en/cq/5-6-1/dam/customizing_and_extendingcq5dam/query_builder.html)
@@ -25,6 +26,36 @@ Query Builder Queries
 * [Operation UnEquals](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=path%3D%2Fcontent%2Fgeometrixx%0D%0Atype%3Dcq%3APage%0D%0Aproperty%3Djcr%3Acontent%2Fjcr%3Atitle%0D%0Aproperty.operation%3Dunequals%0D%0Aproperty.value%3DContact)
 * [Operation Not Exist](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=path%3D%2Fcontent%2Fgeometrixx%0D%0Atype%3Dcq%3APage%0D%0Aproperty%3Djcr%3Acontent%2Fcq%3Atoolbars%0D%0Aproperty.operation%3Dnot)
 * [Special Character Search](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=path%3D%2Fcontent%2Fgeometrixx%0D%0Atype%3Dnt%3Aunstructured%0D%0Aproperty%3Dtext%0D%0Aproperty.operation%3Dlike%0D%0Aproperty.value%3D%25%3Cli%3EThe+whole+is+greater+than+the+part.%3C%2Fli%3E%25)
+
+### Tools
+* [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html)
+* [Available Predicates](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+
+
+### Available Predicates
+These are the keywords that can be used in the Query Builder when creating predicate queries:
+
+* relativedaterange
+* hasPermission
+* nodename
+* tagsearch
+* property
+* rangeproperty
+* path
+* memberOf
+* tagid
+* mainasset
+* type
+* savedquery
+* dateComparison
+* notexpired
+* tag
+* language
+* similar
+* daterange
+* fulltext
+* boolproperty
+* group
 
 ### Samples 
 
