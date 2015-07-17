@@ -114,8 +114,8 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [CQ5 AntiSamy configuration XSS](http://localhost:4502/libs/cq/xssprotection/config.xml)
 
 ### Third-party Tools
-(There's an Adobe Community page that collects these, but I can't find it right now.)
 
+* [Adobe Marketing Cloud Open Developer](http://adobe-marketing-cloud.github.io/) - directory for tools
 * [Access Control Tool](https://github.com/Netcentric/accesscontroltool)
 * [Sling Dynamic Include](https://github.com/Cognifide/Sling-Dynamic-Include)
 
