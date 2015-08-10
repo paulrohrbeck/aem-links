@@ -155,6 +155,15 @@ vlt ci test.jsp
 
 ```
 
+##### filter.xml Modes
+There are three Mode available:
+
+1. replace: Normal behavior. Existing content is replaced completly by the imported content, i.e. is overridden or deleted accordingly.
+2. merge: Existing content is not modified, i.e. only new content is added and none is deleted or modified
+3. update: Existing content is only updated but never deleted
+
+(via [wemblog](http://www.wemblog.com/2012/04/how-to-change-package-install-behavior.html))
+
 ### David's Model
 
 1. Data First, Structure Later. Maybe.
