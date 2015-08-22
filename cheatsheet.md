@@ -87,47 +87,6 @@ Order of evaluation:
 
 -----------------------
 
-## Querybuilder
-[Query Builder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html)
-
-```
-type=nt:file
-nodename=*.jar
-orderby=@jcr:content/jcr:lastModified
-orderby.sort=desc
-
-# LIKE
-property=propertyName
-property.operation=like
-property.value=%value%
-
-# check if a property exists:
-property=propertyName
-property.operation=exists
-property.value=true
-
-# set this higher so you can actually see all the results and not just 10
-p.limit=1000
-
-# date ranges:
-daterange.property=cq:lastReplicated
-daterange.lowerBound=2013-01-01T00:00:00.000+01:00
-daterange.lowerOperation=>=
-
-```
-
-
-```
-Grab all assets and return the path, title and tags:
-http://localhost:4502/bin/querybuilder.json?type=dam:Asset&path=/content/dam&p.limit=-1&p.hits=selective&p.properties=jcr:path%20jcr:content/metadata/cq:tags%20jcr:content/metadata/dc:title
-```
-
-(more to come...)
-
-[(Source)](http://dev.day.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)
-
------------------------
-
 ### Install AEM
 
 ```
@@ -195,6 +154,15 @@ Commit  changes:
 vlt ci test.jsp
 
 ```
+
+##### filter.xml Modes
+There are three Mode available:
+
+1. replace: Normal behavior. Existing content is replaced completly by the imported content, i.e. is overridden or deleted accordingly.
+2. merge: Existing content is not modified, i.e. only new content is added and none is deleted or modified
+3. update: Existing content is only updated but never deleted
+
+(via [wemblog](http://www.wemblog.com/2012/04/how-to-change-package-install-behavior.html))
 
 ### David's Model
 
