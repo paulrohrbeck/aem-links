@@ -18,6 +18,9 @@ Query Builder Queries
 * [Implementing a Custom Predicate Evaluator for the Query Builder](https://docs.adobe.com/docs/en/aem/6-1/develop/search/implementing-custom-predicate-evaluator.html)
 * [Security CQ Actions](https://docs.adobe.com/docs/en/cq/5-6-1/javadoc/index.html?com/day/cq/security/util/CqActions.html)
 * [Creating Adobe CQ OSGi bundles that use the Query Builder API](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)
+* [CRX 2.3 Search Features](https://docs.adobe.com/docs/en/crx/2-3/developing/searching_in_crx.html)
+* [AEM 5.6.1 Search Features](https://docs.adobe.com/docs/en/cq/5-6-1/core/developing/searching_in_crx.html)
+* [Apache Lucene - Query Parser Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html)
 
 ### Query Builder Samples
 * [Operation Exists](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=path%3D%2Fcontent%2Fgeometrixx%0D%0Atype%3Dcq%3APage%0D%0Aproperty%3Djcr%3Acontent%2Fcq%3Atoolbars%0D%0Aproperty.operation%3Dexists%0D%0A)

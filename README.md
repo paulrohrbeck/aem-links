@@ -129,6 +129,7 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [Workflows](https://helpx.adobe.com/marketing-cloud/experience-manager/faq_aem.html#workflows)
 * [Dispatcher](https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html)
 * [LDAP](https://helpx.adobe.com/experience-manager/using/faq-integrating-cq-ldap.html)
+* [The most complete list of -XX options for Java JVM](http://stas-blogspot.blogspot.ca/2011/07/most-complete-list-of-xx-options-for.html)
 
 #### Component Development
 * [Favourite CQ5 utils](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers/2013/05/my-favourite-cq5-utils.html)
