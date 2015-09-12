@@ -2,6 +2,7 @@ Adobe Experience Manager Links
 =========
 
 #### Start Here
+* [Adobe Experience Manager Onboarding resources](https://helpx.adobe.com/experience-manager/using/onboardAEM.html)
 * [Experiencing Adobe Experience Manger - Day CQ](http://experience-aem.blogspot.com/2013/08/in-blog-experiencing-adobe-experience.html)
 * [My HUGE list of AEM bookmarks](http://aemtips.blogspot.com/2013/05/my-huge-list-of-aem-bookmarks.html)
 
@@ -113,6 +114,11 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [DAM WebDav](http://localhost:4502/crx/repository/crx.default/content/dam/)
 * [CQ5 AntiSamy configuration XSS](http://localhost:4502/libs/cq/xssprotection/config.xml)
 
+### Servlets (in AEM)
+
+* [Query Builder JSON Servlet](http://localhost:4502/bin/querybuilder.json?path=/content)
+* [Security API](http://localhost:4502/.cqactions.tidy.json?anode=%2Fhome%2Fgroups%2Fsitesmart&path=%2Fhome%2Fgroups&predicate=useradmin&depth=1&authorizableId=admin)
+
 ### Third-party Tools
 
 * [Adobe Marketing Cloud Open Developer](http://adobe-marketing-cloud.github.io/) - directory for tools
@@ -130,6 +136,7 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [Workflows](https://helpx.adobe.com/marketing-cloud/experience-manager/faq_aem.html#workflows)
 * [Dispatcher](https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html)
 * [LDAP](https://helpx.adobe.com/experience-manager/using/faq-integrating-cq-ldap.html)
+* [The most complete list of -XX options for Java JVM](http://stas-blogspot.blogspot.ca/2011/07/most-complete-list-of-xx-options-for.html)
 
 #### Component Development
 * [Favourite CQ5 utils](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers/2013/05/my-favourite-cq5-utils.html)
