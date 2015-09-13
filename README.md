@@ -37,6 +37,7 @@ Adobe Experience Manager Links
 ### Component Development
 * [Adobe Marketing Cloud Open Developer Projects](http://adobe-marketing-cloud.github.io/index.html#projects)
 * [CQ5 Widgets API](http://dev.day.com/docs/en/cq/current/widgets-api/index.html)
+* [Sightly Style Guide](https://github.com/Netcentric/aem-sightly-style-guide)
 
 ### Adobe Consulting Services
 * [Commons](http://adobe-consulting-services.github.io/acs-aem-commons/) - AEM development and component toolkit for bootstrapping any AEM project
@@ -50,16 +51,17 @@ Adobe Experience Manager Links
 
 ### Documentation
 * [CRX 2.3](http://docs.adobe.com/docs/en/crx/2-3.html)
-* [5.6.1](http://dev.day.com/docs/en/cq/current.html)
+* [5.6.1](http://docs.adobe.com/docs/en/cq/5-6-1.html)
 * [6.0](http://docs.adobe.com/content/docs/en/aem/6-0.html)
 * [6.1](http://docs.adobe.com/content/docs/en/aem/6-1.html)
 
 ### Events
 * [Adobe's AEM Technologists](https://communities.adobe.com/en/communities/aem_technologistsdevelopersarchitects/home.html)
-* [Circuit](http://www.circuitdevcon.com) (Chicago)
+* [Circuit](http://www.circuitdevcon.com)
 * [Adobe Summit](http://summit.adobe.com/)
 * [Evolve](http://evolve.3sharecorp.com/)
-* A lof of [meetups](http://www.meetup.com/find/) all over the world
+* [adapt.to](http://adapt.to/)
+* There are a lof of [meetups](http://www.meetup.com/find/) all over the world. Come join us in [San Francisco](http://www.meetup.com/Adobe-Experience-Manager-Adobe-Marketing-Cloud).
 
 ### Forums, Help
 * [Official Adobe Experience Manager Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
@@ -73,6 +75,7 @@ Adobe Experience Manager Links
 * [Google Java Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javaguide.html)
 
 ### Maven
+* [AEM project archetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype) by Adobe
 * [CQ Blueprints](http://www.cqblueprints.com/)
 
 ### Quick References
