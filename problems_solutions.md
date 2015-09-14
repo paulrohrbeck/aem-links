@@ -165,3 +165,8 @@ Some approaches:
 - On the project, do "Maven" > "Reimport"
 - "File" > "Invalidate Caches / Restart"
 
+---
+
+#### Unresolved constraint in bundle ... osgi.wiring.package (version conflict)
+
+- try moving up/down the dependecies that have conflicts
