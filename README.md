@@ -65,6 +65,7 @@ Adobe Experience Manager Links
 
 ### Forums, Help
 * [Official Adobe Experience Manager Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+* [Stackoverflow](http://stackoverflow.com/questions/tagged/aem)
 
 ### General
 * [Adobe Experience Manager help](http://helpx.adobe.com/marketing-cloud/experience-manager.html) (hub for all sorts of information, webinars, etc.)
@@ -97,11 +98,11 @@ Adobe Experience Manager Links
 * [Apache Lucene - Scoring](http://lucene.apache.org/core/3_0_3/scoring.html)
 * [Jackrabbit Indexing](http://wiki.apache.org/jackrabbit/IndexingConfiguration)
 
-### Screencasts, Podcasts
+### Screencasts, Podcasts, Presentations
 * [CQ Gems on Adobe Experience Manager](http://dev.day.com/gems)
 * [AEM Casts](http://www.aemcasts.com/) -  Micro Topics on AEM and AEM Delivery
 * [Adobe Experience Manager Podcast](http://aempodcast.com/)
-
+* [AEM @ SlideShare](http://www.slideshare.net/search/slideshow?q=adobe+aem)
 
 (* not sure if this is still being updated)
 
