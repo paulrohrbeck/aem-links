@@ -169,4 +169,5 @@ Some approaches:
 
 #### Unresolved constraint in bundle ... osgi.wiring.package (version conflict)
 
+- does dependency exist in OSGi container? If not, try embedding it.
 - try moving up/down the dependecies that have conflicts
