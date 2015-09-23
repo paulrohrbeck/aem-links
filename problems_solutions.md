@@ -115,7 +115,8 @@ campaigns.length seems to be 0
 #### editor.html throws 404
 Whenever you try to edit a page and enter the /editor.html/path/to/page.html it throws a 404 error.
 
-- I'm still not sure how/shy this happened but for some reason there was a folder node "editor.html" under "/libs/wcm/core/content" that prevented the actual "editor" node from loading.
+- For me there was a folder node "editor.html" under "/libs/wcm/core/content" that prevented the actual "editor" node from loading.
+- As far as I can see the reason for this is: when you don't have a campaign selected but click "+" it creates this fake node because it doesn't know where to save the new experience. Bug?
 
 ---
 
