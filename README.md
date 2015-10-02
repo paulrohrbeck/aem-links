@@ -117,6 +117,7 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [Dump Libs](http://localhost:4502/libs/cq/ui/content/dumplibs.html)
 * [DAM WebDav](http://localhost:4502/crx/repository/crx.default/content/dam/)
 * [CQ5 AntiSamy configuration XSS](http://localhost:4502/libs/cq/xssprotection/config.xml)
+* [ContextHub Diagnostics](http://localhost:4502/etc/cloudsettings/default/contexthub.diagnostics.html)
 
 ### Servlets (in AEM)
 
