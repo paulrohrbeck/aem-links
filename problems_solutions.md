@@ -172,3 +172,9 @@ Some approaches:
 
 - does dependency exist in OSGi container? If not, try embedding it.
 - try moving up/down the dependecies that have conflicts
+
+---
+
+#### j_security_check returns 403 / User login does not work / Error in logs: org.apache.sling.auth.core.impl.SlingAuthenticator handleSecurity: AuthenticationHandler did not block request; access denied
+
+- In our case a 301 redirect messed with the headers so the auth headers didn't make it through.
