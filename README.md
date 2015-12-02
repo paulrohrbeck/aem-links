@@ -5,6 +5,7 @@ Adobe Experience Manager Links
 * [Adobe Experience Manager Onboarding resources](https://helpx.adobe.com/experience-manager/using/onboardAEM.html)
 * [Experiencing Adobe Experience Manger - Day CQ](http://experience-aem.blogspot.com/2013/08/in-blog-experiencing-adobe-experience.html)
 * [My HUGE list of AEM bookmarks](http://aemtips.blogspot.com/2013/05/my-huge-list-of-aem-bookmarks.html)
+* [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki)
 
 ### Blogs (by Adobe)
 * [Experience Delivers](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers.html)
