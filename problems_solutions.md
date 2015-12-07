@@ -178,3 +178,9 @@ Some approaches:
 #### j_security_check returns 403 / User login does not work / Error in logs: org.apache.sling.auth.core.impl.SlingAuthenticator handleSecurity: AuthenticationHandler did not block request; access denied
 
 - In our case a 301 redirect messed with the headers so the auth headers didn't make it through.
+
+---
+
+#### GenericArtifactHandler Error while parsing ....xml / org.xml.sax.SAXException
+
+For me one of the items in my dialog was simply missing "jcr:primaryType="nt:unstructured" but stepping through each field to make sure it can be parsed properly definitely helps.
