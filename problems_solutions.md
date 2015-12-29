@@ -184,3 +184,11 @@ Some approaches:
 #### GenericArtifactHandler Error while parsing ....xml / org.xml.sax.SAXException
 
 For me one of the items in my dialog was simply missing "jcr:primaryType="nt:unstructured" but stepping through each field to make sure it can be parsed properly definitely helps.
+
+---
+
+#### Cookie does not show up
+Cookie does not show up even when it looks correct in the response headers.
+Possible solutions:
+- Add Cookie to "Adobe Granite Opt-Out Service" OSGi config
+- Don't set "Domain" in Cookie
