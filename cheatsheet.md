@@ -196,3 +196,39 @@ a4/print.html.jsp - wrong order of selectors
 
 ([Source](http://sling.apache.org/documentation/the-sling-engine/url-to-script-resolution.html), also see [here] (http://svn.apache.org/repos/asf/sling/trunk/bundles/servlets/resolver/src/test/java/org/apache/sling/servlets/resolver/internal/helper/ScriptSelectionTest.java) for some example tests)
 
+### Dialog settings
+
+```
+sling:hideProperties (String or String[])
+Specifies the property, or list of properties, to hide.
+The wildcard * hides all.
+
+sling:hideResource (Boolean)
+Indicates whether the resources should be completely hidden, including its children.
+
+sling:hideChildren (String or String[])
+Contains the child node, or list of child nodes, to hide. The properties of the node will be maintained.
+The wildcard * hides all.
+
+sling:orderBefore (String)
+Contains the name of the sibling node that the current node should be positioned in front of.
+
+```
+
+([Source](https://docs.adobe.com/docs/en/aem/6-1/develop/platform/sling-resource-merger.html))
+
+```
+cq:showOnCreate="{Boolean}true"
+Page property to be available in the create view (e.g. Create Page wizard)
+
+cq:hideOnEdit
+Page property to be available in the edit view (e.g. View/Edit) Properties option)
+```
+
+([Source](https://docs.adobe.com/docs/en/aem/6-1/develop/extending/customizing-page-properties/page-properties-views.html))
+
+```
+allowBulkEdit="{Boolean}true"
+```
+
+([Source](https://docs.adobe.com/docs/en/aem/6-1/develop/extending/customizing-page-properties/bulk-editing.html))
