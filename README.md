@@ -173,4 +173,5 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [AEM Capability Matrix](https://docs.google.com/spreadsheets/d/11sESEtCSf45j5JWknVLE3DJt9NOJaDHfeBBJFOsxt5o/edit?usp=sharing) - list AEM Capabilities, Features and OOTB Component
 * [Libraries and extensions for AEM applications](http://wcm.io/)
 * [Apache Sling Resource Resolver Rules in a Nutshell](http://ilikeorangutans.github.io/2012/11/20/apache-sling-resource-resolver-rule-priority-explained/)
+* [Adobe CQ/AEM Support Matrix](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html#cq)
 
