@@ -34,6 +34,7 @@ Adobe Experience Manager Links
 * [Ruben's Blog](http://ruben42.wordpress.com/) *
 * [CRXDelight](http://crxdelight.com/) *
 * [Adobe Experience Manager Blog](http://aemtips.blogspot.com.au/)
+* [AEM Development Mastery](http://www.aemmastery.com)
 
 ### Component Development
 * [Adobe Marketing Cloud Open Developer Projects](http://adobe-marketing-cloud.github.io/index.html#projects)
@@ -45,10 +46,11 @@ Adobe Experience Manager Links
 * [Tools](http://adobe-consulting-services.github.io/acs-aem-tools/) - Set of tools for AEM to make developer lives easier
 * [Samples](http://adobe-consulting-services.github.io/acs-aem-samples) - Well commented code samples of AEM building blocks to help educate AEM developers.
 
-### Continuous Integration and Delivery 
+### Continuous Integration and Delivery - DevOps
 * [Grabbit](https://github.com/TWCable/grabbit)
 * [Recap](http://adamcin.net/net.adamcin.recap/) - rsync for Adobe Granite
 * [Chef cookbook by Tacit Knowledge](https://github.com/tacitknowledge/aem-cookbook)
+* [Python client for Adobe Experience Manager (AEM) API](https://github.com/wildone/pyaem)
 
 ### Documentation
 * [CRX 2.3](http://docs.adobe.com/docs/en/crx/2-3.html)
@@ -107,6 +109,9 @@ Adobe Experience Manager Links
 
 ### Oak
 * [Oak Index Definition Generator](http://oakutils.appspot.com/generate/index)
+
+### AEM Apps
+* [A PhoneGap API showcase app managed in AEM](https://github.com/blefebvre/aem-phonegap-kitchen-sink)
 
 (* not sure if this is still being updated)
 
