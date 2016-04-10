@@ -133,6 +133,7 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [Adobe Marketing Cloud Open Developer](http://adobe-marketing-cloud.github.io/) - directory for tools
 * [Access Control Tool](https://github.com/Netcentric/accesscontroltool)
 * [Sling Dynamic Include](https://github.com/Cognifide/Sling-Dynamic-Include)
+* [AEM Tooling Plugin for Intellij IDEA](https://github.com/headwirecom/aem-ide-tooling-4-intellij)
 
 ----------------------------------------
 
