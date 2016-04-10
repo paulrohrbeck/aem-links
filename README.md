@@ -105,6 +105,9 @@ Adobe Experience Manager Links
 * [Adobe Experience Manager Podcast](http://aempodcast.com/)
 * [AEM @ SlideShare](http://www.slideshare.net/search/slideshow?q=adobe+aem)
 
+### Oak
+* [Oak Index Definition Generator](http://oakutils.appspot.com/generate/index)
+
 (* not sure if this is still being updated)
 
 ----------------------------------------
