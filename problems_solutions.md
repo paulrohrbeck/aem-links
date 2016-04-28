@@ -192,3 +192,4 @@ Cookie does not show up even when it looks correct in the response headers.
 Possible solutions:
 - Add Cookie to "Adobe Granite Opt-Out Service" [OSGi config](https://docs.adobe.com/docs/en/aem/6-1/develop/platform/cookie-optout.html)
 - Don't set "Domain" in Cookie
+- setSecure(true) set on http traffic
