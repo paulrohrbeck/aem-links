@@ -193,3 +193,10 @@ Possible solutions:
 - Add Cookie to "Adobe Granite Opt-Out Service" [OSGi config](https://docs.adobe.com/docs/en/aem/6-1/develop/platform/cookie-optout.html)
 - Don't set "Domain" in Cookie
 - setSecure(true) set on http traffic
+
+---
+
+#### Can't add pages to translation project / translation project gets created with 0 pages
+
+For me the problem was that I had a comment at the beginning of this config file: `/etc/workflow/models/translation/translation_rules.xml`
+Apparently AEM can't handle it and fails without error. Make sure to put any comments inside the `<nodelist>`.
