@@ -223,6 +223,9 @@ Page property to be available in the create view (e.g. Create Page wizard)
 
 cq:hideOnEdit
 Page property to be available in the edit view (e.g. View/Edit) Properties option)
+
+renderReadOnly="{Boolean}true"
+If this is not set it will show the form fields even if the author is not in edit mode.
 ```
 
 ([Source](https://docs.adobe.com/docs/en/aem/6-1/develop/extending/customizing-page-properties/page-properties-views.html))
