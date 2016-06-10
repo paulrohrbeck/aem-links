@@ -28,9 +28,11 @@ Solutions:
 #### Component does not show up in component list (AEM 6)
 
 Solutions:
-* missing or malformed '_cq_editConfig.xml' file
+* Component does not have a dialog or cq:editConfig (must have at least one of these), or the dialog.xml/_cq_editConfig.xml is malformed
 * Component is '.hidden'
 * Component is not allowed for current page / parsys / etc.
+* The design's "components" list is malformed (missing commas "," between components, has whitespace in it, etc)
+* There is no cq:designPath set on the site's root page (e.g. /content/mysite) or the page isn't able to inherit this property from the root page (e.g. because it's nested in a folder)
 
 ---
 
@@ -72,6 +74,7 @@ java.lang.Error: Unresolved compilation problems:
 
 * Make sure bundle is active
 * Make sure bundle actually exports this class/service
+* Try deleting /var/classes/* to force recompilation 
 
 ---
 
