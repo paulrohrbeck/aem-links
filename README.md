@@ -107,12 +107,9 @@ Adobe Experience Manager Links
 * [Adobe Experience Manager Podcast](http://aempodcast.com/)
 * [AEM @ SlideShare](http://www.slideshare.net/search/slideshow?q=adobe+aem)
 
-<<<<<<< HEAD
 ### Oak
 * [Oak Index Definition Generator](http://oakutils.appspot.com/generate/index)
 
-=======
->>>>>>> e465a089e5e9c5c9f4da71c4048af6c87cb0cba3
 ### AEM Apps
 * [A PhoneGap API showcase app managed in AEM](https://github.com/blefebvre/aem-phonegap-kitchen-sink)
 
