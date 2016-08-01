@@ -45,7 +45,7 @@ Adobe Experience Manager Links
 * [Tools](http://adobe-consulting-services.github.io/acs-aem-tools/) - Set of tools for AEM to make developer lives easier
 * [Samples](http://adobe-consulting-services.github.io/acs-aem-samples) - Well commented code samples of AEM building blocks to help educate AEM developers.
 
-### Continuous Integration and Delivery 
+### Continuous Integration and Delivery
 * [Grabbit](https://github.com/TWCable/grabbit)
 * [Recap](http://adamcin.net/net.adamcin.recap/) - rsync for Adobe Granite
 * [Chef cookbook by Tacit Knowledge](https://github.com/tacitknowledge/aem-cookbook)
@@ -134,6 +134,7 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [Access Control Tool](https://github.com/Netcentric/accesscontroltool)
 * [Sling Dynamic Include](https://github.com/Cognifide/Sling-Dynamic-Include)
 * [AEM Tooling Plugin for Intellij IDEA](https://github.com/headwirecom/aem-ide-tooling-4-intellij)
+* [NEBA](https://github.com/unic/neba) - integration of Spring Framework into Apache Sling
 
 ----------------------------------------
 
