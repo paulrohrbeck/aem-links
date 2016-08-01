@@ -192,10 +192,20 @@ curl -u admin:admin http://localhost:4502/system/console/bundles/org.apache.jack
 
 ### Package Management
 
+List Commands
+```bash
+ curl -u admin:admin  http://localhost:4502/crx/packmgr/service.jsp?cmd=help
+```
+
+Check If Package Exist
+```bash
+curl -u admin:admin -s -I -w %{http_code} http://localhost:4502/etc/packages/package/group/path/name_of_package.zip
+```
+
 List Packages
 ```bash
 #XML
-curl -u admin:admin  http://localhost:4502/crx/packmgr/service.jsp?cmd=ls
+curl -u admin:admin http://localhost:4502/crx/packmgr/service.jsp?cmd=ls
 #JSON
 curl -u admin:admin http://localhost:4502/crx/packmgr/list.jsp
 ```
@@ -214,7 +224,7 @@ curl -u admin:admin -F file=@"name of zip file" -F name="name of package" \
 
 Rebuild an existing package in CQ
 ```bash
-curl -u admin:admin -X POST http://localhost:4502:/crx/packmgr/service/.json/etc/packages/name_of_package.zip?cmd=build
+curl -u admin:admin -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/name_of_package.zip?cmd=build
 ```
 
 Download (the package)
