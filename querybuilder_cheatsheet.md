@@ -1,4 +1,4 @@
-Query Builder Queries 
+Query Builder Cheat Sheet
 =========
 
 

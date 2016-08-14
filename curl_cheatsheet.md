@@ -1,4 +1,4 @@
-Sling Curl Command
+Sling Curl Command Cheat Sheet
 =========
 
 ### References

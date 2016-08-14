@@ -1,5 +1,5 @@
 Problems & Solutions
---------------------------
+==========
 
 Working document to gather common issues and possible solutions. (AEM 5.6.1 and 6.0)
 Please let me know if you have explanations for any of these issues.

@@ -1,3 +1,5 @@
+Maven Cheat Sheet
+=========
 ### Common commands
 
 * `mvn clean package` - check if maven is able to build package
