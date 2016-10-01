@@ -59,6 +59,7 @@ Adobe Experience Manager Links
 * [5.6.1](http://docs.adobe.com/docs/en/cq/5-6-1.html)
 * [6.0](http://docs.adobe.com/content/docs/en/aem/6-0.html)
 * [6.1](http://docs.adobe.com/content/docs/en/aem/6-1.html)
+* [6.2](https://docs.adobe.com/content/docs/en/aem/6-2.html)
 
 ### Events
 * [Adobe's AEM Technologists](https://communities.adobe.com/en/communities/aem_technologistsdevelopersarchitects/home.html)
