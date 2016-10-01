@@ -126,6 +126,7 @@ Adobe Experience Manager Links
 
 ### Open Source Projects & Code Examples
 A curated list of open source projects, code examples and snippets to learn from and base your work from:
+* [Libraries and extensions for AEM applications](http://wcm.io/) - huge library of extensions
 * [AEM Replication Customization](https://github.com/mwmd/circuit14-aem-replication)
 * [CRX / AEM Package built w/ ANT + XSL](https://github.com/odu/crx-package-xsl-example)
 * [AEM React](https://github.com/sinnerschrader/aem-react) - Render components using React, isomorphic JavaScript rendering.
@@ -191,7 +192,6 @@ This is more of a short cut for people who don't want to navigate through the AE
 
 ### Other
 * [AEM Capability Matrix](https://docs.google.com/spreadsheets/d/11sESEtCSf45j5JWknVLE3DJt9NOJaDHfeBBJFOsxt5o/edit?usp=sharing) - list AEM Capabilities, Features and OOTB Component
-* [Libraries and extensions for AEM applications](http://wcm.io/)
 * [Apache Sling Resource Resolver Rules in a Nutshell](http://ilikeorangutans.github.io/2012/11/20/apache-sling-resource-resolver-rule-priority-explained/)
 * [Adobe CQ/AEM Support Matrix](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html#cq)
 
