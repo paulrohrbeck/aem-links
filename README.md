@@ -52,6 +52,7 @@ Adobe Experience Manager Links
 * [Recap](http://adamcin.net/net.adamcin.recap/) - rsync for Adobe Granite
 * [Chef cookbook by Tacit Knowledge](https://github.com/tacitknowledge/aem-cookbook)
 * [Python client for Adobe Experience Manager (AEM) API](https://github.com/wildone/pyaem)
+* [Carty](http://cognifide.github.io/Carty/) - Visual Sling mappings editor
 
 ### Documentation
 * [CRX 2.3](http://docs.adobe.com/docs/en/crx/2-3.html)
@@ -113,6 +114,11 @@ Adobe Experience Manager Links
 
 ### AEM Apps
 * [A PhoneGap API showcase app managed in AEM](https://github.com/blefebvre/aem-phonegap-kitchen-sink)
+
+### Development Tools
+* [AEMSync](https://github.com/gavoja/aemsync) - Single most useful tool for AEM development, syncs AEM with your working project.
+* [Grunt Smart VLT](https://github.com/Ariel-Rodriguez/grunt-smart-vlt) (last commit >2 years)
+* [Vagrant AEM](https://github.com/bstopp/vagrant-aem) - Vagrant boxes for AEM.
 
 (* not sure if this is still being updated)
 
