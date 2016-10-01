@@ -124,6 +124,15 @@ Adobe Experience Manager Links
 
 ----------------------------------------
 
+### Open Source Projects & Code Examples
+A curated list of open source projects, code examples and snippets to learn from and base your work from:
+* [AEM Replication Customization](https://github.com/mwmd/circuit14-aem-replication)
+* [CRX / AEM Package built w/ ANT + XSL](https://github.com/odu/crx-package-xsl-example)
+* [AEM React](https://github.com/sinnerschrader/aem-react) - Render components using React, isomorphic JavaScript rendering.
+
+
+----------------------------------------
+
 ### Tools (in AEM)
 This is more of a short cut for people who don't want to navigate through the AEM UI or search for these useful tools in the docs:
 
