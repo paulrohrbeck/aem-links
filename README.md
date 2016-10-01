@@ -84,7 +84,7 @@ Adobe Experience Manager Links
 * [CQ Blueprints](http://www.cqblueprints.com/)
 
 ### Quick References
-* [AEM 5.6 - Quick Reference](http://www.aemcasts.com/qr.html)
+* [AEM 5.6 - Quick Reference](http://adobe-consulting-services.github.io/aemcasts/qr.html)
 * [Frequently Used CQ URLs](http://cq5geeks.blogspot.com/2013/02/frequently-used-cq-urls.html)
 * [XSS Cheat Sheet](http://dev.day.com/content/docs/en/cq/current/developing/securitychecklist/_jcr_content/par/download/file.res/xss_cheat_sheet.pdf)
 * [Apache Sling Cheat Sheet](http://dev.day.com/content/ddc/blog/2008/07/cheatsheet/_jcr_content/par/download/file)
@@ -103,7 +103,7 @@ Adobe Experience Manager Links
 * [Jackrabbit Indexing](http://wiki.apache.org/jackrabbit/IndexingConfiguration)
 
 ### Screencasts, Podcasts, Presentations
-* [CQ Gems on Adobe Experience Manager](http://dev.day.com/gems)
+* [CQ Gems on Adobe Experience Manager](https://docs.adobe.com/content/ddc/en/gems.html)
 * [AEM Casts](http://www.aemcasts.com/) -  Micro Topics on AEM and AEM Delivery
 * [Adobe Experience Manager Podcast](http://aempodcast.com/)
 * [AEM @ SlideShare](http://www.slideshare.net/search/slideshow?q=adobe+aem)
