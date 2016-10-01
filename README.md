@@ -77,7 +77,7 @@ Adobe Experience Manager Links
 * [David's Model](http://wiki.apache.org/jackrabbit/DavidsModel)
 
 ### Java
-* [Google Java Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javaguide.html)
+* [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
 
 ### Maven
 * [AEM project archetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype) by Adobe
