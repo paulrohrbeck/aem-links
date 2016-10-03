@@ -117,9 +117,11 @@ Adobe Experience Manager Links
 * [A PhoneGap API showcase app managed in AEM](https://github.com/blefebvre/aem-phonegap-kitchen-sink)
 
 ### Development Tools
-* [AEMSync](https://github.com/gavoja/aemsync) - Single most useful tool for AEM development, syncs AEM with your working project.
+* [AEMSync](https://github.com/gavoja/aemsync) - Single most useful tool for AEM development, syncs AEM with your working project
+* [Gulp Slang](https://github.com/mnlsn/gulp-slang) - Gulp process CURLs content straight into JCR
+* [Grunt Clientlibify](https://github.com/mickleroy/grunt-clientlibify) - Grunt plugin for integrating AEM with a styleguide
 * [Grunt Smart VLT](https://github.com/Ariel-Rodriguez/grunt-smart-vlt) (last commit >2 years)
-* [Vagrant AEM](https://github.com/bstopp/vagrant-aem) - Vagrant boxes for AEM.
+* [Vagrant AEM](https://github.com/bstopp/vagrant-aem) - Vagrant boxes for AEM
 
 (* not sure if this is still being updated)
 
