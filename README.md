@@ -120,7 +120,7 @@ Adobe Experience Manager Links
 * [AEMSync](https://github.com/gavoja/aemsync) - AEM Synchronization Tool, the tool pushes code changes to AEM instance(s) upon a file change (Single most useful tool for AEM development)
 * [Gulp Slang](https://github.com/mnlsn/gulp-slang) - Gulp process CURLs content straight into JCR
 * [Grunt Clientlibify](https://github.com/mickleroy/grunt-clientlibify) - Grunt plugin for integrating AEM with a styleguide
-* [Grunt Smart VLT](https://github.com/Ariel-Rodriguez/grunt-smart-vlt) (last commit >2 years)
+* [Grunt Smart VLT](https://github.com/Ariel-Rodriguez/grunt-smart-vlt) - A simple grunt interface for Adobe VLT (last commit >2 years)
 * [Vagrant AEM](https://github.com/bstopp/vagrant-aem) - Vagrant boxes for AEM
 
 (* not sure if this is still being updated)
