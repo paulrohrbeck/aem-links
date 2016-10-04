@@ -283,17 +283,17 @@ curl -u admin:admin http://localhost:4502/libs/granite/security/balakondepudi.js
 
 Create User:
 ```bash
-curl -u admin:admin -FcreateUser= -FauthorizableId=testuser -Frep:password=abc123http://localhost:4502/libs/granite/security/post/authorizables
+curl -u admin:admin -FcreateUser= -FauthorizableId=testuser -Frep:password=abc123 http://localhost:4502/libs/granite/security/post/authorizables
 ```
 
 Create Group:
 ```bash
-curl -u admin:admin -FcreateGroup=group1 -FauthorizableId=testGroup1http://localhost:4502/libs/granite/security/post/authorizables
+curl -u admin:admin -FcreateGroup=group1 -FauthorizableId=testGroup1 http://localhost:4502/libs/granite/security/post/authorizables
 ```
 
 Create user with Profile:
 ```bash
-curl -u admin:admin -FcreateUser=testuser -FauthorizableId=testuser -Frep:password=abc123 -Fprofile/gender=malehttp://localhost:4502/libs/granite/security/post/authorizables
+curl -u admin:admin -FcreateUser=testuser -FauthorizableId=testuser -Frep:password=abc123 -Fprofile/gender=male http://localhost:4502/libs/granite/security/post/authorizables
 ```
 
 Set a Profile Property on an Existing User:
@@ -303,7 +303,7 @@ curl -u admin:admin -Fprofile/age=29http://localhost:4502/home/users/t/testuser1
 
 Create a User as a Member of a Group:
 ```bash
-curl -u admin:admin -FcreateUser=testuser -FauthorizableId=testuser -Frep:password=abc123 -Fmembership=contributorhttp://localhost:4502/libs/granite/security/post/authorizables
+curl -u admin:admin -FcreateUser=testuser -FauthorizableId=testuser -Frep:password=abc123 -Fmembership=contributor http://localhost:4502/libs/granite/security/post/authorizables
 ```
 
 Add a User to a Group:
@@ -327,11 +327,11 @@ curl -u admin:admin -FdeleteAuthorizable=http://localhost:4502/home/users/t/test
 curl -u admin:admin -FdeleteAuthorizable=http://localhost:4502/home/groups/t/testGroup
 ```
 
-Change an user password:
+Change a user password:
 ```bash
-curl -u testuser:OLD_PWD -F rep:password="NEW_PWD"http://localhost:4502/home/users/t/testuser.rw.html
+curl -u testuser:OLD_PWD -F rep:password="NEW_PWD" http://localhost:4502/home/users/t/testuser.rw.html
 
-curl -u admin:admin rep:password="test" http://localhost:4502/home/users/a/alister@geometrixx.com
+curl -u admin:admin -F rep:password="test" http://localhost:4502/home/users/a/alister@geometrixx.com
 ```
 
 Group Permissions
