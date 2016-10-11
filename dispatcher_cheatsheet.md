@@ -1,4 +1,5 @@
-# Dispatcher
+Dispatcher Cheat Sheet
+==========
 
 * Docs: http://docs.adobe.com/docs/en/dispatcher.html
 * FAQ: http://helpx.adobe.com/experience-manager/using/dispatcher-faq.html

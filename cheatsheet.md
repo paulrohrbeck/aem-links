@@ -1,4 +1,5 @@
-# AEM Cheat Sheet
+AEM Cheat Sheet
+========
 
 Some more useful snippets for AEM. Please create an issue if you have any comments or would like to add some more useful snippets etc.
 
