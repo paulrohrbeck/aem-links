@@ -140,6 +140,7 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [Access Control Tool](https://github.com/Netcentric/accesscontroltool)
 * [Sling Dynamic Include](https://github.com/Cognifide/Sling-Dynamic-Include)
 * [AEM Tooling Plugin for Intellij IDEA](https://github.com/headwirecom/aem-ide-tooling-4-intellij)
+* [NEBA](https://github.com/unic/neba) - integration of Spring Framework into Apache Sling
 
 ----------------------------------------
 
