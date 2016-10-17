@@ -6,7 +6,8 @@ Adobe Experience Manager Links
 * [Experiencing Adobe Experience Manger - Day CQ](http://experience-aem.blogspot.com/2013/08/in-blog-experiencing-adobe-experience.html)
 * [My HUGE list of AEM bookmarks](http://aemtips.blogspot.com/2013/05/my-huge-list-of-aem-bookmarks.html)
 * [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki)
-* [We.Retail](https://docs.adobe.com/docs/en/aem/6-2/develop/best-practices/we-retail.html) ... a reference implementation that illustrates the recommended way of setting up an online presence with Adobe Experience Manager.
+* [We.Retail](https://docs.adobe.com/docs/en/aem/6-2/develop/best-practices/we-retail.html) - Adobe's reference site implementation
+
 ### Blogs (by Adobe)
 * [Experience Delivers](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers.html)
 * [Adobe Content Management](http://blogs.adobe.com/contentmanagement/) *
