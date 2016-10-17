@@ -32,7 +32,6 @@ Adobe Experience Manager Links
 * [Eyelock](http://www.eyelock.net/)
 * [ACQ | mobi.fm](http://mobi.fm/blog/category/acq/) *
 * [Ruben's Blog](http://ruben42.wordpress.com/) *
-* [CRXDelight](http://crxdelight.com/) *
 * [Adobe Experience Manager Blog](http://aemtips.blogspot.com.au/)
 * [AEM Development Mastery](http://www.aemmastery.com)
 * [CQ5 | AEM6 Solutions and Suggestions](http://aem6solutions.blogspot.com.au/)
