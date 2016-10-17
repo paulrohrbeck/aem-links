@@ -6,7 +6,7 @@ Adobe Experience Manager Links
 * [Experiencing Adobe Experience Manger - Day CQ](http://experience-aem.blogspot.com/2013/08/in-blog-experiencing-adobe-experience.html)
 * [My HUGE list of AEM bookmarks](http://aemtips.blogspot.com/2013/05/my-huge-list-of-aem-bookmarks.html)
 * [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki)
-
+* [We.Retail](https://docs.adobe.com/docs/en/aem/6-2/develop/best-practices/we-retail.html) ... a reference implementation that illustrates the recommended way of setting up an online presence with Adobe Experience Manager.
 ### Blogs (by Adobe)
 * [Experience Delivers](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers.html)
 * [Adobe Content Management](http://blogs.adobe.com/contentmanagement/) *
@@ -16,6 +16,7 @@ Adobe Experience Manager Links
 * [Scott's Digital Community](http://scottsdigitalcommunity.blogspot.ca/)
 * [Wem Blog](http://www.wemblog.com/)
 * [CQ-OPS](http://cq-ops.tumblr.com/)
+* [Experience Managed](http://experiencemanaged.com/) - by [Chris Millar](https://twitter.com/auniverseaway)
 * [Daniel Klco's Blog](http://www.danklco.com/)
 * [The Real CQ](http://therealcq.blogspot.de/)
 * [Code Monkey](http://blog.kristianwright.com/)
@@ -112,6 +113,7 @@ Adobe Experience Manager Links
 
 ### Oak
 * [Oak Index Definition Generator](http://oakutils.appspot.com/generate/index)
+* [David's Model: A guide for content modeling](https://wiki.apache.org/jackrabbit/DavidsModel)
 
 ### AEM Apps
 * [A PhoneGap API showcase app managed in AEM](https://github.com/blefebvre/aem-phonegap-kitchen-sink)
@@ -192,9 +194,10 @@ This is more of a short cut for people who don't want to navigate through the AE
 #### Certification
 * [Adobe WEM / CQ Tips and Tricks (Google Doc)](https://docs.google.com/document/d/1FBvBxyKequyP32d6Zfh6_lmHKLO1mMN4E6Vgu0uE3Z4/edit?pli=1#heading=h.ps4m4afefi7l)
 * [ACE: AEM 6.0 Architect experience and Certification Path](http://aemfaq.blogspot.com/2014/12/ace-aem-60-architect-experience-and.html)
+* [AEM 6.0 Architect Certification tips](http://www.computepatterns.com/233/aem-6-0-architect-certification-tips/)
 
 ### Other
 * [AEM Capability Matrix](https://docs.google.com/spreadsheets/d/11sESEtCSf45j5JWknVLE3DJt9NOJaDHfeBBJFOsxt5o/edit?usp=sharing) - list AEM Capabilities, Features and OOTB Component
 * [Apache Sling Resource Resolver Rules in a Nutshell](http://ilikeorangutans.github.io/2012/11/20/apache-sling-resource-resolver-rule-priority-explained/)
 * [Adobe CQ/AEM Support Matrix](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html#cq)
-
+* [Adobe CQ5 AEM cURL Commands](http://www.aemcq5tutorials.com/tutorials/adobe-cq5-aem-curl-commands/)
