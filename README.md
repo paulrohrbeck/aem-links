@@ -38,7 +38,7 @@ Adobe Experience Manager Links
 
 ### Component Development
 * [Adobe Marketing Cloud Open Developer Projects](http://adobe-marketing-cloud.github.io/index.html#projects)
-* [CQ5 Widgets API](http://dev.day.com/docs/en/cq/current/widgets-api/index.html)
+* [CQ5 Widgets API](https://docs.adobe.com/content/docs/en/cq/5-6-1/widgets-api/index.html)
 * [Sightly Style Guide](https://github.com/Netcentric/aem-sightly-style-guide)
 
 ### Adobe Consulting Services
@@ -85,8 +85,8 @@ Adobe Experience Manager Links
 ### Quick References
 * [AEM 5.6 - Quick Reference](http://adobe-consulting-services.github.io/aemcasts/qr.html)
 * [Frequently Used CQ URLs](http://cq5geeks.blogspot.com/2013/02/frequently-used-cq-urls.html)
-* [XSS Cheat Sheet](http://dev.day.com/content/docs/en/cq/current/developing/securitychecklist/_jcr_content/par/download/file.res/xss_cheat_sheet.pdf)
-* [Apache Sling Cheat Sheet](http://dev.day.com/content/ddc/blog/2008/07/cheatsheet/_jcr_content/par/download/file)
+* [XSS Cheat Sheet](https://docs.adobe.com/content/docs/en/cq/5-6-1/developing/securitychecklist/_jcr_content/par/download/file.res/xss_cheat_sheet.pdf)
+* [Apache Sling Cheat Sheet](https://docs.adobe.com/docs/en/aem/6-2/develop/platform/sling-cheatsheet.html)
 * [Expression Language (EL)](http://docs.oracle.com/javaee/1.4/tutorial/doc/JSPIntro7.html)
 * [JSP XML Cheat Sheet](http://ndpsoftware.com/JSPXMLCheatSheet.html)
 * [Granite UI](http://docs.adobe.com/docs/en/aem/6-0/develop/extending/granite/granite-reference.html)
@@ -95,8 +95,8 @@ Adobe Experience Manager Links
 * [Sling](http://sling.apache.org/)
 * [Jackrabbit Oak](http://jackrabbit.apache.org/oak/)
 * [Apache Felix](http://felix.apache.org/)
-* [JCR 1.0 Spec](http://www.day.com/specs/jcr/1.0/index.html)
-* [JCR 2.0 Spec](http://www.day.com/specs/jcr/2.0/index.html)
+* [JCR 1.0 Spec](https://docs.adobe.com/content/docs/en/spec/jcr/1.0/index.html)
+* [JCR 2.0 Spec](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)
 * [Apache Lucene](http://lucene.apache.org/core/3_0_3/index.html)
 * [Apache Lucene - Scoring](http://lucene.apache.org/core/3_0_3/scoring.html)
 * [Jackrabbit Indexing](http://wiki.apache.org/jackrabbit/IndexingConfiguration)
@@ -155,7 +155,7 @@ This is more of a short cut for people who don't want to navigate through the AE
 
 #### Component Development
 * [Favourite CQ5 utils](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers/2013/05/my-favourite-cq5-utils.html)
-* [possible xtypes](http://dev.day.com/docs/en/cq/current/developing/widgets/xtypes.html)
+* [Using xtypes (Classic UI)](https://docs.adobe.com/docs/en/aem/6-2/develop/components/xtypes.html)
 * [Basic CQ5 code examples](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers/2012/06/basic-cq5-code-samples.html)
 
 #### Workflows
