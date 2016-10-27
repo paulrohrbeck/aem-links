@@ -21,7 +21,7 @@ General
 * [Node Type Administration Console](http://localhost:4502/crx/explorer/nodetypes/index.jsp)
 * [Maintenance Tools](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)
 * [Dialog Conversion Console](http://localhost:4502/libs/cq/dialogconversion/content/console.html)
-
+* [Maven Dependency Finder](http://localhost:4502/system/console/depfinder)
 
 Classic UI
 ---------
