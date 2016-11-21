@@ -46,7 +46,6 @@ AEM Links Index
 * [Eyelock](http://www.eyelock.net/)
 * [ACQ | mobi.fm](http://mobi.fm/blog/category/acq/) *
 * [Ruben's Blog](http://ruben42.wordpress.com/) *
-* [CRXDelight](http://crxdelight.com/) *
 * [Adobe Experience Manager Blog](http://aemtips.blogspot.com.au/)
 * [AEM Development Mastery](http://www.aemmastery.com)
 * [CQ5 | AEM6 Solutions and Suggestions](http://aem6solutions.blogspot.com.au/)
@@ -55,7 +54,7 @@ AEM Links Index
 
 ### Component Development
 * [Adobe Marketing Cloud Open Developer Projects](http://adobe-marketing-cloud.github.io/index.html#projects)
-* [CQ5 Widgets API](http://dev.day.com/docs/en/cq/current/widgets-api/index.html)
+* [CQ5 Widgets API](https://docs.adobe.com/content/docs/en/cq/5-6-1/widgets-api/index.html)
 * [Sightly Style Guide](https://github.com/Netcentric/aem-sightly-style-guide)
 
 ### Adobe Consulting Services
@@ -93,17 +92,17 @@ AEM Links Index
 * [David's Model](http://wiki.apache.org/jackrabbit/DavidsModel)
 
 ### Java
-* [Google Java Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javaguide.html)
+* [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
 
 ### Maven
 * [AEM project archetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype) by Adobe
 * [CQ Blueprints](http://www.cqblueprints.com/)
 
 ### Quick References
-* [AEM 5.6 - Quick Reference](http://www.aemcasts.com/qr.html)
+* [AEM 5.6 - Quick Reference](http://adobe-consulting-services.github.io/aemcasts/qr.html)
 * [Frequently Used CQ URLs](http://cq5geeks.blogspot.com/2013/02/frequently-used-cq-urls.html)
-* [XSS Cheat Sheet](http://dev.day.com/content/docs/en/cq/current/developing/securitychecklist/_jcr_content/par/download/file.res/xss_cheat_sheet.pdf)
-* [Apache Sling Cheat Sheet](http://dev.day.com/content/ddc/blog/2008/07/cheatsheet/_jcr_content/par/download/file)
+* [XSS Cheat Sheet](https://docs.adobe.com/content/docs/en/cq/5-6-1/developing/securitychecklist/_jcr_content/par/download/file.res/xss_cheat_sheet.pdf)
+* [Apache Sling Cheat Sheet](https://docs.adobe.com/docs/en/aem/6-2/develop/platform/sling-cheatsheet.html)
 * [Expression Language (EL)](http://docs.oracle.com/javaee/1.4/tutorial/doc/JSPIntro7.html)
 * [JSP XML Cheat Sheet](http://ndpsoftware.com/JSPXMLCheatSheet.html)
 * [Granite UI](http://docs.adobe.com/docs/en/aem/6-0/develop/extending/granite/granite-reference.html)
@@ -112,14 +111,14 @@ AEM Links Index
 * [Sling](http://sling.apache.org/)
 * [Jackrabbit Oak](http://jackrabbit.apache.org/oak/)
 * [Apache Felix](http://felix.apache.org/)
-* [JCR 1.0 Spec](http://www.day.com/specs/jcr/1.0/index.html)
-* [JCR 2.0 Spec](http://www.day.com/specs/jcr/2.0/index.html)
+* [JCR 1.0 Spec](https://docs.adobe.com/content/docs/en/spec/jcr/1.0/index.html)
+* [JCR 2.0 Spec](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)
 * [Apache Lucene](http://lucene.apache.org/core/3_0_3/index.html)
 * [Apache Lucene - Scoring](http://lucene.apache.org/core/3_0_3/scoring.html)
 * [Jackrabbit Indexing](http://wiki.apache.org/jackrabbit/IndexingConfiguration)
 
 ### Screencasts, Podcasts, Presentations
-* [CQ Gems on Adobe Experience Manager](http://dev.day.com/gems)
+* [CQ Gems on Adobe Experience Manager](https://docs.adobe.com/content/ddc/en/gems.html)
 * [AEM Casts](http://www.aemcasts.com/) -  Micro Topics on AEM and AEM Delivery
 * [Adobe Experience Manager Podcast](http://aempodcast.com/)
 * [AEM @ SlideShare](http://www.slideshare.net/search/slideshow?q=adobe+aem)
@@ -176,7 +175,7 @@ This is more of a short cut for people who don't want to navigate through the AE
 
 #### Component Development
 * [Favourite CQ5 utils](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers/2013/05/my-favourite-cq5-utils.html)
-* [possible xtypes](http://dev.day.com/docs/en/cq/current/developing/widgets/xtypes.html)
+* [Using xtypes (Classic UI)](https://docs.adobe.com/docs/en/aem/6-2/develop/components/xtypes.html)
 * [Basic CQ5 code examples](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers/2012/06/basic-cq5-code-samples.html)
 
 #### Workflows
