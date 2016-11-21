@@ -20,6 +20,7 @@ AEM Links Index
 * [Experiencing Adobe Experience Manger - Day CQ](http://experience-aem.blogspot.com/2013/08/in-blog-experiencing-adobe-experience.html)
 * [My HUGE list of AEM bookmarks](http://aemtips.blogspot.com/2013/05/my-huge-list-of-aem-bookmarks.html)
 * [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki)
+* [We.Retail](https://docs.adobe.com/docs/en/aem/6-2/develop/best-practices/we-retail.html) - Adobe's reference site implementation
 
 ### Blogs (by Adobe)
 * [Experience Delivers](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers.html)
@@ -30,6 +31,7 @@ AEM Links Index
 * [Scott's Digital Community](http://scottsdigitalcommunity.blogspot.ca/)
 * [Wem Blog](http://www.wemblog.com/)
 * [CQ-OPS](http://cq-ops.tumblr.com/)
+* [Experience Managed](http://experiencemanaged.com/) - by [Chris Millar](https://twitter.com/auniverseaway)
 * [Daniel Klco's Blog](http://www.danklco.com/)
 * [The Real CQ](http://therealcq.blogspot.de/)
 * [Code Monkey](http://blog.kristianwright.com/)
@@ -67,12 +69,14 @@ AEM Links Index
 * [Recap](http://adamcin.net/net.adamcin.recap/) - rsync for Adobe Granite
 * [Chef cookbook by Tacit Knowledge](https://github.com/tacitknowledge/aem-cookbook)
 * [Python client for Adobe Experience Manager (AEM) API](https://github.com/wildone/pyaem)
+* [Carty](http://cognifide.github.io/Carty/) - Visual Sling mappings editor
 
 ### Documentation
 * [CRX 2.3](http://docs.adobe.com/docs/en/crx/2-3.html)
 * [5.6.1](http://docs.adobe.com/docs/en/cq/5-6-1.html)
 * [6.0](http://docs.adobe.com/content/docs/en/aem/6-0.html)
 * [6.1](http://docs.adobe.com/content/docs/en/aem/6-1.html)
+* [6.2](https://docs.adobe.com/content/docs/en/aem/6-2.html)
 
 ### Events
 * [Adobe's AEM Technologists](https://communities.adobe.com/en/communities/aem_technologistsdevelopersarchitects/home.html)
@@ -125,11 +129,29 @@ AEM Links Index
 
 ### Oak
 * [Oak Index Definition Generator](http://oakutils.appspot.com/generate/index)
+* [David's Model: A guide for content modeling](https://wiki.apache.org/jackrabbit/DavidsModel)
 
 ### AEM Apps
 * [A PhoneGap API showcase app managed in AEM](https://github.com/blefebvre/aem-phonegap-kitchen-sink)
 
+### Development Tools
+* [AEMSync](https://github.com/gavoja/aemsync) - AEM Synchronization Tool, the tool pushes code changes to AEM instance(s) upon a file change (Single most useful tool for AEM development)
+* [Gulp Slang](https://github.com/mnlsn/gulp-slang) - Gulp process CURLs content straight into JCR
+* [Grunt Clientlibify](https://github.com/mickleroy/grunt-clientlibify) - Grunt plugin for integrating AEM with a styleguide
+* [Grunt Smart VLT](https://github.com/Ariel-Rodriguez/grunt-smart-vlt) - A simple grunt interface for Adobe VLT (last commit >2 years)
+* [Vagrant AEM](https://github.com/bstopp/vagrant-aem) - Vagrant boxes for AEM
+
 (* not sure if this is still being updated)
+
+----------------------------------------
+
+### Open Source Projects & Code Examples
+A curated list of open source projects, code examples and snippets to learn from and base your work from:
+* [Libraries and extensions for AEM applications](http://wcm.io/) - huge library of extensions
+* [AEM Replication Customization](https://github.com/mwmd/circuit14-aem-replication)
+* [CRX / AEM Package built w/ ANT + XSL](https://github.com/odu/crx-package-xsl-example)
+* [AEM React](https://github.com/sinnerschrader/aem-react) - Render components using React, isomorphic JavaScript rendering.
+
 
 ----------------------------------------
 
@@ -192,10 +214,10 @@ This is more of a short cut for people who don't want to navigate through the AE
 #### Certification
 * [Adobe WEM / CQ Tips and Tricks (Google Doc)](https://docs.google.com/document/d/1FBvBxyKequyP32d6Zfh6_lmHKLO1mMN4E6Vgu0uE3Z4/edit?pli=1#heading=h.ps4m4afefi7l)
 * [ACE: AEM 6.0 Architect experience and Certification Path](http://aemfaq.blogspot.com/2014/12/ace-aem-60-architect-experience-and.html)
+* [AEM 6.0 Architect Certification tips](http://www.computepatterns.com/233/aem-6-0-architect-certification-tips/)
 
 ### Other
 * [AEM Capability Matrix](https://docs.google.com/spreadsheets/d/11sESEtCSf45j5JWknVLE3DJt9NOJaDHfeBBJFOsxt5o/edit?usp=sharing) - list AEM Capabilities, Features and OOTB Component
-* [Libraries and extensions for AEM applications](http://wcm.io/)
 * [Apache Sling Resource Resolver Rules in a Nutshell](http://ilikeorangutans.github.io/2012/11/20/apache-sling-resource-resolver-rule-priority-explained/)
 * [Adobe CQ/AEM Support Matrix](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html#cq)
-
+* [Adobe CQ5 AEM cURL Commands](http://www.aemcq5tutorials.com/tutorials/adobe-cq5-aem-curl-commands/)
