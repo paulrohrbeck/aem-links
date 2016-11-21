@@ -50,6 +50,7 @@ AEM Links Index
 * [Adobe Experience Manager Blog](http://aemtips.blogspot.com.au/)
 * [AEM Development Mastery](http://www.aemmastery.com)
 * [CQ5 | AEM6 Solutions and Suggestions](http://aem6solutions.blogspot.com.au/)
+* [AEM Quickstart](https://aemquickstart.blogspot.com.au/)
 
 ### Component Development
 * [Adobe Marketing Cloud Open Developer Projects](http://adobe-marketing-cloud.github.io/index.html#projects)
