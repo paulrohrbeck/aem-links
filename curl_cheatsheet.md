@@ -42,8 +42,25 @@ Example: -F"":operation=delete""
 ```
 * Quotes around name of package (or name of zip file, or jar) should be included.
 
+CSRF Request in Scripts 
+========
+Here is how to add CSRF to your scripts
+```bash
+AEM_SCHEME=http
+AEM_HOST=localhost
+AEM_PORT=4502
+REFERER=${AEM_SCHEME}://${AEM_HOST}:${AEM_PORT}
+SERVICE_URL=/libs/granite/security/post/authorizables
+AEM_TOKEN="$(curl -s -c cookie.txt -H User-Agent:curl -H Referer:${REFERER} -u admin:admin http://localhost:4502/libs/granite/csrf/token.json  | sed -e 's/[{"token":}]/''/g')"
 
+echo "CSRF Token: ${AEM_TOKEN}"
 
+HEADERS=" -u admin:admin -H User-Agent:curl -H CSRF-Token:${AEM_TOKEN} -H Referer:${REFERER}"
+
+echo "Headers: $HEADERS"
+
+curl ${HEADERS} -FcreateGroup= -FauthorizableId=testGroup1 ${REFERER}${SERVICE_URL}
+```
 
 ### Common Curl's
 
@@ -288,7 +305,7 @@ curl -u admin:admin -FcreateUser= -FauthorizableId=testuser -Frep:password=abc12
 
 Create Group:
 ```bash
-curl -u admin:admin -FcreateGroup=group1 -FauthorizableId=testGroup1 http://localhost:4502/libs/granite/security/post/authorizables
+curl -u admin:admin -FcreateGroup= -FauthorizableId=testGroup1 http://localhost:4502/libs/granite/security/post/authorizables
 ```
 
 Create user with Profile:
@@ -318,7 +335,7 @@ curl -u admin:admin -FremoveMembers=testuser1http://localhost:4502/home/groups/t
 
 Set a User’s Group Memberships:
 ```bash
-curl -u admin:admin -Fmembership=contributor -Fmembership=testgrouphttp://localhost:4502/home/users/t/testuser.rw.html
+curl -u admin:admin -Fmembership=contributor -Fmembership=testgroup http://localhost:4502/home/users/t/testuser.rw.html
 ```
 
 Delete user and Group:
