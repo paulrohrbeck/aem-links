@@ -49,13 +49,16 @@ Here is how to add CSRF to your scripts
 AEM_SCHEME=http
 AEM_HOST=localhost
 AEM_PORT=4502
+AEM_LOGIN=admin:admin
 REFERER=${AEM_SCHEME}://${AEM_HOST}:${AEM_PORT}
 SERVICE_URL=/libs/granite/security/post/authorizables
-AEM_TOKEN="$(curl -s -c cookie.txt -H User-Agent:curl -H Referer:${REFERER} -u admin:admin http://localhost:4502/libs/granite/csrf/token.json  | sed -e 's/[{"token":}]/''/g')"
+SERVICE_TOKEN=/libs/granite/csrf/token.json
+
+AEM_TOKEN="$(curl -s -H User-Agent:curl -H Referer:${REFERER} -u ${AEM_LOGIN} ${REFERER}${SERVICE_TOKEN}  | sed -e 's/[{"token":}]/''/g')"
 
 echo "CSRF Token: ${AEM_TOKEN}"
 
-HEADERS=" -u admin:admin -H User-Agent:curl -H CSRF-Token:${AEM_TOKEN} -H Referer:${REFERER}"
+HEADERS=" -u ${AEM_LOGIN} -H User-Agent:curl -H CSRF-Token:${AEM_TOKEN} -H Referer:${REFERER}"
 
 echo "Headers: $HEADERS"
 
