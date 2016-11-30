@@ -11,7 +11,7 @@ Sling Curl Command Cheat Sheet
 * [Useful Curl Commands](http://cq-ops.tumblr.com/post/19017053665/useful-curl-commands)
 * [CRX 2.3 - Working with Packages](https://docs.adobe.com/docs/en/crx/2-3/how_to/package_manager.html)
 * [CQ5 curl commands](https://gist.github.com/sergeimuller/2916697)
-* [](http://balawcm.wordpress.com/2013/02/13/curl-it-out-adobe-cq5-curl-commands-and-usage/)
+* [Culr It Out](http://balawcm.wordpress.com/2013/02/13/curl-it-out-adobe-cq5-curl-commands-and-usage/)
 
 ### NOTES
 
@@ -489,4 +489,7 @@ To find all Blocking Jobs
 curl -s -u admin:admin http://localhost:4502/bin/querybuilder.json?path=/var/eventing/jobs/anon&type=slingevent:Job&rangeproperty.property=event.job.retrycount&rangeproperty.lowerBound=1&#8243;
 ```
 
-
+Clear JSP Cache
+```bash
+curl -s u admin:admin http://localhost:4502/system/console/slingjsp?reset
+```
