@@ -491,5 +491,5 @@ curl -s -u admin:admin http://localhost:4502/bin/querybuilder.json?path=/var/eve
 
 Clear JSP Cache
 ```bash
-curl -s u admin:admin http://localhost:4502/system/console/slingjsp?reset
+curl -s -u admin:admin http://localhost:4502/system/console/slingjsp?reset
 ```
