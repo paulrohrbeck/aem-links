@@ -198,7 +198,6 @@ This is more of a short cut for people who don't want to navigate through the AE
 #### Component Development
 * [Favourite CQ5 utils](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers/2013/05/my-favourite-cq5-utils.html)
 * [Using xtypes (Classic UI)](https://docs.adobe.com/docs/en/aem/6-2/develop/components/xtypes.html)
-* [Basic CQ5 code examples](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers/2012/06/basic-cq5-code-samples.html)
 
 #### Workflows
 * [CQ5 OOTB workflow processes](http://blogs.adobe.com/contentmanagement/2013/05/13/cq-5-6-out-of-the-box-workflow-processes-and-what-they-docan-be-used-for/)
