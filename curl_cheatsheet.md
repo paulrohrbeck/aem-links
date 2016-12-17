@@ -11,7 +11,7 @@ Sling Curl Command Cheat Sheet
 * [Useful Curl Commands](http://cq-ops.tumblr.com/post/19017053665/useful-curl-commands)
 * [CRX 2.3 - Working with Packages](https://docs.adobe.com/docs/en/crx/2-3/how_to/package_manager.html)
 * [CQ5 curl commands](https://gist.github.com/sergeimuller/2916697)
-* [](http://balawcm.wordpress.com/2013/02/13/curl-it-out-adobe-cq5-curl-commands-and-usage/)
+* [Culr It Out](http://balawcm.wordpress.com/2013/02/13/curl-it-out-adobe-cq5-curl-commands-and-usage/)
 
 ### NOTES
 
@@ -42,8 +42,28 @@ Example: -F"":operation=delete""
 ```
 * Quotes around name of package (or name of zip file, or jar) should be included.
 
+CSRF Request in Scripts 
+========
+Here is how to add CSRF to your scripts
+```bash
+AEM_SCHEME=http
+AEM_HOST=localhost
+AEM_PORT=4502
+AEM_LOGIN=admin:admin
+REFERER=${AEM_SCHEME}://${AEM_HOST}:${AEM_PORT}
+SERVICE_URL=/libs/granite/security/post/authorizables
+SERVICE_TOKEN=/libs/granite/csrf/token.json
 
+AEM_TOKEN="$(curl -s -H User-Agent:curl -H Referer:${REFERER} -u ${AEM_LOGIN} ${REFERER}${SERVICE_TOKEN}  | sed -e 's/[{"token":}]/''/g')"
 
+echo "CSRF Token: ${AEM_TOKEN}"
+
+HEADERS=" -u ${AEM_LOGIN} -H User-Agent:curl -H CSRF-Token:${AEM_TOKEN} -H Referer:${REFERER}"
+
+echo "Headers: $HEADERS"
+
+curl ${HEADERS} -FcreateGroup= -FauthorizableId=testGroup1 ${REFERER}${SERVICE_URL}
+```
 
 ### Common Curl's
 
@@ -288,7 +308,7 @@ curl -u admin:admin -FcreateUser= -FauthorizableId=testuser -Frep:password=abc12
 
 Create Group:
 ```bash
-curl -u admin:admin -FcreateGroup=group1 -FauthorizableId=testGroup1 http://localhost:4502/libs/granite/security/post/authorizables
+curl -u admin:admin -FcreateGroup= -FauthorizableId=testGroup1 http://localhost:4502/libs/granite/security/post/authorizables
 ```
 
 Create user with Profile:
@@ -318,7 +338,7 @@ curl -u admin:admin -FremoveMembers=testuser1http://localhost:4502/home/groups/t
 
 Set a User’s Group Memberships:
 ```bash
-curl -u admin:admin -Fmembership=contributor -Fmembership=testgrouphttp://localhost:4502/home/users/t/testuser.rw.html
+curl -u admin:admin -Fmembership=contributor -Fmembership=testgroup http://localhost:4502/home/users/t/testuser.rw.html
 ```
 
 Delete user and Group:
@@ -469,4 +489,7 @@ To find all Blocking Jobs
 curl -s -u admin:admin http://localhost:4502/bin/querybuilder.json?path=/var/eventing/jobs/anon&type=slingevent:Job&rangeproperty.property=event.job.retrycount&rangeproperty.lowerBound=1&#8243;
 ```
 
-
+Clear JSP Cache
+```bash
+curl -s -u admin:admin -X POST http://localhost:4502/system/console/slingjsp
+```
