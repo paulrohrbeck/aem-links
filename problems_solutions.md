@@ -203,3 +203,11 @@ Possible solutions:
 
 For me the problem was that I had a comment at the beginning of this config file: `/etc/workflow/models/translation/translation_rules.xml`
 Apparently AEM can't handle it and fails without error. Make sure to put any comments inside the `<nodelist>`.
+
+---
+
+#### EventHandler class isn't called
+
+- Check if event is even happening: `/system/console/events`
+- Is EventHandler registered?
+- EventHandler might be "blacklisted", check: `org.apache.felix.eventadmin.impl.EventAdmin` config
