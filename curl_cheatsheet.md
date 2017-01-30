@@ -345,6 +345,11 @@ Add a User to a Group:
 curl -u admin:admin -FaddMembers=testuser1 http://localhost:4502/home/groups/t/testGroup.rw.html
 ```
 
+Add multiple Users to a Group:
+```bash
+curl -u admin:admin -FaddMembers=testuser1 -FaddMembers=testuser2 http://localhost:4502/home/groups/t/testGroup.rw.html
+```
+
 Remove a User from a Group:
 ```bash
 curl -u admin:admin -FremoveMembers=testuser1 http://localhost:4502/home/groups/t/testGroup.rw.html
