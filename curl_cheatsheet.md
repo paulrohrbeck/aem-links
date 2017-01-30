@@ -25,10 +25,24 @@ curl -X POST -u "admin:admin" -F"_charset_=utf-8" --form-string "text-ja=サー�
     http://localhost:4502/content/site/jcr:content/par
 ```
 
-* Since version 1.0.6 of the Sling Security bundle, you will get Forbidden when accessing endpoint to fix add Referer header to your curl:
+* Since version 1.0.6 of the Sling Security bundle, you will get Forbidden when accessing endpoint, without valid user agent or without CSRF token, to fix add some header to your curl :
+```bash
+    AEM_SCHEME=${1:-http} \
+    AEM_HOST=${2:-localhost} \
+    AEM_PORT=${3:-4502} \
+    AEM_LOGIN=${4:-admin:admin} \
+    CURL=$(which curl) \
+    REFERER=${AEM_SCHEME}://${AEM_HOST}:${AEM_PORT} \
+    SERVICE_TOKEN=/libs/granite/csrf/token.json \
+    AEM_TOKEN="$(${CURL} -s -H User-Agent:curl -H Referer:${REFERER} -u ${AEM_LOGIN} ${REFERER}${SERVICE_TOKEN}  | sed -e 's/[{"token":}]/''/g')"  \
+    ${CURL} -H User-Agent:curl -H Referer:${REFERER} -u ${AEM_LOGIN} -H CSRF-Token:${AEM_TOKEN} -X POST ${REFERER}/content/jcr:content -F jcr:primaryType=nt:unstructured -F jcr:title=Test
 ```
---header "Referer:http://localhost:4502/"
+
+you can check valid User-Agent headers here:
 ```
+http://localhost:4502/system/console/configMgr/com.day.cq.wcm.foundation.impl.HTTPAuthHandler
+```
+
 alternative is to set allow empty and 'allow.hosts.regexp':
 ```
 http://localhost:4502/system/console/configMgr/org.apache.sling.security.impl.ReferrerFilter
@@ -42,7 +56,7 @@ Example: -F"":operation=delete""
 ```
 * Quotes around name of package (or name of zip file, or jar) should be included.
 
-CSRF Request in Scripts 
+CSRF Request in Scripts
 ========
 Here is how to add CSRF to your scripts
 ```bash
