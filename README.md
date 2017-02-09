@@ -151,7 +151,7 @@ A curated list of open source projects, code examples and snippets to learn from
 * [AEM Replication Customization](https://github.com/mwmd/circuit14-aem-replication)
 * [CRX / AEM Package built w/ ANT + XSL](https://github.com/odu/crx-package-xsl-example)
 * [AEM React](https://github.com/sinnerschrader/aem-react) - Render components using React, isomorphic JavaScript rendering.
-
+* [TODO MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample) - SCF+SRP implementation of ToDo MVC with walkthrough.
 
 ----------------------------------------
 
