@@ -25,10 +25,24 @@ curl -X POST -u "admin:admin" -F"_charset_=utf-8" --form-string "text-ja=サー�
     http://localhost:4502/content/site/jcr:content/par
 ```
 
-* Since version 1.0.6 of the Sling Security bundle, you will get Forbidden when accessing endpoint to fix add Referer header to your curl:
+* Since version 1.0.6 of the Sling Security bundle, you will get Forbidden when accessing endpoint, without valid user agent or without CSRF token, to fix add some header to your curl :
+```bash
+AEM_SCHEME=http \
+AEM_HOST=localhost \
+AEM_PORT=4502 \
+AEM_LOGIN=admin:admin \
+CURL=$(which curl) \
+REFERER=${AEM_SCHEME}://${AEM_HOST}:${AEM_PORT} \
+SERVICE_TOKEN=/libs/granite/csrf/token.json \
+AEM_TOKEN="$(${CURL} -s -H User-Agent:curl -H Referer:${REFERER} -u ${AEM_LOGIN} ${REFERER}${SERVICE_TOKEN}  | sed -e 's/[{"token":}]/''/g')"  \
+${CURL} -H User-Agent:curl -H Referer:${REFERER} -u ${AEM_LOGIN} -H CSRF-Token:${AEM_TOKEN} -X POST ${REFERER}/content/jcr:content -F jcr:primaryType=nt:unstructured -F jcr:title=Test
 ```
---header "Referer:http://localhost:4502/"
+
+you can check valid User-Agent headers here:
 ```
+http://localhost:4502/system/console/configMgr/com.day.cq.wcm.foundation.impl.HTTPAuthHandler
+```
+
 alternative is to set allow empty and 'allow.hosts.regexp':
 ```
 http://localhost:4502/system/console/configMgr/org.apache.sling.security.impl.ReferrerFilter
@@ -42,7 +56,7 @@ Example: -F"":operation=delete""
 ```
 * Quotes around name of package (or name of zip file, or jar) should be included.
 
-CSRF Request in Scripts 
+CSRF Request in Scripts
 ========
 Here is how to add CSRF to your scripts
 ```bash
@@ -151,14 +165,14 @@ curl -u admin:admin -F cmd=activate -F ignoredeactivated=true -F onlymodified=tr
 Lock page
 ```bash
 curl -u admin:admin -X POST -F cmd="lockPage" -F path="/content/path/to/page" -F "_charset_"="utf-8" \
-    http://localhost:4502/bin/wcmcommand
+http://localhost:4502/bin/wcmcommand
 ```
 
 
 Unlock page
 ```bash
 curl -u admin:admin -X POST -F cmd="unlockPage" -F path="/content/path/to/page" -F "_charset_"="utf-8" \
-    http://localhost:4502/bin/wcmcommand
+http://localhost:4502/bin/wcmcommand
 ```
 
 Copy page
@@ -183,20 +197,20 @@ curl -u admin:admin -F action=install -F bundlestartlevel=20 -F bundlefile=@name
 Build a bundle
 ```bash
 curl -u admin:admin -F"bundleHome=/apps/centrica/bundles/name of bundle" \
-    -F descriptor=/apps/centrica/bundles/com.centrica.cq.wcm.core-bundle/name_of_bundle.bnd \
-    http://localhost:4502/libs/crxde/build
+-F descriptor=/apps/centrica/bundles/com.centrica.cq.wcm.core-bundle/name_of_bundle.bnd \
+http://localhost:4502/libs/crxde/build
 ```
 
 Stop a bundle
 ```bash
 curl -u admin:admin http://localhost:4502/system/console/bundles/org.apache.sling.scripting.jsp \
-    -F action=stop
+-F action=stop
 ```
 
 Start a bundle
 ```bash
 curl -u admin:admin http://localhost:4502/system/console/bundles/org.apache.sling.scripting.jsp \
-    -F action=start
+-F action=start
 ```
 Delete a node (hierarchy) - (this will delete any directory / node / site)
 ```bash
@@ -318,7 +332,7 @@ curl -u admin:admin -FcreateUser=testuser -FauthorizableId=testuser -Frep:passwo
 
 Set a Profile Property on an Existing User:
 ```bash
-curl -u admin:admin -Fprofile/age=29http://localhost:4502/home/users/t/testuser1.rw.html
+curl -u admin:admin -Fprofile/age=29 http://localhost:4502/home/users/t/testuser1.rw.html
 ```
 
 Create a User as a Member of a Group:
@@ -328,12 +342,17 @@ curl -u admin:admin -FcreateUser=testuser -FauthorizableId=testuser -Frep:passwo
 
 Add a User to a Group:
 ```bash
-curl -u admin:admin -FaddMembers=testuser1http://localhost:4502/home/groups/t/testGroup.rw.html
+curl -u admin:admin -FaddMembers=testuser1 http://localhost:4502/home/groups/t/testGroup.rw.html
+```
+
+Add multiple Users to a Group:
+```bash
+curl -u admin:admin -FaddMembers=testuser1 -FaddMembers=testuser2 http://localhost:4502/home/groups/t/testGroup.rw.html
 ```
 
 Remove a User from a Group:
 ```bash
-curl -u admin:admin -FremoveMembers=testuser1http://localhost:4502/home/groups/t/testGroup.rw.html
+curl -u admin:admin -FremoveMembers=testuser1 http://localhost:4502/home/groups/t/testGroup.rw.html
 ```
 
 Set a User’s Group Memberships:
@@ -343,8 +362,8 @@ curl -u admin:admin -Fmembership=contributor -Fmembership=testgroup http://local
 
 Delete user and Group:
 ```bash
-curl -u admin:admin -FdeleteAuthorizable=http://localhost:4502/home/users/t/testuser
-curl -u admin:admin -FdeleteAuthorizable=http://localhost:4502/home/groups/t/testGroup
+curl -u admin:admin -FdeleteAuthorizable= http://localhost:4502/home/users/t/testuser
+curl -u admin:admin -FdeleteAuthorizable= http://localhost:4502/home/groups/t/testGroup
 ```
 
 Change a user password:
@@ -373,17 +392,17 @@ curl -s -u admin:admin -X GET "http://localhost:4502/bin/querybuilder.json?path=
 ### Backup Commands:
 Online Backup:
 ```bash
-curl -u admin:admin -X POSThttp://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startBackup/java.lang.String?target=<PATH-TO-BACKUP>/12-feb-2013.zip
+curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startBackup/java.lang.String?target=<PATH-TO-BACKUP>/12-feb-2013.zip
 ```
 Online backup with delay in milli seconds:
 ```bash
-curl -u admin:admin -X POSThttp://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/a/BackupDelay?value=<TIME-IN-MILISECOND&gt;
+curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/a/BackupDelay?value=<TIME-IN-MILISECOND&gt;
 
 curl -u admin:admin --data "delay=TIME-IN-MILISECONDS&force=false&target=01-dec-2012.zip" http://localhost:4502/libs/granite/backup/content/admin/backups/
 ```
 How to stop a running online backup:
 ```bash
-curl -u admin:adminhttp://localhost:4502/libs/granite/backup/content/admin/backups.cancel.html
+curl -u admin:admin http://localhost:4502/libs/granite/backup/content/admin/backups.cancel.html
 ```
 Link to track online progress:
 ```bash
@@ -400,30 +419,30 @@ curl -u admin:admin -X POST http://localhost:4502/libs/granite/backup/content/ad
 For Datastore Garbage Collection:
 ```bash
 curl -u admin:admin -X POST \
-    http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/runDataStoreGarbageCollection/java.lang.Boolean
-
+http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/runDataStoreGarbageCollection/java.lang.Boolean
+```
 # OR
-
+```bash
 curl -u admin:admin -X POST --data "delete=true&delay=2" \
-    http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository/op/runDataStoreGarbageCollection/java.lang.Boolean
+http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository/op/runDataStoreGarbageCollection/java.lang.Boolean
 ```
 
 Tar Optimization:
 ```bash
-curl -u admin:admin -X POSThttp://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startTarOptimization/
+curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startTarOptimization/
 ```
 
 Flush Dispatcher Cache:
 ```bash
 curl -H "CQ-Action: Flush" -H "CQ-Handle: /content/geometrixx/en/products" -H "CQ-Path:/content/geometrixx/en/products" \
-    -H "Content-Length: 0" -H "Content-Type: application/octet-stream" \
-    http://dispatcher-server-hostname:port/dispatcher/invalidate.cache
+-H "Content-Length: 0" -H "Content-Type: application/octet-stream" \
+http://dispatcher-server-hostname:port/dispatcher/invalidate.cache
 ```
 
 BINARY GARBAGE COLLECTION
 ```bash
 curl -u admin:admin -X POST --data 'markOnly=false' \
-    'http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D14%2Cname%3D%22repository+manager%22%2Ctype%3D%22RepositoryManagement%22/op/startDataStoreGC/boolean'
+'http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D14%2Cname%3D%22repository+manager%22%2Ctype%3D%22RepositoryManagement%22/op/startDataStoreGC/boolean'
 ```
 GARBAGE COLLECTION FOR A SHARED DATA STORE
 ```bash
@@ -471,7 +490,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 Find "all” page references for a given image/asset in a jcr path. The below command will return in JSON format:
 ```bash
 curl -s -u admin:admin -X GET \
-    http://localhost:4502/bin/querybuilder.json?path=/content/my-site&1_property=fileReference&1_property.value=/content/dam/my-site/image.jpg&p.limit=-1
+http://localhost:4502/bin/querybuilder.json?path=/content/my-site&1_property=fileReference&1_property.value=/content/dam/my-site/image.jpg&p.limit=-1
 ```
 *Note: -1 in the p.limit will return all page references else prints only 10.
 
