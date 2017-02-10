@@ -512,3 +512,10 @@ Clear JSP Cache
 ```bash
 curl -s -u admin:admin -X POST http://localhost:4502/system/console/slingjsp
 ```
+
+### System Console
+download logs without viewing them in console
+```bash
+curl -s -u admin:admin -X POST http://localhost:4502/system/console/status-slinglogs/configuration-status.zip
+```
+
