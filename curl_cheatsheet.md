@@ -43,10 +43,17 @@ you can check valid User-Agent headers here:
 http://localhost:4502/system/console/configMgr/com.day.cq.wcm.foundation.impl.HTTPAuthHandler
 ```
 
+you can check valid CSRF User-Agent headers here:
+```
+http://localhost:4502/system/console/configMgr/com.adobe.granite.csrf.impl.CSRFFilter
+```
+
 alternative is to set allow empty and 'allow.hosts.regexp':
 ```
 http://localhost:4502/system/console/configMgr/org.apache.sling.security.impl.ReferrerFilter
 ```
+
+
 
 * The following CQ curl commands assumes a admin:admin username and password.
 
