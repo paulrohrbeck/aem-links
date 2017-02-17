@@ -215,7 +215,7 @@ Apparently AEM can't handle it and fails without error. Make sure to put any com
 
 ---
 
-### RTE configs don't work for authors
+#### RTE configs don't work for authors
 
 There's a permission for `contributors` on root (`/`) that denies read access to `rep:glob=apps/*/config/*` which means that out-of-the-box, authors in this group won't have access to the `config` node under your `cq:inplaceEditing` node (`_cq_editConfig.xml`) for your components. According to Adobe, this is a security feature.
 
