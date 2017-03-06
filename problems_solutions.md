@@ -219,3 +219,8 @@ Apparently AEM can't handle it and fails without error. Make sure to put any com
 
 There's a permission for `contributors` on root (`/`) that denies read access to `rep:glob=apps/*/config/*` which means that out-of-the-box, authors in this group won't have access to the `config` node under your `cq:inplaceEditing` node (`_cq_editConfig.xml`) for your components. According to Adobe, this is a security feature.
 
+---
+
+#### Problem when publishing: `Failed to retrieve references for the selected page.` / `NullPointerException` in `ContentPolicyReferenceProvider`
+
+Seen in AEM 6.2 SP1. For me, it was a `cq:policy` property that was pointing to a policy that didn't exist (anymore?): `wcm/foundation/components/responsivegrid/policy_1487706890435`
