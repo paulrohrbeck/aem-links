@@ -526,3 +526,7 @@ download logs without viewing them in console
 curl -s -u admin:admin -X POST http://localhost:4502/system/console/status-slinglogs/configuration-status.zip
 ```
 
+Restart AEM
+```bash
+curl -u admin:admin -d "shutdown_type=Restart" http://localhost:4502/system/console/vmstat
+```
