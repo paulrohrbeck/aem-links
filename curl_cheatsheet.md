@@ -423,12 +423,13 @@ curl -u admin:admin -X POST http://localhost:4502/libs/granite/backup/content/ad
 
 ### Datastore GC:
 
-For Datastore Garbage Collection:
+Start Datastore Garbage Collection:
 ```bash
 curl -u admin:admin -X POST \
 http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/runDataStoreGarbageCollection/java.lang.Boolean
 ```
-# OR
+
+Start Datastore Garbage Collection Delayed:
 ```bash
 curl -u admin:admin -X POST --data "delete=true&delay=2" \
 http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository/op/runDataStoreGarbageCollection/java.lang.Boolean
@@ -526,15 +527,18 @@ download logs without viewing them in console
 curl -s -u admin:admin -X POST http://localhost:4502/system/console/status-slinglogs/configuration-status.zip
 ```
 
+### Restart AEM
+```bash
+curl -u admin:admin -d "shutdown_type=Restart" http://localhost:4502/system/console/vmstat
+```
+
 ### Enable CRX DE
 enable wedav
-
 ```bash
 curl -u admin:admin -H User-Agent:curl -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
 ```
 
 disable wedav
-
 ```bash
 curl -u admin:admin -H User-Agent:curl -X DELETE http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
 ```

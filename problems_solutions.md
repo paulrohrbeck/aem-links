@@ -74,7 +74,7 @@ java.lang.Error: Unresolved compilation problems:
 
 * Make sure bundle is active
 * Make sure bundle actually exports this class/service
-* Try deleting /var/classes/* to force recompilation 
+* Try deleting `/var/classes/*` to force recompilation (or via `/system/console/slingjsp`)
 
 ---
 
@@ -211,3 +211,23 @@ Apparently AEM can't handle it and fails without error. Make sure to put any com
 - Check if event is even happening: `/system/console/events`
 - Is EventHandler registered?
 - EventHandler might be "blacklisted", check: `org.apache.felix.eventadmin.impl.EventAdmin` config
+
+
+---
+
+#### RTE configs don't work for authors
+
+There's a permission for `contributors` on root (`/`) that denies read access to `rep:glob=apps/*/config/*` which means that out-of-the-box, authors in this group won't have access to the `config` node under your `cq:inplaceEditing` node (`_cq_editConfig.xml`) for your components. According to Adobe, this is a security feature.
+
+---
+
+#### Problem when publishing: `Failed to retrieve references for the selected page.` / `NullPointerException` in `ContentPolicyReferenceProvider`
+
+Seen in AEM 6.2 SP1. For me, it was a `cq:policy` property that was pointing to a policy that didn't exist (anymore?): `wcm/foundation/components/responsivegrid/policy_1487706890435`
+
+---
+
+#### Java process high i/o wait due to MSM rollouts
+As seen via `top` command, the io wait `wa` is constantly above 30%.
+
+In our case, it was related to MSM rollouts that got messed up somehow so they bogged down the system. We noticed this by looking at the events via `/system/console/events`
