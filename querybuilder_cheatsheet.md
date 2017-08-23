@@ -29,7 +29,6 @@ Query Builder Cheat Sheet
 * [Operation UnEquals](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=path%3D%2Fcontent%2Fgeometrixx%0D%0Atype%3Dcq%3APage%0D%0Aproperty%3Djcr%3Acontent%2Fjcr%3Atitle%0D%0Aproperty.operation%3Dunequals%0D%0Aproperty.value%3DContact)
 * [Operation Not Exist](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=path%3D%2Fcontent%2Fgeometrixx%0D%0Atype%3Dcq%3APage%0D%0Aproperty%3Djcr%3Acontent%2Fcq%3Atoolbars%0D%0Aproperty.operation%3Dnot)
 * [Special Character Search](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=path%3D%2Fcontent%2Fgeometrixx%0D%0Atype%3Dnt%3Aunstructured%0D%0Aproperty%3Dtext%0D%0Aproperty.operation%3Dlike%0D%0Aproperty.value%3D%25%3Cli%3EThe+whole+is+greater+than+the+part.%3C%2Fli%3E%25)
-<<<<<<< HEAD
 
 ### Tools
 * [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html)
@@ -61,7 +60,7 @@ These are the keywords that can be used in the Query Builder when creating predi
 * boolproperty
 * group
 
-### Samples 
+### Samples
 
 GET USER PATH
 ```bash
@@ -163,7 +162,7 @@ EXAMPLE QUERY BUILDER API USAGE
 
 ```java
 String fulltextSearchTerm = "Geometrixx";
-               
+
 // create query description as hash map (simplest way, same as form post)
 Map<String, String> map = new HashMap<String, String>();
 
@@ -179,11 +178,11 @@ map.put("group.2_fulltext.relPath", "jcr:content/@cq:tags");
 // can be done in map or with Query methods
 map.put("p.offset", "0"); // same as query.setStart(0) below
 map.put("p.limit", "20"); // same as query.setHitsPerPage(20) below
-                 
+
 Query query = builder.createQuery(PredicateGroup.create(map), session);
 query.setStart(0);
 query.setHitsPerPage(20);
-           
+
 SearchResult result = query.getResult();
 
 // paging metadata
@@ -191,16 +190,16 @@ int hitsPerPage = result.getHits().size(); // 20 (set above) or lower
 long totalMatches = result.getTotalMatches();
 long offset = result.getStartIndex();
 long numberOfPages = totalMatches / 20;
-              
+
 //Place the results in XML to return to client
 DocumentBuilderFactory factory =     DocumentBuilderFactory.newInstance();
 DocumentBuilder builder = factory.newDocumentBuilder();
 Document doc = builder.newDocument();
-                           
+
 //Start building the XML to pass back to the AEM client
 Element root = doc.createElement( "results" );
 doc.appendChild( root );
-              
+
 // iterating over the results
 for (Hit hit : result.getHits()) {
    String path = hit.getPath();
@@ -208,7 +207,7 @@ for (Hit hit : result.getHits()) {
   //Create a result element
   Element resultel = doc.createElement( "result" );
   root.appendChild( resultel );
-                  
+
   Element pathel = doc.createElement( "path" );
   pathel.appendChild( doc.createTextNode(path ) );
   resultel.appendChild( pathel );
