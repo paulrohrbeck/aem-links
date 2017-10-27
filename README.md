@@ -153,6 +153,7 @@ A curated list of open source projects, code examples and snippets to learn from
 * [CRX / AEM Package built w/ ANT + XSL](https://github.com/odu/crx-package-xsl-example)
 * [AEM React](https://github.com/sinnerschrader/aem-react) - Render components using React, isomorphic JavaScript rendering.
 * [TODO MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample) - SCF+SRP implementation of ToDo MVC with walkthrough.
+* [SASS compiler for AEM](https://github.com/mickleroy/aem-sass-compiler) - provides native SASS support in AEM
 
 ----------------------------------------
 
