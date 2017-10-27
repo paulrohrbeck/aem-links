@@ -316,6 +316,23 @@ Tree Activation
 curl -u admin:admin -F cmd=activate -F ignoredeactivated=true -F onlymodified=true -F path=/content/geometrixxhttp://localhost:4502/etc/replication/treeactivation.html
 ```
 
+Clear Queue Jobs
+```
+AEM_SCHEME=http; \
+AEM_HOST=localhost; \
+AEM_PORT=4502; \
+AEM_LOGIN=admin:admin; \
+CURL=$(which curl); \
+REFERER="${AEM_SCHEME}://${AEM_HOST}:${AEM_PORT}"; \
+TOKEN_SERVICE="/libs/granite/csrf/token.json"; \
+SERVICE_URL="/etc/replication/agents.author/publish/jcr:content.queue.json"; \
+SERVICE_CONTENT="cmd=clear&agent=publish"; \
+AEM_TOKEN=$( ${CURL} -v -s -H User-Agent:curl -H Referer:${REFERER} -u "${AEM_LOGIN}" ${REFERER}${TOKEN_SERVICE} | sed -e 's/[{"token":}]/''/g' ); \
+echo AEM_TOKEN=$AEM_TOKEN; \
+AEM_COMMAND=$( ${CURL} -v -H User-Agent:curl -H Referer:${REFERER} -u "${AEM_LOGIN}" -H "CSRF-Token:${AEM_TOKEN}" --data ${SERVICE_CONTENT} -X POST ${REFERER}${SERVICE_URL} ); \
+echo AEM_COMMAND=$AEM_COMMAND
+```
+
 ### User & Group Administration
 Get User Info:
 ```bash
