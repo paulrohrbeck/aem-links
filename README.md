@@ -77,6 +77,7 @@ AEM Links Index
 * [6.0](http://docs.adobe.com/content/docs/en/aem/6-0.html)
 * [6.1](http://docs.adobe.com/content/docs/en/aem/6-1.html)
 * [6.2](https://docs.adobe.com/content/docs/en/aem/6-2.html)
+* [6.3](https://docs.adobe.com/content/docs/en/aem/6-3.html)
 
 ### Events
 * [Adobe's AEM Technologists](https://communities.adobe.com/en/communities/aem_technologistsdevelopersarchitects/home.html)
