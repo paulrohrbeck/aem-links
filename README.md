@@ -11,11 +11,9 @@ AEM Links Index
 * [Problems & Solutions](problems_solutions.md)
 * [Query Builder Cheat Sheet](querybuilder_cheatsheet.md)
 
-
 ---------
 
-
-###Start Here
+### Start Here
 * [Adobe Experience Manager Onboarding resources](https://helpx.adobe.com/experience-manager/using/onboardAEM.html)
 * [Experiencing Adobe Experience Manger - Day CQ](http://experience-aem.blogspot.com/2013/08/in-blog-experiencing-adobe-experience.html)
 * [My HUGE list of AEM bookmarks](http://aemtips.blogspot.com/2013/05/my-huge-list-of-aem-bookmarks.html)
@@ -127,6 +125,7 @@ AEM Links Index
 * [AEM Casts](http://www.aemcasts.com/) -  Micro Topics on AEM and AEM Delivery
 * [Adobe Experience Manager Podcast](http://aempodcast.com/)
 * [AEM @ SlideShare](http://www.slideshare.net/search/slideshow?q=adobe+aem)
+* [Listing of Ask the AEM Community Experts sessions](https://helpx.adobe.com/experience-manager/topics/ate-sessions.html)
 
 ### Oak
 * [Oak Index Definition Generator](http://oakutils.appspot.com/generate/index)
@@ -153,6 +152,7 @@ A curated list of open source projects, code examples and snippets to learn from
 * [CRX / AEM Package built w/ ANT + XSL](https://github.com/odu/crx-package-xsl-example)
 * [AEM React](https://github.com/sinnerschrader/aem-react) - Render components using React, isomorphic JavaScript rendering.
 * [TODO MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample) - SCF+SRP implementation of ToDo MVC with walkthrough.
+* [SASS compiler for AEM](https://github.com/mickleroy/aem-sass-compiler) - provides native SASS support in AEM
 
 ----------------------------------------
 
