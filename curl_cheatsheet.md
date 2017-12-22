@@ -559,3 +559,14 @@ disable wedav
 ```bash
 curl -u admin:admin -H User-Agent:curl -X DELETE http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
 ```
+
+### Enable Query Debug Log
+create Query Debug log file
+```bash
+curl -u admin:admin -H User-Agent:curl -F "jcr:primaryType=sling:OsgiConfig" -F "org.apache.sling.commons.log.names@TypeHint=String[]" -F "org.apache.sling.commons.log.names=com.day.cq.search" -F "org.apache.sling.commons.log.names=org.apache.jackrabbit.oak.plugins.index" -F "org.apache.sling.commons.log.names=org.apache.jackrabbit.oak.query" -F "org.apache.sling.commons.log.file=logs/query.log" -F "org.apache.sling.commons.log.level=info" -F "org.apache.sling.commons.log.additiv=false" http://localhost:4502/apps/system/config/org.apache.sling.commons.log.LogManager.factory.config-query.config
+```
+
+remove Query Debug log file
+```bash
+curl -u admin:admin -H User-Agent:curl -F":operation=delete" http://localhost:4502/apps/system/config/org.apache.sling.commons.log.LogManager.factory.config-query.config
+```
