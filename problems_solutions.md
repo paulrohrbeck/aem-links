@@ -237,3 +237,12 @@ In our case, it was related to MSM rollouts that got messed up somehow so they b
 #### i18n dictionary cache is outdated / new strings don't show up translated
 
 Only solutions I've found were faking a change and deploying it so that AEM realizes there's a change OR restarting the `Apache Sling Internationalization Support (org.apache.sling.i18n)` bundle.
+
+---
+
+#### Maven build to self-signed https author/publish instance (like AMS)
+
+Error: 
+```[ERROR] Failed to execute goal com.day.jcr.vault:content-package-maven-plugin:0.5.1:install (install-content-package) on project aem-view: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target```
+
+Solution: Add `-Dvault.relaxedSSLCheck=true` to `mvn` command.
