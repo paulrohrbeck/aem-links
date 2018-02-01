@@ -107,6 +107,10 @@ Search under multiple paths (using groups)
 
 [http://localhost:4502/bin/querybuilder.json?fulltext=Management&group.1_path=/content/geometrixx/en/company/management&group.2_path=/content/geometrixx/en/company/bod&group.p.or=true](http://localhost:4502/bin/querybuilder.json?fulltext=Management&group.1_path=/content/geometrixx/en/company/management&group.2_path=/content/geometrixx/en/company/bod&group.p.or=true)
 
+Exclude certain paths while searching flat (avoid children) in a path
+
+[http://localhost:4502/bin/querybuilder.json?1_property=%40jcr%3acontent%2fsling%3aresourceType&1_property.value=weretail%2fcomponents%2fstructure%2fpage&group.1_group.p.not=true&group.1_group.path=%2fcontent%2fwe-retail%2flanguage-masters%2fen%2fuser&group.1_group.path.self=true&group.2_group.p.not=true&group.2_group.path=%2fcontent%2fwe-retail%2flanguage-masters%2fen%2fabout-us&group.2_group.path.self=true&path=%2fcontent%2fwe-retail%2flanguage-masters%2fen&path.flat=true](http://localhost:4502/bin/querybuilder.json?1_property=%40jcr%3acontent%2fsling%3aresourceType&1_property.value=weretail%2fcomponents%2fstructure%2fpage&group.1_group.p.not=true&group.1_group.path=%2fcontent%2fwe-retail%2flanguage-masters%2fen%2fuser&group.1_group.path.self=true&group.2_group.p.not=true&group.2_group.path=%2fcontent%2fwe-retail%2flanguage-masters%2fen%2fabout-us&group.2_group.path.self=true&path=%2fcontent%2fwe-retail%2flanguage-masters%2fen&path.flat=true)
+
 Search for properties
 
 Here you are searching for all pages of a given template, using the cq:template property:
