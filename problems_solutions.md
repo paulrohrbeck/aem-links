@@ -231,3 +231,18 @@ Seen in AEM 6.2 SP1. For me, it was a `cq:policy` property that was pointing to 
 As seen via `top` command, the io wait `wa` is constantly above 30%.
 
 In our case, it was related to MSM rollouts that got messed up somehow so they bogged down the system. We noticed this by looking at the events via `/system/console/events`
+
+---
+
+#### i18n dictionary cache is outdated / new strings don't show up translated
+
+Only solutions I've found were faking a change and deploying it so that AEM realizes there's a change OR restarting the `Apache Sling Internationalization Support (org.apache.sling.i18n)` bundle.
+
+---
+
+#### Maven build to self-signed https author/publish instance (like AMS)
+
+Error: 
+```[ERROR] Failed to execute goal com.day.jcr.vault:content-package-maven-plugin:0.5.1:install (install-content-package) on project aem-view: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target```
+
+Solution: Add `-Dvault.relaxedSSLCheck=true` to `mvn` command.
