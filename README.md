@@ -177,6 +177,8 @@ This is more of a short cut for people who don't want to navigate through the AE
 
 * [Adobe Marketing Cloud Open Developer](http://adobe-marketing-cloud.github.io/) - directory for tools
 * [Access Control Tool](https://github.com/Netcentric/accesscontroltool)
+* [AEM Permission Management](https://github.com/Cognifide/APM)
+* [Felix Search Web Console Plugin](https://github.com/neva-dev/felix-search-webconsole-plugin) - decompiler and more
 * [Sling Dynamic Include](https://github.com/Cognifide/Sling-Dynamic-Include)
 * [AEM Tooling Plugin for Intellij IDEA](https://github.com/headwirecom/aem-ide-tooling-4-intellij)
 * [NEBA](https://github.com/unic/neba) - integration of Spring Framework into Apache Sling
