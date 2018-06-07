@@ -138,6 +138,7 @@ AEM Links Index
 ### Development Tools
 * [AEMSync](https://github.com/gavoja/aemsync) - AEM Synchronization Tool, the tool pushes code changes to AEM instance(s) upon a file change (Single most useful tool for AEM development)
 * [Gulp Slang](https://github.com/mnlsn/gulp-slang) - Gulp process CURLs content straight into JCR
+* [Gradle AEM Plugin](https://github.com/Cognifide/gradle-aem-plugin) - Allows to easily copy JCR content between remote instances. Provides advanced JCR content synchronization (with cleaning) from running instance to local file system.
 * [Grunt Clientlibify](https://github.com/mickleroy/grunt-clientlibify) - Grunt plugin for integrating AEM with a styleguide
 * [Grunt Smart VLT](https://github.com/Ariel-Rodriguez/grunt-smart-vlt) - A simple grunt interface for Adobe VLT (last commit >2 years)
 * [Vagrant AEM](https://github.com/bstopp/vagrant-aem) - Vagrant boxes for AEM
