@@ -9,8 +9,8 @@ Gradle Cheat Sheet
 
 ### Common commands
 
-* `sh gradlew :build` - check if maven is able to build package
-* `sh gradlew :aemDeploy` - install package to defined AEM instance
+* `sh gradlew :build` - check if Gradle is able to build package
+* `sh gradlew :aemDeploy` - install package to defined AEM instance(s)
 
 ### Init new project
 
