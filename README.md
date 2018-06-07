@@ -7,6 +7,7 @@ AEM Links Index
 * [AEM Console Cheat Sheet](console_cheatsheet.md)
 * [Sling Curl Command Cheat Sheet](curl_cheatsheet.md)
 * [Dispatcher Cheat Sheet](dispatcher_cheatsheet.md)
+* [Gradle Cheat Sheet](gradle_cheatsheet.md)
 * [Maven Cheat Sheet](maven_cheatsheet.md)
 * [Problems & Solutions](problems_solutions.md)
 * [Query Builder Cheat Sheet](querybuilder_cheatsheet.md)
