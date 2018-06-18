@@ -535,7 +535,7 @@ curl -s -u admin:admin http://localhost:4502/bin/querybuilder.json?path=/var/eve
 
 Clear JSP Cache
 ```bash
-curl -s -u admin:admin -X POST http://localhost:4502/system/console/slingjsp
+curl -s -u admin:admin -H User-Agent:curl -X POST http://localhost:4502/system/console/slingjsp
 ```
 
 ### System Console
@@ -552,7 +552,7 @@ curl -u admin:admin -d "shutdown_type=Restart" http://localhost:4502/system/cons
 ### Enable CRX DE
 enable wedav
 ```bash
-curl -u admin:admin -H User-Agent:curl -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
+curl -u admin:admin -H User-Agent:curl -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" -F"../../jcr:primaryType=sling:Folder" -F"../jcr:primaryType=sling:Folder" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
 ```
 
 disable wedav
