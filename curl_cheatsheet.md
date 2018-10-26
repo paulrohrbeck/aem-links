@@ -570,3 +570,9 @@ remove Query Debug log file
 ```bash
 curl -u admin:admin -H User-Agent:curl -F":operation=delete" http://localhost:4502/apps/system/config/org.apache.sling.commons.log.LogManager.factory.config-query.config
 ```
+
+count Session Statistics in your instance
+```bash
+curl -u admin:admin http://localhost:4502/system/console/jmx | grep -o SessionStat | wc -l
+```
+
