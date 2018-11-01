@@ -582,3 +582,8 @@ count Admin Session Statistics on your instance
 curl -u admin:admin http://192.168.27.2:4502/system/console/jmx | grep -o "&quot;admin@session" | wc -l
 ```
 
+Start workflow
+
+```bash
+ curl -u admin:admin -H User-Agent:curl -F "payload=/content/aemdesign-showcase/en/component/lists/page-list" -F "payloadType=JCR_PATH" -F "workflowTitle=CurlTitle" -F "startComment=CurlComment" -F"model=/var/workflow/models/test1" http://192.168.27.2:4502/etc/workflow/instances
+```
