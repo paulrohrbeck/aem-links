@@ -7,6 +7,7 @@ AEM Links Index
 * [AEM Console Cheat Sheet](console_cheatsheet.md)
 * [Sling Curl Command Cheat Sheet](curl_cheatsheet.md)
 * [Dispatcher Cheat Sheet](dispatcher_cheatsheet.md)
+* [Gradle Cheat Sheet](gradle_cheatsheet.md)
 * [Maven Cheat Sheet](maven_cheatsheet.md)
 * [Problems & Solutions](problems_solutions.md)
 * [Query Builder Cheat Sheet](querybuilder_cheatsheet.md)
@@ -137,6 +138,7 @@ AEM Links Index
 ### Development Tools
 * [AEMSync](https://github.com/gavoja/aemsync) - AEM Synchronization Tool, the tool pushes code changes to AEM instance(s) upon a file change (Single most useful tool for AEM development)
 * [Gulp Slang](https://github.com/mnlsn/gulp-slang) - Gulp process CURLs content straight into JCR
+* [Gradle AEM Plugin](https://github.com/Cognifide/gradle-aem-plugin) - Allows to easily copy JCR content between remote instances. Provides advanced JCR content synchronization (with cleaning) from running instance to local file system.
 * [Grunt Clientlibify](https://github.com/mickleroy/grunt-clientlibify) - Grunt plugin for integrating AEM with a styleguide
 * [Grunt Smart VLT](https://github.com/Ariel-Rodriguez/grunt-smart-vlt) - A simple grunt interface for Adobe VLT (last commit >2 years)
 * [Vagrant AEM](https://github.com/bstopp/vagrant-aem) - Vagrant boxes for AEM
@@ -176,6 +178,8 @@ This is more of a short cut for people who don't want to navigate through the AE
 
 * [Adobe Marketing Cloud Open Developer](http://adobe-marketing-cloud.github.io/) - directory for tools
 * [Access Control Tool](https://github.com/Netcentric/accesscontroltool)
+* [AEM Permission Management](https://github.com/Cognifide/APM)
+* [Felix Search Web Console Plugin](https://github.com/neva-dev/felix-search-webconsole-plugin) - decompiler and more
 * [Sling Dynamic Include](https://github.com/Cognifide/Sling-Dynamic-Include)
 * [AEM Tooling Plugin for Intellij IDEA](https://github.com/headwirecom/aem-ide-tooling-4-intellij)
 * [NEBA](https://github.com/unic/neba) - integration of Spring Framework into Apache Sling

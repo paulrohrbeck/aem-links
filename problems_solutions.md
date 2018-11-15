@@ -246,3 +246,16 @@ Error:
 ```[ERROR] Failed to execute goal com.day.jcr.vault:content-package-maven-plugin:0.5.1:install (install-content-package) on project aem-view: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target```
 
 Solution: Add `-Dvault.relaxedSSLCheck=true` to `mvn` command.
+
+---
+
+#### SAML Authentication Handler issue
+SAML request to /saml_login returned 403 Forbidden when the user was already logged in. Only happened when config was installed via `config.author` folder and not when the config is manually saved in the configMgr.
+
+- Make sure all config values have the right type: `{Boolean}`, `{Long}`, `[]`
+- For me one issue was that `service.ranking` shouldn't be included in the config at all because then it got ranked lower in the list of authentication handlers (see `/system/console/slingauth`). Needs to be above the Token Authentication Handler to work. Check `/system/console/events` for `LOGIN` events and see what authenticator is used.
+
+---
+
+#### `SlingException: Cannot get DefaultSlingScript: null` seemingly for `cloudservices` resource
+Problem in my case was that the root /content/* resource wasn't replicated so when it traversed up the three it caused a `NullPointerException`.
