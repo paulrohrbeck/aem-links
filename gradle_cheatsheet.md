@@ -3,9 +3,9 @@ Gradle Cheat Sheet
 
 ### Links
 
-* [Gradle AEM Plugin](https://github.com/Cognifide/gradle-aem-plugin>) (documentation)
-* [Gradle AEM Multi](https://github.com/Cognifide/gradle-aem-multi>) (multi-module project archetype)
-* [Gradle AEM Single](https://github.com/Cognifide/gradle-aem-plugin) (single-module project archetype)
+* [Gradle AEM Plugin](https://github.com/Cognifide/gradle-aem-plugin) (documentation)
+* [Gradle AEM Multi](https://github.com/Cognifide/gradle-aem-multi) (multi-module project archetype)
+* [Gradle AEM Single](https://github.com/Cognifide/gradle-aem-single) (single-module project archetype)
 
 ### Common commands
 
