@@ -9,6 +9,13 @@ Query Builder Cheat Sheet
 ### References
 * [CQ Queries Demystified](http://itgumby.github.io/blog/2014/10/cq-queries-demystified/)
 * [Tuning your JCR Queries for the AEM & Jackrabbit OAK](http://tech.ethomasjoseph.com/2015/03/tuning-your-jcr-queries-for-aem.html)
+* [AEM Query Builder : Comprehensive Guide](http://www.aemcq5tutorials.com/tutorials/adobe-aem-cq5-tutorials/aem-query-builder/)
+* [Tuning your JCR Queries for the AEM & Jackrabbit OAK](https://ethomasjoseph.com/developerhub/blog/2015/03/tuning-your-jcr-queries-for-aem.html)
+* [Hashim Khan - Query Builder](https://hashimkhan.in/aem-adobecq5-code-templates/query-builder/)
+* [JCR Score - Similarity](http://lucene.apache.org/core/3_0_3/api/core/org/apache/lucene/search/Similarity.html)
+* [Lucene Scoring](http://www.lucenetutorial.com/advanced-topics/scoring.html)
+* [Sample Filtering Predicate Evaluator](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/bundle/src/main/java/com/adobe/acs/samples/search/querybuilder/impl/SampleFilteringPredicateEvaluator.java)
+* [CQ5 Querybuilder simplified](http://aemcq5.blogspot.com/2014/11/cq5-querybuilder-simplified.html)
 
 ### Documentation
 * [JCR 2.0 Spec - Query](http://www.day.com/specs/jcr/2.0/6_Query.html)
@@ -21,6 +28,7 @@ Query Builder Cheat Sheet
 * [CRX 2.3 Search Features](https://docs.adobe.com/docs/en/crx/2-3/developing/searching_in_crx.html)
 * [AEM 5.6.1 Search Features](https://docs.adobe.com/docs/en/cq/5-6-1/core/developing/searching_in_crx.html)
 * [Apache Lucene - Query Parser Syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html)
+* [Query Builder API](https://helpx.adobe.com/au/experience-manager/6-4/sites/developing/using/querybuilder-api.html)
 
 ### Query Builder Samples
 * [Operation Exists](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=path%3D%2Fcontent%2Fgeometrixx%0D%0Atype%3Dcq%3APage%0D%0Aproperty%3Djcr%3Acontent%2Fcq%3Atoolbars%0D%0Aproperty.operation%3Dexists%0D%0A)
@@ -59,6 +67,65 @@ These are the keywords that can be used in the Query Builder when creating predi
 * fulltext
 * boolproperty
 * group
+
+Full list can be found in the [console](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+
+
+### Query Syntax
+
+Following is the list of all available keywords that can be used in a a query
+
+| Keyword                       | Description                                                                           |
+|-------------------------------|---------------------------------------------------------------------------------------|
+| path                          | This is used to search under a  particular hierarchy only. |
+| path.self=true                | If true searches the subtree including the main node given in path,  if false searches the subtree only. |
+| path.exact=true               | If true exact path is matched, if false all descendants are included. |
+| path.flat=true                | If true searches only the direct children . |
+| type                          | It is used for searching for a  particular nodetype only. |
+| property                      | This is used to search for a specific property only. |
+| property.value                | the property value to search . Mutilple values of a particular property could be given using ```property.N_value=X```, where N is number from 1 to N. |
+| property.depth                | The number of additional levels to search under a node. eg. if property.depth=2 then the property is searched under <br>```(@jcr:title = 'foo' or */@jcr:title = 'foo' or */*/@jcr:title = 'foo' )``` |
+| property.and                  |  If multiple properties are present , by default an OR operator is applied. If you want an AND ,  you may use property.and=true |
+| property.operation            | “equals” for exact match (default), “unequals” for unequality comparison, “like” for using the jcr:like xpath function , “not” for no match , (value param will be ignored) or “exists” for existence match .(value can be true – property must exist). [Example](#check-if-property-exist-in-sub-node) |
+| property.operation=exists     | check if property exists |
+| property.operation=not        | check if property does not exists |
+| property.operation=like       | check if property is like value |
+| property.operation=equals     | check if property is equals value |
+| property.operation=unequals   | check if property is does not equal value |
+| fulltext                      | It is used to search terms for fulltext search |
+| fulltext.relPath              | the relative path to search in (eg. property or subnode) eg. ```fulltext.relPath=jcr:content``` or ```fulltext.relPath=jcr:content/@cq:tags``` |
+| daterange                     | This predicate is used to search a date property range. |
+| daterange.property            | Specify a property which is searched. |
+| daterange.lowerBound          |  Fix a lower bound eg. 2010-07-25 |
+| daterange.lowerOperation      | “>” (default) or “>=” |
+| daterange.upperBound          | Fix a lower bound eg. 2013-07-26 |
+| daterange.upperOperation      | “<” (default) or “<=” |
+| relativedaterange             | It is an extension of daterange which uses relative offsets to server time. It also supports 1s 2m 3h 4d 5w 6M 7y |
+| relativedaterange.lowerBound  | Lower bound offset, default=0 |
+| relativedaterange.upperBound  | Upper bound Offset . |
+| nodename                      | This is used to search exact nodenames for the result set. It allows few wildcards like: ```nodename=text```, will search for any character or no character after text. ```nodename=text?``` will search for any character after text. |
+| tagid                         | This predicate is used to search for a particular tag on a page. You may specify the exact tagid of a tag in this predicate |
+| tagid.property                | this may be used to specify the path of node where tags are stored. |
+| group                         | This predicate is used to create logical conditions in your query. You can create complex conditions using OR & AND operators in different groups.  [Example 1](#group-usage-1) [Example 2](#group-usage-2) |
+| group.p.or=true               | treat group options as OR |
+| group.p.and=true              | treat group options as AND |
+| group.fulltext                | search group using full text |
+| orderBy                       | This predicate is used to sort the result sets obtained in the query. e.g. ```orderby=@jcr:score``` or ```orderby=@jcr:content/cq:lastModified``` [Multiple ordering](#multiple-ordering) |
+| orderby.sort                  | You may define the sorting way for the search results e.g.  desc for descending and “” for ascending. ```orderby.desc=true```  or ```orderby.sort=desc``` for descending and ```orderby.asc=true``` or ```orderby.sort=asc``` for ascending |
+| orderby.desc=true             | sort descending |
+| orderby.asc=true              | sort ascending |
+| orderby.case=ignore           | support case insensitive |
+| orderby=custompredicate       | order using custom predicate, try [Available Predicates](#available-predicates) |
+| orderby=path                  | order by path predicate |
+| p.hits=full                   | Use this when you want to return all the properties in a node. |
+| p.hits=selective              | Use this if you want to return selective properties in search result. |
+| p.properties                  | jcr:primaryType Example |
+| p.nodedepth                   | Use this when you need properties of a node and its child nodes in the same search result. Use this with ```p.hits=full``` |
+| p.facets=true                 | This will be used to Search Facets based search for the assigned Query. If you want to calculate the count of tags which are present in your search result or you want to know how many templates for a particular page are there etc, you may go with Facets based search (Example)[#facets-results] |
+| p.offset                      | defines start of index means from which index you want to fetch records from query result. |
+| p.limit                       | defines page size. In simple words how many records you want to fetch. |
+| p.guesstotal                  | The purpose of p.guessTotal parameter is to return the appropriate number of results that can be shown by combining the minimum viable p.offset and p.limit values. The advantage of using this parameter is improved performance with large result sets. This avoids calculating the full total (e.g calling result.getSize()) and reading the entire result set. (Example)[#guess-total] |
+| p.excerpt=true                | return page full text excerpt |
 
 ### Samples
 
@@ -245,34 +312,42 @@ For example, a Query stored to the path /mypath/getfiles can be loaded by the fo
 Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 ```
 
-## More Examples
-[Query Builder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html)
+
+## Query Sample Fragments
 
 ```
 type=nt:file
 nodename=*.jar
 orderby=@jcr:content/jcr:lastModified
 orderby.sort=desc
+```
+### Check property Like value
 
-# LIKE
+```
 property=propertyName
 property.operation=like
 property.value=%value%
+```
 
-# check if a property exists:
+### Check if a property exists:
+
+```
 property=propertyName
 property.operation=exists
 property.value=true
+```
 
-# set this higher so you can actually see all the results and not just 10
-p.limit=1000
+### Date ranges:
 
-# date ranges:
+```
 daterange.property=cq:lastReplicated
 daterange.lowerBound=2013-01-01T00:00:00.000+01:00
 daterange.lowerOperation=>=
+```
 
-# show pages that have been modified since they were last published
+### Show pages that have been modified since they were last published
+
+```
 path=/content/geometrixx
 property=cq:lastModifiedBy
 property.value=reference-adjustment-service
@@ -281,8 +356,247 @@ dateComparison.property2=cq:lastReplicated
 dateComparison.operation=greater
 ```
 
+### Grab all assets and return the path, title and tags
 
 ```
-Grab all assets and return the path, title and tags:
-http://localhost:4502/bin/querybuilder.json?type=dam:Asset&path=/content/dam&p.limit=-1&p.hits=selective&p.properties=jcr:path%20jcr:content/metadata/cq:tags%20jcr:content/metadata/dc:title
+type=dam:Asset
+path=/content/dam
+p.limit=-1
+p.hits=selective
+p.properties=jcr:path%20jcr:content/metadata/cq:tags%20jcr:content/metadata/dc:title
+```
+
+### Check if property exist in sub node
+
+```
+path=/content/dam
+nodename=metadata
+1_property=tiff:ImageHeight
+1_property.value=false
+2_property=tiff:ImageWidth
+2_property.value=false
+1_property.operation=exists
+2_property.operation=exists
+property.and=true
+```
+
+### Multiple Predicates at the same time
+
+```
+type=cq:Page
+1_property=jcr:content/cq:template
+1_property.value=/apps/geometrixx/templates/homepage
+2_property=jcr:content/jcr:title
+2_property.value=English
+```
+
+### Group Usage 1
+
+```
+fulltext=Management
+group.p.or=true
+group.1_path=/content/geometrixx/en
+group.2_path=/content/dam/geometrixx
+```
+
+Final Xpath query will be created as **(fulltext AND (path=… OR path=…))**
+
+### Group Usage 2
+
+```
+fulltext=Management
+group.p.or=true
+group.1_group.path=/content/geometrixx/en
+group.1_group.type=cq:Page
+group.2_group.path=/content/dam/geometrixx
+group.2_group.type=dam:Asset
+```
+
+Final Xpath query will be created as **(fulltext AND ( (path= AND type=) OR (path= AND type=) ))**
+
+
+### Multiple ordering
+
+```
+1_orderby=@cq:tags
+2_orderby=@cq:lastModified
+3_orderby=nodename
+```
+
+### Guess total
+
+```
+path=/content
+1_property=sling:resourceType
+1_property.value=foundation/components/text
+1_property.operation=like
+p.guessTotal=true
+orderby:path
+```
+
+### Check if property is not empty string
+
+```
+property.value=%_%
+```
+
+### Facets results
+
+```
+type=cq:Page
+orderby=@jcr:score
+orderby.sort=desc
+1_property=jcr:content/cq:tags
+2_property=jcr:content/cq:template
+2_property.value=/apps/geometrixx/templates/contentpage
+p.facets=true
+```
+
+# Facets
+
+
+## Extract Facets for your search result
+
+```java
+Map<String, Facet> facets = result.getFacets();
+for (String key : facets.keySet()) {
+    Facet facet = facets.get(key);
+    if (facet.getContainsHit()) {
+        for (Bucket bucket : facet.getBuckets()) {
+            long count = bucket.getCount();
+            Map<String, String> params = bucket.getPredicate().getParameters();
+            for (String k : params.keySet()) {
+                out.println("<br>k:"+k);
+            }
+        }
+    }
+}
+```
+
+
+# Custom Predicates
+
+Broadly there are 2 kinds of Predicate Evaluators which can be used to create new predicates as per Business need.
+
+
+## XPath Predicate
+
+This is used to create a Backend XPATH Query using the new custom predicates which can be defined as per need. Many of the inbuilt CQ predicates are XPATH predicates. Notice that in XPATH Predicate Evaluator the overriden method canXpath() should return true while canFilter() should return false.  Use the below code snippet to create Custom Predicates
+
+```java
+
+import org.apache.felix.scr.annotations.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.day.cq.search.Predicate;
+import com.day.cq.search.eval.AbstractPredicateEvaluator;
+import com.day.cq.search.eval.EvaluationContext;
+
+/**
+* <code>OriginPredicateEvaluator</code>queries the Livecopy status of a page.
+
+*This property is used to find the Livecopy status of the page.
+*origin.value=disconnected gives the XPATH query as jcr:content/@jcr:mixinTypes='cq:LiveSyncCancelled'
+*origin.value=locally gives the XPATH query as jcr:content/@jcr:mixinTypes!='cq:LiveSync'
+*origin.value=inheritted gives the XPATH query as jcr:content/@jcr:mixinTypes='cq:LiveSync'
+*/
+
+@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/origin")
+public class OriginPredicateEvaluator extends AbstractPredicateEvaluator {
+    static final String PE_NAME = "origin";
+    static final String JCRCONTENT_JCRMIXIN = "jcr:content/@jcr:mixinTypes";
+
+    static final String PREDICATE_VALUE = "value";
+    static final String PREDICATE_LIVESYNCCANC = "'cq:LiveSyncCancelled'";
+    static final String PREDICATE_LIVESYNC = "'cq:LiveSync'";
+
+    static final String OP_EQUALS = "=";
+    static final String OP_NOT_EQUALS = "!=";
+
+    private static final Logger logger = LoggerFactory.getLogger(OriginPredicateEvaluator.class);
+
+    @Override
+    public String getXPathExpression(Predicate predicate, EvaluationContext context) {
+
+        String value = predicate.get(PREDICATE_VALUE);
+
+        StringBuilder sb = new StringBuilder();
+
+        if(value != null){
+            if (value.equalsIgnoreCase("inheritted")) {
+                sb.append(JCRCONTENT_JCRMIXIN).append(OP_EQUALS);
+                sb.append(PREDICATE_LIVESYNC);
+            }
+            if (value.equalsIgnoreCase("disconnected")) {
+                sb.append(JCRCONTENT_JCRMIXIN).append(OP_EQUALS);
+                sb.append(PREDICATE_LIVESYNCCANC);
+            }
+            if (value.equalsIgnoreCase("locally")) {
+                sb.append(JCRCONTENT_JCRMIXIN).append(OP_NOT_EQUALS);
+                sb.append(PREDICATE_LIVESYNC);
+            }
+        }
+
+        String xpath = sb.toString();
+
+        logger.debug("**********XPATH*******" + xpath);
+
+        return xpath;
+    }
+
+    @Override
+    public boolean canXpath(Predicate predicate, EvaluationContext context) {
+        return true;
+    }
+
+    @Override
+    public boolean canFilter(Predicate predicate, EvaluationContext context) {
+        return false;
+    }
+}
+```
+
+## Filter Predicate
+
+This predicate is used whenever you want to Filter out some results which are not needed in the end Search Result. Notice that in Filter Predicate Evaluator the overriden method canXpath() should return false while canFilter() should return true.
+
+```java
+
+import javax.jcr.query.Row;
+
+import org.apache.felix.scr.annotations.Component;
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.resource.collection.ResourceCollection;
+
+import com.day.cq.search.Predicate;
+
+@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/samplepredicate")
+public class SampleFilterPredicateEvaluator extends AbstractPredicateEvaluator {
+    public static final String SAMPLE = "samplepredicate";
+
+    @Override
+    public boolean includes(Predicate p, Row row, EvaluationContext context) {
+        if (!p.hasNonEmptyValue(SAMPLE)) {
+        return true;
+        }
+        /* Write some code logic here as per the condition:
+        Return true for a favourable Condition for keeping the entity in Search Results.
+        Return false for an unfavourable Condition for removing the entity from the Search Results.
+        */
+
+        return false;
+    }
+    @Override
+    public boolean canXpath(Predicate predicate, EvaluationContext context) {
+        return false;
+    }
+
+    @Override
+    public boolean canFilter(Predicate predicate, EvaluationContext context) {
+        return true;
+    }
+
+}
+
 ```
