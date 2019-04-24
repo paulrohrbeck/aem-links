@@ -116,6 +116,13 @@ Additional run modes:
 
 [(More info)](https://helpx.adobe.com/experience-manager/kb/RunModeSetUp.html)
 
+Check current run modes of your instance:
+
+1. Go to your Felix console (/system/console).
+2. Click on “Sling Settings” (/system/console/status-slingsettings)
+
+[(More info)](http://blogs.adobe.com/experiencedelivers/experience-management/how-to-find-the-runmodes/)
+
 ### Troubleshooting
 
 Possible memory leaks? ```-XX:+HeapDumpOnOutOfMemoryError```
