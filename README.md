@@ -37,7 +37,7 @@ AEM Links Index
 * [Code Monkey](http://blog.kristianwright.com/)
 * [Things on a content management system](http://cqdump.wordpress.com/)
 * [Adobe CQ (by Himanshu Jain )](http://cqinnovator.blogspot.in/?view=classic)
-* [Cititech Blog](http://www.citytechinc.com/us/en/blog.html)
+* [ICF Next Engineering Blog](https://engineering.icf.com/)
 * [cqwemblog](http://cqwemblog.wordpress.com/)
 * [AEM Stuff](http://www.aemstuff.com/)
 * [Six Dimensions](http://labs.sixdimensions.com/blog/)
