@@ -10,7 +10,7 @@ General
 * [Backup Console](http://localhost:4502/libs/granite/backup/content/admin.html)
 * [Web Console](http://localhost:4502/system/console/configMgr)
 * [OSGi Bundles Console](http://localhost:4502/system/console/bundles)
-* [Query Debugger Tool](localhost:4502/libs/cq/search/content/querydebug.html)
+* [Query Debugger Tool](http://localhost:4502/libs/cq/search/content/querydebug.html)
 * [Search UI](http://localhost:4502/crx/explorer/ui/search.jsp?Path=&amp;Query=)
 * [Display Client Libraries in use by Component](http://localhost:4502/libs/granite/ui/content/dumplibs.html)
 * [JVM Memory Usage](http://localhost:4502/system/console/memoryusage)

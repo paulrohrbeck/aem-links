@@ -259,3 +259,22 @@ SAML request to /saml_login returned 403 Forbidden when the user was already log
 
 #### `SlingException: Cannot get DefaultSlingScript: null` seemingly for `cloudservices` resource
 Problem in my case was that the root /content/* resource wasn't replicated so when it traversed up the three it caused a `NullPointerException`.
+
+
+---
+
+#### How to create an OSGi bundle that reads configuration values 
+
+At high level you need to create:
+- Service Config Interface
+- Service Interface
+- Service Implementation that "implements" you Service Interface and has @Designate(ocd = <Service Config Interface.class>)
+
+Notes:
+- if you want to have config entries that have "." eg "host.ip" you need use "_" in the Service Config Interface.
+ 
+Reference:
+ 
+[Reading OSGi Configuration Values for Adobe Experience Manager 6.3](https://helpx.adobe.com/experience-manager/using/osgi_config63.html) 
+[Official OSGi Declarative Services Annotations in AEM](http://www.nateyolles.com/blog/2017/05/osgi-declarative-services-annotations-in-aem)
+
