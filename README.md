@@ -17,49 +17,51 @@ AEM Links Index
 
 ### Start Here
 * [Adobe Experience Manager Onboarding resources](https://helpx.adobe.com/experience-manager/using/onboardAEM.html)
-* [Experiencing Adobe Experience Manger - Day CQ](http://experience-aem.blogspot.com/2013/08/in-blog-experiencing-adobe-experience.html)
-* [My HUGE list of AEM bookmarks](http://aemtips.blogspot.com/2013/05/my-huge-list-of-aem-bookmarks.html)
+* [AEM project archetype](https://github.com/adobe/aem-project-archetype) by Adobe
 * [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki)
 * [We.Retail](https://docs.adobe.com/docs/en/aem/6-2/develop/best-practices/we-retail.html) - Adobe's reference site implementation
 
-### Blogs (by Adobe)
-* [Experience Delivers](http://experiencedelivers.adobe.com/cemblog/en/experiencedelivers.html)
-* [Adobe Content Management](http://blogs.adobe.com/contentmanagement/) *
-
-### Blogs (3rd party)
-* [Adobe CQ @ Reddit](http://www.reddit.com/r/adobecq/)
-* [Scott's Digital Community](http://scottsdigitalcommunity.blogspot.ca/)
-* [Wem Blog](http://www.wemblog.com/)
-* [CQ-OPS](http://cq-ops.tumblr.com/)
-* [Experience Managed](http://experiencemanaged.com/) - by [Chris Millar](https://twitter.com/auniverseaway)
+### Blogs
+* [Things on a content management system](http://cqdump.wordpress.com/)
 * [Daniel Klco's Blog](http://www.danklco.com/)
+* [AEM @ Reddit](https://www.reddit.com/r/aem/), [Adobe CQ @ Reddit](http://www.reddit.com/r/adobecq/)
+* [Scott's Digital Community](http://scottsdigitalcommunity.blogspot.ca/)
+* [CQ-OPS](http://cq-ops.tumblr.com/)
+* [Experience Managed](http://experiencemanaged.com/)
+* [ICF Next Engineering Blog](https://engineering.icf.com/)
+* [CQ5 | AEM6 Solutions and Suggestions](http://aem6solutions.blogspot.com.au/)
+* [Nate Yolles' Blog](http://www.nateyolles.com/blog)
+* [Bounteous AEM Blog](https://www.bounteous.com/insights/?category=platforms/adobe/adobe-experience-manager&secondary_category=All)
+
+### Blogs (slightly outdated but good historical content)
+* [Wem Blog](http://www.wemblog.com/)
 * [The Real CQ](http://therealcq.blogspot.de/)
 * [Code Monkey](http://blog.kristianwright.com/)
-* [Things on a content management system](http://cqdump.wordpress.com/)
-* [Adobe CQ (by Himanshu Jain )](http://cqinnovator.blogspot.in/?view=classic)
-* [ICF Next Engineering Blog](https://engineering.icf.com/)
 * [cqwemblog](http://cqwemblog.wordpress.com/)
 * [AEM Stuff](http://www.aemstuff.com/)
-* [Six Dimensions](http://labs.sixdimensions.com/blog/)
-* [A WCM journey with Day/Adobe CQ](https://balawcm.wordpress.com/)
-* [AEM Club](http://adobeaemclub.com/)
-* [Answers to Frequently Asked Questions in AEM](http://aemfaq.blogspot.com.au/)
-* [DIGITAL PROJECTIONS](https://chanchal.wordpress.com/)
-* [Eyelock](http://www.eyelock.net/)
-* [ACQ | mobi.fm](http://mobi.fm/blog/category/acq/) *
-* [Ruben's Blog](http://ruben42.wordpress.com/) *
-* [Adobe Experience Manager Blog](http://aemtips.blogspot.com.au/)
 * [AEM Development Mastery](http://www.aemmastery.com)
-* [CQ5 | AEM6 Solutions and Suggestions](http://aem6solutions.blogspot.com.au/)
-* [AEM Quickstart](https://aemquickstart.blogspot.com.au/)
-* [Nate Yolles' Blog](http://www.nateyolles.com/blog)
+* [Adobe Experience Manager Podcast](http://aempodcast.com/)
+
+### Twitter accounts to follow
+* [Jörg Hoh](https://twitter.com/joerghoh)
+* [Daniel Klco](https://twitter.com/KlcoDanR)
+* [Chris Millar](https://twitter.com/auniverseaway)
+* [Gaston Gonzalez](https://twitter.com/therealgaston)
+* [Wim Symons](https://twitter.com/wimsymons)
+* [Brett Birschbach](https://twitter.com/BirschbachBrett)
+* [Gabriel Walt](https://twitter.com/GabrielWalt)
+* [AEM Guru](https://twitter.com/AEM_Guru)
+* [David](https://twitter.com/unicornless)
+* [Mark Adamcin](https://twitter.com/MarkAdamcin)
+* [Nate Yolles](https://twitter.com/nateyolles)
+* [Justin Edelson](https://twitter.com/justinedelson)
+* [Cedric Huesler](https://twitter.com/keepthebyte)
+* [Bounteous Adobe](https://twitter.com/bounteousadobe)
 
 ### Component Development
-* [Adobe Marketing Cloud Open Developer Projects](http://adobe-marketing-cloud.github.io/index.html#projects)
-* [CQ5 Widgets API](https://docs.adobe.com/content/docs/en/cq/5-6-1/widgets-api/index.html)
-* [Sightly Style Guide](https://github.com/Netcentric/aem-sightly-style-guide)
+* [HTL (fka Sightly) Style Guide](https://github.com/Netcentric/aem-htl-style-guide)
 
-### Adobe Consulting Services
+### Adobe Consulting Services (ACS)
 * [Commons](http://adobe-consulting-services.github.io/acs-aem-commons/) - AEM development and component toolkit for bootstrapping any AEM project
 * [Tools](http://adobe-consulting-services.github.io/acs-aem-tools/) - Set of tools for AEM to make developer lives easier
 * [Samples](http://adobe-consulting-services.github.io/acs-aem-samples) - Well commented code samples of AEM building blocks to help educate AEM developers.
@@ -72,45 +74,33 @@ AEM Links Index
 * [Carty](http://cognifide.github.io/Carty/) - Visual Sling mappings editor
 
 ### Documentation
-* [CRX 2.3](http://docs.adobe.com/docs/en/crx/2-3.html)
-* [5.6.1](http://docs.adobe.com/docs/en/cq/5-6-1.html)
-* [6.0](http://docs.adobe.com/content/docs/en/aem/6-0.html)
 * [6.1](http://docs.adobe.com/content/docs/en/aem/6-1.html)
-* [6.2](https://docs.adobe.com/content/docs/en/aem/6-2.html)
-* [6.3](https://docs.adobe.com/content/docs/en/aem/6-3.html)
+* [6.2](https://helpx.adobe.com/support/experience-manager/6-2.html)
+* [6.3](https://helpx.adobe.com/support/experience-manager/6-3.html)
+* [6.4](https://helpx.adobe.com/support/experience-manager/6-4.html)
+* [6.5](https://helpx.adobe.com/support/experience-manager/6-5.html)
 
 ### Events
-* [Adobe's AEM Technologists](https://communities.adobe.com/en/communities/aem_technologistsdevelopersarchitects/home.html)
-* [Circuit](http://www.circuitdevcon.com)
 * [Adobe Summit](http://summit.adobe.com/)
 * [Evolve](http://evolve.3sharecorp.com/)
 * [adapt.to](http://adapt.to/)
-* There are a lof of [meetups](http://www.meetup.com/find/) all over the world. Come join us in [San Francisco](http://www.meetup.com/Adobe-Experience-Manager-Adobe-Marketing-Cloud).
+* There are a lof of [meetups](http://www.meetup.com/find/) all over the world. Come join us in [San Francisco](https://www.meetup.com/Adobe-Experience-Manager-Adobe-Marketing-Cloud).
 
 ### Forums, Help
-* [Official Adobe Experience Manager Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+* [Official Adobe Experience Manager Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
 * [Stackoverflow](http://stackoverflow.com/questions/tagged/aem)
-
-### General
-* [Adobe Experience Manager help](http://helpx.adobe.com/marketing-cloud/experience-manager.html) (hub for all sorts of information, webinars, etc.)
-* [Adobe CQ Help / Help and tutorials](http://helpx.adobe.com/experience-manager/topics.html)
-* [David's Model](http://wiki.apache.org/jackrabbit/DavidsModel)
 
 ### Java
 * [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
 
-### Maven
-* [AEM project archetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype) by Adobe
-* [CQ Blueprints](http://www.cqblueprints.com/)
+### AEM as a Cloud Service
+* [Migration guides](https://github.com/adobe/aem-enablement/tree/master/AEMAsACloudService)
+* [Development Guidelines](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 
 ### Quick References
-* [AEM 5.6 - Quick Reference](http://adobe-consulting-services.github.io/aemcasts/qr.html)
 * [Frequently Used CQ URLs](http://cq5geeks.blogspot.com/2013/02/frequently-used-cq-urls.html)
-* [XSS Cheat Sheet](https://docs.adobe.com/content/docs/en/cq/5-6-1/developing/securitychecklist/_jcr_content/par/download/file.res/xss_cheat_sheet.pdf)
 * [Apache Sling Cheat Sheet](https://docs.adobe.com/docs/en/aem/6-2/develop/platform/sling-cheatsheet.html)
-* [Expression Language (EL)](http://docs.oracle.com/javaee/1.4/tutorial/doc/JSPIntro7.html)
-* [JSP XML Cheat Sheet](http://ndpsoftware.com/JSPXMLCheatSheet.html)
-* [Granite UI](http://docs.adobe.com/docs/en/aem/6-0/develop/extending/granite/granite-reference.html)
+* [Coral UI 3](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/getting-started.html)
 
 ### Open Source Documentation
 * [Sling](http://sling.apache.org/)
@@ -118,23 +108,15 @@ AEM Links Index
 * [Apache Felix](http://felix.apache.org/)
 * [JCR 1.0 Spec](https://docs.adobe.com/content/docs/en/spec/jcr/1.0/index.html)
 * [JCR 2.0 Spec](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)
-* [Apache Lucene](http://lucene.apache.org/core/3_0_3/index.html)
-* [Apache Lucene - Scoring](http://lucene.apache.org/core/3_0_3/scoring.html)
-* [Jackrabbit Indexing](http://wiki.apache.org/jackrabbit/IndexingConfiguration)
 
 ### Screencasts, Podcasts, Presentations
-* [CQ Gems on Adobe Experience Manager](https://docs.adobe.com/content/ddc/en/gems.html)
-* [AEM Casts](http://www.aemcasts.com/) -  Micro Topics on AEM and AEM Delivery
-* [Adobe Experience Manager Podcast](http://aempodcast.com/)
+* [AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) - technical deep dives delivered by Adobe experts
 * [AEM @ SlideShare](http://www.slideshare.net/search/slideshow?q=adobe+aem)
-* [Listing of Ask the AEM Community Experts sessions](https://helpx.adobe.com/experience-manager/topics/ate-sessions.html)
+* [Listing of Ask the AEM Community Experts sessions](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/atace-index.html)
 
 ### Oak
 * [Oak Index Definition Generator](http://oakutils.appspot.com/generate/index)
 * [David's Model: A guide for content modeling](https://wiki.apache.org/jackrabbit/DavidsModel)
-
-### AEM Apps
-* [A PhoneGap API showcase app managed in AEM](https://github.com/blefebvre/aem-phonegap-kitchen-sink)
 
 ### Development Tools
 * [AEMSync](https://github.com/gavoja/aemsync) - AEM Synchronization Tool, the tool pushes code changes to AEM instance(s) upon a file change (Single most useful tool for AEM development)
@@ -226,3 +208,7 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [Apache Sling Resource Resolver Rules in a Nutshell](http://ilikeorangutans.github.io/2012/11/20/apache-sling-resource-resolver-rule-priority-explained/)
 * [Adobe CQ/AEM Support Matrix](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html#cq)
 * [Adobe CQ5 AEM cURL Commands](http://www.aemcq5tutorials.com/tutorials/adobe-cq5-aem-curl-commands/)
+* [How to upgrade AEM 6.5 safely](https://labs.tadigital.com/index.php/2019/11/18/how-to-upgrade-aem-6-5-safely/)
+
+
+* [Experiencing Adobe Experience Manger - Day CQ](http://experience-aem.blogspot.com/2013/08/in-blog-experiencing-adobe-experience.html)
