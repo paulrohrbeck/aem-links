@@ -96,6 +96,7 @@ AEM Links Index
 ### AEM as a Cloud Service
 * [Migration guides](https://github.com/adobe/aem-enablement/tree/master/AEMAsACloudService)
 * [Development Guidelines](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
+* [AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-dispatcher-converter)
 
 ### Quick References
 * [Frequently Used CQ URLs](http://cq5geeks.blogspot.com/2013/02/frequently-used-cq-urls.html)
