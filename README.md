@@ -19,7 +19,7 @@ AEM Links Index
 * [Adobe Experience Manager Onboarding resources](https://helpx.adobe.com/experience-manager/using/onboardAEM.html)
 * [AEM project archetype](https://github.com/adobe/aem-project-archetype) by Adobe
 * [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki)
-* [We.Retail](https://docs.adobe.com/docs/en/aem/6-2/develop/best-practices/we-retail.html) - Adobe's reference site implementation
+* [WKND Sites Project](https://github.com/adobe/aem-guides-wknd) - Adobe's reference site implementation
 
 ### Blogs
 * [Things on a content management system](http://cqdump.wordpress.com/)
@@ -210,6 +210,4 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [Adobe CQ/AEM Support Matrix](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html#cq)
 * [Adobe CQ5 AEM cURL Commands](http://www.aemcq5tutorials.com/tutorials/adobe-cq5-aem-curl-commands/)
 * [How to upgrade AEM 6.5 safely](https://labs.tadigital.com/index.php/2019/11/18/how-to-upgrade-aem-6-5-safely/)
-
-
 * [Experiencing Adobe Experience Manger - Day CQ](http://experience-aem.blogspot.com/2013/08/in-blog-experiencing-adobe-experience.html)
