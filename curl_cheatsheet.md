@@ -549,16 +549,30 @@ curl -s -u admin:admin -X POST http://localhost:4502/system/console/status-sling
 curl -u admin:admin -d "shutdown_type=Restart" http://localhost:4502/system/console/vmstat
 ```
 
-### Enable CRX DE
+### Enable CRX/De / WebDav
 enable wedav
+
 ```bash
 curl -u admin:admin -H User-Agent:curl -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" -F"../../jcr:primaryType=sling:Folder" -F"../jcr:primaryType=sling:Folder" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
+```
+
+or 
+
+```bash
+curl -u admin:admin -H User-Agent:curl -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" -F"../../jcr:primaryType=sling:Folder" -F"../jcr:primaryType=sling:Folder" http://localhost:4502/apps/system/config/org.apache.sling.jcr.webdav.impl.servlets.SimpleWebDavServlet
 ```
 
 disable wedav
 ```bash
 curl -u admin:admin -H User-Agent:curl -X DELETE http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
 ```
+
+or
+
+```bash
+curl -u admin:admin -H User-Agent:curl -X DELETE http://localhost:4502/apps/system/config/org.apache.sling.jcr.webdav.impl.servlets.SimpleWebDavServlet
+```
+
 
 ### Enable Query Debug Log
 create Query Debug log file
