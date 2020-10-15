@@ -98,6 +98,9 @@ AEM Links Index
 * [Development Guidelines](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 * [AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-dispatcher-converter)
 
+### AEM Screens
+* [Screens HowTo project](https://github.com/Adobe-Marketing-Cloud/aem-screens-howto)
+
 ### Quick References
 * [Frequently Used CQ URLs](http://cq5geeks.blogspot.com/2013/02/frequently-used-cq-urls.html)
 * [Apache Sling Cheat Sheet](https://docs.adobe.com/docs/en/aem/6-2/develop/platform/sling-cheatsheet.html)
