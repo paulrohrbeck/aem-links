@@ -24,6 +24,7 @@ AEM Links Index
 ### Blogs
 * [Things on a content management system](http://cqdump.wordpress.com/)
 * [Daniel Klco's Blog](http://www.danklco.com/)
+* [OpsInventor (Tad Reeves' Blog)](https://www.opsinventor.com/)
 * [AEM @ Reddit](https://www.reddit.com/r/aem/), [Adobe CQ @ Reddit](http://www.reddit.com/r/adobecq/)
 * [Scott's Digital Community](http://scottsdigitalcommunity.blogspot.ca/)
 * [CQ-OPS](http://cq-ops.tumblr.com/)
