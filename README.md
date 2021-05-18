@@ -143,6 +143,7 @@ A curated list of open source projects, code examples and snippets to learn from
 * [AEM React](https://github.com/sinnerschrader/aem-react) - Render components using React, isomorphic JavaScript rendering.
 * [TODO MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample) - SCF+SRP implementation of ToDo MVC with walkthrough.
 * [SASS compiler for AEM](https://github.com/mickleroy/aem-sass-compiler) - provides native SASS support in AEM
+* [AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components) - Set of standardized WCM components supported by Adobe.
 
 ----------------------------------------
 
