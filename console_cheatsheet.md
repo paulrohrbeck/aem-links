@@ -22,6 +22,7 @@ General
 * [Maintenance Tools](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)
 * [Dialog Conversion Console](http://localhost:4502/libs/cq/dialogconversion/content/console.html)
 * [Maven Dependency Finder](http://localhost:4502/system/console/depfinder)
+* [Namespaces: Update Namespaces to match your DAM assets schema](http://localhost:4502/crx/explorer/ui/namespace_editor.jsp)
 
 Classic UI
 ---------
