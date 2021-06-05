@@ -599,5 +599,19 @@ curl -u admin:admin http://192.168.27.2:4502/system/console/jmx | grep -o "&quot
 Start workflow
 
 ```bash
- curl -u admin:admin -H User-Agent:curl -F "payload=/content/aemdesign-showcase/en/component/lists/page-list" -F "payloadType=JCR_PATH" -F "workflowTitle=CurlTitle" -F "startComment=CurlComment" -F"model=/var/workflow/models/test1" http://192.168.27.2:4502/etc/workflow/instances
+curl -u admin:admin -H User-Agent:curl -F "payload=/content/aemdesign-showcase/en/component/lists/page-list" -F "payloadType=JCR_PATH" -F "workflowTitle=CurlTitle" -F "startComment=CurlComment" -F"model=/var/workflow/models/test1" http://192.168.27.2:4502/etc/workflow/instances
+```
+
+## Workflow Launchers
+
+### Disable Workflow Launchers
+
+```bash
+curl -u admin:admin -H User-Agent:curl -F "action=stop" http://localhost:4502/system/console/bundles/com.adobe.granite.workflow.core
+```
+
+#### Enable Workflow Launchers
+
+```bash
+curl -u admin:admin -H User-Agent:curl -F "action=start" http://localhost:4502/system/console/bundles/com.adobe.granite.workflow.core
 ```
