@@ -25,7 +25,7 @@ If you would like to start and run new instance of AEM using Docker use the foll
 docker run --name author \
 -e "TZ=Australia/Sydney" \
 -e "AEM_JVM_OPTS=-server -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=58242 -Xms1024m -Xmx1024m -XX:MaxDirectMemorySize=256M -XX:+CMSClassUnloadingEnabled -Djava.awt.headless=true -Dorg.apache.felix.http.host=0.0.0.0" \
--p4502:8080 -d \
+-p4502:8080 \
 -p30303:58242 -d \
 -v ~/aemdesign-docker/author/crx-quickstart/repository:/aem/crx-quickstart/repository \
 -v ~/aemdesign-docker/author/crx-quickstart/logs:/aem/crx-quickstart/logs \
@@ -61,11 +61,19 @@ docker run --name aem64-publish \
 -e "TZ=Australia/Sydney" \
 -e "AEM_JVM_OPTS=-server -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=58242 -Xms1024m -Xmx1024m -XX:MaxDirectMemorySize=256M -XX:+CMSClassUnloadingEnabled -Djava.awt.headless=true -Dorg.apache.felix.http.host=0.0.0.0" \
 -e "AEM_RUNMODE=-Dsling.run.modes=publish,crx3,crx3tar,nosamplecontent" \
--p4503:8080 -d \
+-p4503:8080 \
 -p30304:58242 -d \
 -v ~/aemdesign-docker/publish/crx-quickstart/repository:/aem/crx-quickstart/repository \
 -v ~/aemdesign-docker/publish/crx-quickstart/logs:/aem/crx-quickstart/logs \
 aemdesign/aem:6.5.0
+```
+
+## Start AEM 6.4.8.4
+
+This container will run until stopped and will restart when ever you reboot your pc, this is done using `--restart unless-stopped` setting.
+
+```bash
+docker run --name author6484 -e "TZ=Australia/Sydney" -e "AEM_RUNMODE=-Dsling.run.modes=author,crx3,crx3tar,forms,localdev" -e "AEM_JVM_OPTS=-server -Xms248m -Xmx2524m -XX:MaxDirectMemorySize=256M -XX:+CMSClassUnloadingEnabled -Djava.awt.headless=true -Dorg.apache.felix.http.host=0.0.0.0 -Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=58242,suspend=n" -p4502:8080 -p30303:58242 --restart unless-stopped -d aemdesign/aem:6.4.8.4
 ```
 
 :heart: :heart: :heart:
