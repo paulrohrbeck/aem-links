@@ -24,6 +24,7 @@ AEM Links Index
 ### Blogs
 * [Things on a content management system](http://cqdump.wordpress.com/)
 * [Daniel Klco's Blog](http://www.danklco.com/)
+* [OpsInventor (Tad Reeves' Blog)](https://www.opsinventor.com/)
 * [AEM @ Reddit](https://www.reddit.com/r/aem/), [Adobe CQ @ Reddit](http://www.reddit.com/r/adobecq/)
 * [Scott's Digital Community](http://scottsdigitalcommunity.blogspot.ca/)
 * [CQ-OPS](http://cq-ops.tumblr.com/)
@@ -99,6 +100,9 @@ AEM Links Index
 * [Development Guidelines](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 * [AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-dispatcher-converter)
 
+### AEM Screens
+* [Screens HowTo project](https://github.com/Adobe-Marketing-Cloud/aem-screens-howto)
+
 ### Quick References
 * [Frequently Used CQ URLs](http://cq5geeks.blogspot.com/2013/02/frequently-used-cq-urls.html)
 * [Apache Sling Cheat Sheet](https://docs.adobe.com/docs/en/aem/6-2/develop/platform/sling-cheatsheet.html)
@@ -142,6 +146,7 @@ A curated list of open source projects, code examples and snippets to learn from
 * [AEM React](https://github.com/sinnerschrader/aem-react) - Render components using React, isomorphic JavaScript rendering.
 * [TODO MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample) - SCF+SRP implementation of ToDo MVC with walkthrough.
 * [SASS compiler for AEM](https://github.com/mickleroy/aem-sass-compiler) - provides native SASS support in AEM
+* [AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components) - Set of standardized WCM components supported by Adobe.
 
 ----------------------------------------
 
@@ -170,6 +175,8 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [Sling Dynamic Include](https://github.com/Cognifide/Sling-Dynamic-Include)
 * [AEM Tooling Plugin for Intellij IDEA](https://github.com/headwirecom/aem-ide-tooling-4-intellij)
 * [NEBA](https://github.com/unic/neba) - integration of Spring Framework into Apache Sling
+* [WebSight](https://github.com/DS-WebSight) - Set of AEM/Sling Admin Tools (User Manager, Package Manager, Groovy Console and Resource Browser)
+
 
 ----------------------------------------
 
