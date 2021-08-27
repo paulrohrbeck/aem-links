@@ -33,6 +33,7 @@ AEM Links Index
 * [CQ5 | AEM6 Solutions and Suggestions](http://aem6solutions.blogspot.com.au/)
 * [Nate Yolles' Blog](http://www.nateyolles.com/blog)
 * [Bounteous AEM Blog](https://www.bounteous.com/insights/?category=platforms/adobe/adobe-experience-manager&secondary_category=All)
+* [AEM.Design Blog](https://aem.design/blog/)
 
 ### Blogs (slightly outdated but good historical content)
 * [Wem Blog](http://www.wemblog.com/)
@@ -130,6 +131,8 @@ AEM Links Index
 * [Grunt Clientlibify](https://github.com/mickleroy/grunt-clientlibify) - Grunt plugin for integrating AEM with a styleguide
 * [Grunt Smart VLT](https://github.com/Ariel-Rodriguez/grunt-smart-vlt) - A simple grunt interface for Adobe VLT (last commit >2 years)
 * [Vagrant AEM](https://github.com/bstopp/vagrant-aem) - Vagrant boxes for AEM
+* [AEM Docker Containers](https://hub.docker.com/r/aemdesign) - AEM and Dispatcher Docker Containers, AEM 6.3 - 6.5 - sdk-2021.3.5087
+* [AEM Ansible Roles](https://galaxy.ansible.com/aem_design) - Roles for managing your AEM services.
 
 (* not sure if this is still being updated)
 

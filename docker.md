@@ -17,19 +17,16 @@ When you have installed docker desktop please ensure you configure following ite
 
 Everything else you can leave as defaults.
 
-## Running AEM Author using Docker Container with Debugging Enabled
+## Running AEM 6.5.0 Author using Docker Container with Debugging Enabled
+
+Port: 4502
+Debug Port: 30303
+URL: http://localhost:4502
 
 If you would like to start and run new instance of AEM using Docker use the following command:
 
 ```bash
-docker run --name author \
--e "TZ=Australia/Sydney" \
--e "AEM_JVM_OPTS=-server -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=58242 -Xms1024m -Xmx1024m -XX:MaxDirectMemorySize=256M -XX:+CMSClassUnloadingEnabled -Djava.awt.headless=true -Dorg.apache.felix.http.host=0.0.0.0" \
--p4502:8080 -d \
--p30303:58242 -d \
--v ~/aemdesign-docker/author/crx-quickstart/repository:/aem/crx-quickstart/repository \
--v ~/aemdesign-docker/author/crx-quickstart/logs:/aem/crx-quickstart/logs \
-aemdesign/aem:6.5.0
+docker run --name author -e "TZ=Australia/Sydney" -e "AEM_JVM_OPTS=-server -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=58242 -Xms1024m -Xmx1024m -XX:MaxDirectMemorySize=256M -XX:+CMSClassUnloadingEnabled -Djava.awt.headless=true -Dorg.apache.felix.http.host=0.0.0.0" -p4502:8080 -p30303:58242 -d -v ~/aemdesign-docker/author/crx-quickstart/repository:/aem/crx-quickstart/repository -v ~/aemdesign-docker/author/crx-quickstart/logs:/aem/crx-quickstart/logs aemdesign/aem:6.5.0
 ```
 
 This will start a new instance and will mount internal repository content in a subfolder ```~/aemdesign-docker/author``` of your home directory. 
@@ -52,20 +49,39 @@ If you find your self wanting to checkout internal container setup you can get b
 docker exec -it author bash
 ```
 
+## Running AEM 6.5.0 Publish with Debugging Enabled
 
-
-## Running AEM Publish using Docker Container with Debugging Enabled
+Port: 4503
+Debug Port: 30304
+URL: http://localhost:4503
 
 ```bash
-docker run --name aem64-publish \
--e "TZ=Australia/Sydney" \
--e "AEM_JVM_OPTS=-server -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=58242 -Xms1024m -Xmx1024m -XX:MaxDirectMemorySize=256M -XX:+CMSClassUnloadingEnabled -Djava.awt.headless=true -Dorg.apache.felix.http.host=0.0.0.0" \
--e "AEM_RUNMODE=-Dsling.run.modes=publish,crx3,crx3tar,nosamplecontent" \
--p4503:8080 -d \
--p30304:58242 -d \
--v ~/aemdesign-docker/publish/crx-quickstart/repository:/aem/crx-quickstart/repository \
--v ~/aemdesign-docker/publish/crx-quickstart/logs:/aem/crx-quickstart/logs \
-aemdesign/aem:6.5.0
+docker run --name publish -e "TZ=Australia/Sydney" -e "AEM_JVM_OPTS=-server -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=58242 -Xms1024m -Xmx1024m -XX:MaxDirectMemorySize=256M -XX:+CMSClassUnloadingEnabled -Djava.awt.headless=true -Dorg.apache.felix.http.host=0.0.0.0" -e "AEM_RUNMODE=-Dsling.run.modes=publish,crx3,crx3tar,nosamplecontent" -p4503:8080 -p30304:58242 -d -v ~/aemdesign-docker/publish/crx-quickstart/repository:/aem/crx-quickstart/repository -v ~/aemdesign-docker/publish/crx-quickstart/logs:/aem/crx-quickstart/logs aemdesign/aem:6.5.0
 ```
+
+## Start AEM 6.4.8.4 Author with Debugging Enabled
+
+Port: 4502
+Debug Port: 30303
+URL: http://localhost:4502
+
+This container will run until stopped and will restart when ever you reboot your pc, this is done using `--restart unless-stopped` setting.
+
+```bash
+docker run --name author6484 -e "TZ=Australia/Sydney" -e "AEM_RUNMODE=-Dsling.run.modes=author,crx3,crx3tar,forms,localdev" -e "AEM_JVM_OPTS=-server -Xms248m -Xmx2524m -XX:MaxDirectMemorySize=256M -XX:+CMSClassUnloadingEnabled -Djava.awt.headless=true -Dorg.apache.felix.http.host=0.0.0.0 -Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=58242,suspend=n" -p4502:8080 -p30303:58242 --restart unless-stopped -d aemdesign/aem:6.4.8.4
+```
+
+## Start AEM SDK - 2021.3.5087 Author with Debugging Enabled
+
+Port: 4502
+Debug Port: 30303
+URL: http://localhost:4502
+
+This container will run until stopped and will restart when ever you reboot your pc, this is done using `--restart unless-stopped` setting.
+
+```bash
+docker run --name authorsdk5087 -e "TZ=Australia/Sydney" -e "AEM_RUNMODE=-Dsling.run.modes=author,crx3,crx3tar,forms,localdev" -e "AEM_JVM_OPTS=-server -Xms248m -Xmx1524m -XX:MaxDirectMemorySize=256M -XX:+CMSClassUnloadingEnabled -Djava.awt.headless=true -Dorg.apache.felix.http.host=0.0.0.0 -Xdebug -Xrunjdwp:transport=dt_socket,server=y,address=58242,suspend=n -XX:+UseParallelGC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning" -p4502:8080 -p30303:58242 -d aemdesign/aem:sdk-2021.3.5087
+```
+
 
 :heart: :heart: :heart:
