@@ -92,6 +92,8 @@ Following is the list of all available keywords that can be used in a a query
 | property.operation=like       | check if property is like value |
 | property.operation=equals     | check if property is equals value |
 | property.operation=unequals   | check if property is does not equal value |
+| property.operation=equalsIgnoreCase   | check if property equals ignoring case |
+| property.operation=unequalsIgnoreCase   | check if property not equals ignoring case |
 | fulltext                      | It is used to search terms for fulltext search |
 | fulltext.relPath              | the relative path to search in (eg. property or subnode) eg. ```fulltext.relPath=jcr:content``` or ```fulltext.relPath=jcr:content/@cq:tags``` |
 | daterange                     | This predicate is used to search a date property range. |
