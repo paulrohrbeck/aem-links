@@ -24,6 +24,7 @@ General
 * [Maven Dependency Finder](http://localhost:4502/system/console/depfinder)
 * [Namespaces: Update Namespaces to match your DAM assets schema](http://localhost:4502/crx/explorer/ui/namespace_editor.jsp)
 * [Tag Admin Console](http://localhost:4502/libs/cq/tagging/content/debug.html)
+* [Sling Context-Aware Configuration](http://localhost:4502/system/console/slingcaconfig)
 
 Classic UI
 ---------
