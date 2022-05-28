@@ -70,12 +70,12 @@ Touch UI
 * [AEM Apps](http://localhost:4502/aem/apps.html/content/phonegap)
 * [AEM Publications](http://localhost:4502/aem/publications.html/content/publications)
 * [Search Forms Window](http://localhost:4502/libs/cq/core/content/tools/customsearch/searchfacetformlister.html)
+* [Oak Index Manager](http://localhost:4502/libs/granite/operations/content/diagnosistools/indexManager.html)
 
 ACS AEM Commons
 ---------
 
 * [JCR Compare](http://localhost:4502/etc/acs-commons/jcr-compare.html)
-* [Oak Index Manager](http://localhost:4502/etc/acs-commons/oak-index-manager.html)
 * [Version Compare](http://localhost:4502/etc/acs-commons/version-compare.html)
 * [Workflow Remover](http://localhost:4502/etc/acs-commons/workflow-remover.html)
 
