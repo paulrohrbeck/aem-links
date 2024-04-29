@@ -179,6 +179,7 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [AEM Tooling Plugin for Intellij IDEA](https://github.com/headwirecom/aem-ide-tooling-4-intellij)
 * [NEBA](https://github.com/unic/neba) - integration of Spring Framework into Apache Sling
 * [WebSight](https://github.com/DS-WebSight) - Set of AEM/Sling Admin Tools (User Manager, Package Manager, Groovy Console and Resource Browser)
+* [Composum Nodes](https://github.com/ist-dresden/composum-nodes) - various AEM/Sling Admin Tools (Resource Browser, User Manager, Sling Package Manager, Groovy Console etc.)
 
 
 ----------------------------------------
