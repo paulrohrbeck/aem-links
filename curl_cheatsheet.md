@@ -624,16 +624,16 @@ AEM 6.3 and 6.2
 curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
 ```
 
-AEM 6.4 and 6.5
+AEM 6.4
 
 ```bash
-curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http:/ost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
+curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
 ```
 
-AEM 6.6
+AEM 6.5 and 6.6
 
 ```bash
-curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.protectedhandlers=org.apache.jackrabbit.server.remoting.davex.AclRemoveHandler" -F "dav.create-absolute-uri@TypeHint=Boolean" http:/ost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
+curl -u admin:admin -F "apply=true" -F "action=ajaxConfigManager" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.protectedhandlers=org.apache.jackrabbit.server.remoting.davex.AclRemoveHandler" -F "propertylist=alias,dav.create-absolute-uri,dav.protectedhandlers" http://localhost:4502/system/console/configMgr/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
 ```
 
 #### Disable Workflows Service
