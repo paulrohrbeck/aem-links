@@ -615,3 +615,37 @@ curl -u admin:admin -H User-Agent:curl -F "action=stop" http://localhost:4502/sy
 ```bash
 curl -u admin:admin -H User-Agent:curl -F "action=start" http://localhost:4502/system/console/bundles/com.adobe.granite.workflow.core
 ```
+
+#### Enabble CRXDe
+
+AEM 6.3 and 6.2
+
+```bash
+curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
+```
+
+AEM 6.4 and 6.5
+
+```bash
+curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http:/ost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
+```
+
+AEM 6.6
+
+```bash
+curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.protectedhandlers=org.apache.jackrabbit.server.remoting.davex.AclRemoveHandler" -F "dav.create-absolute-uri@TypeHint=Boolean" http:/ost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
+```
+
+#### Disable Workflows Service
+
+```bashe
+curl -u admin:admin "http://localhost:4502/system/console/components/com.adobe.granite.workflow.core.launcher.WorkflowLauncherImpl" --data "action=disable"
+```
+
+#### Enable Workflows Service
+
+```bashe
+curl -u admin:admin "http://localhost:4502/system/console/components/com.adobe.granite.workflow.core.launcher.WorkflowLauncherImpl" --data "action=enable"
+```
+
+
