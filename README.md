@@ -163,6 +163,7 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [DAM WebDav](http://localhost:4502/crx/repository/crx.default/content/dam/)
 * [CQ5 AntiSamy configuration XSS](http://localhost:4502/libs/cq/xssprotection/config.xml)
 * [ContextHub Diagnostics](http://localhost:4502/etc/cloudsettings/default/contexthub.diagnostics.html)
+* [AEM Chrome Extension](https://chromewebstore.google.com/detail/aem-chrome-extension-sour/ebhapiodakbafkjhegnfcmohjccfedkm)
 
 ### Servlets (in AEM)
 
