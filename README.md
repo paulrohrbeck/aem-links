@@ -100,6 +100,8 @@ AEM Links Index
 * [Migration guides](https://github.com/adobe/aem-enablement/tree/master/AEMAsACloudService)
 * [Development Guidelines](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 * [AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-dispatcher-converter)
+* [BPA report parser](https://github.com/SurgeEnterpriseAI/aem-bpa-parser) - open source (MIT) parser for Best Practices Analyzer CSV reports
+* [Cloud Service readiness scan](https://www.surgemigrate.com/readiness-scan/) - free, reads a BPA report or a repository zip in the browser, nothing is uploaded
 
 ### AEM Screens
 * [Screens HowTo project](https://github.com/Adobe-Marketing-Cloud/aem-screens-howto)
@@ -182,6 +184,7 @@ This is more of a short cut for people who don't want to navigate through the AE
 * [NEBA](https://github.com/unic/neba) - integration of Spring Framework into Apache Sling
 * [WebSight](https://github.com/DS-WebSight) - Set of AEM/Sling Admin Tools (User Manager, Package Manager, Groovy Console and Resource Browser)
 * [Composum Nodes](https://github.com/ist-dresden/composum-nodes) - various AEM/Sling Admin Tools (Resource Browser, User Manager, Sling Package Manager, Groovy Console etc.)
+* [AEM file generators](https://www.surgemigrate.com/aem-developer-tools/) - free browser generators for a component skeleton, OSGi .cfg.json, repoinit and Dispatcher redirects
 
 
 ----------------------------------------
